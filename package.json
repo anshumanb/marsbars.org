@@ -1,0 +1,22 @@
+{
+  "name": "elevenmarsbars-website",
+  "description": "The elevenmarsbars.com website",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elevenmarsbars/elevenmarsbars.com"
+  },
+  "bugs": {
+    "url": "https://github.com/elevenmarsbars/elevenmarsbars.com/issues"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "generator-h5bp": "^1.2.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-mustache-render": "^1.7.0",
+    "grunt": "^0.4.5",
+    "yo": "^1.4.7"
+  },
+  "author": "Anshuman Bhaduri",
+  "license": "MIT"
+}
