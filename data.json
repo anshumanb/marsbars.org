@@ -14,12 +14,14 @@
         },
         {
             "first_name": "rohit",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "patel"
         },
         {
             "first_name": "smit",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "shah"
         },
         {
@@ -86,37 +88,44 @@
     "inactive": [
         {
             "first_name": "joscel",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "alexander"
         },
         {
             "first_name": "kailash",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "satyanarayan"
         },
         {
             "first_name": "kaval",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "patel"
         },
         {
             "first_name": "mohsin",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "wahab"
         },
         {
             "first_name": "navin",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "ramakrishnan"
         },
         {
             "first_name": "pranshu",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "mishra"
         },
         {
             "first_name": "pratik",
-            "joined": 2007,
+            "joined": false,
+            "title": "founding member",
             "last_name": "waghela"
         },
         {
@@ -193,6 +202,11 @@
             "first_name": "dan",
             "joined": 2008,
             "last_name": "brown"
+        },
+        {
+            "first_name": "hasith",
+            "joined": 2008,
+            "last_name": "gamage"
         },
         {
             "first_name": "pratik",
