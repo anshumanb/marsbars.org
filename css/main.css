@@ -94,11 +94,86 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    /*font-size: 1.2em;*/
+    color: #222;
+}
 
+header {
+    padding: 0 0.8em 2em;
+    background-color: #0d0d0d;
+    color: #fef8ce;
+}
 
+#logo {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 
+#sub-logo {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Averia Serif Libre", cursive;
+    margin: 0;
+}
 
+#container {
+    max-width: 20em;
+    margin: 0 auto;
+    padding: 0 0.8em;
+}
 
+.members li {
+    list-style-type: none;
+}
+
+.name {
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+
+ul.members {
+    padding-left: 0;
+    margin: 0;
+}
+
+ul.members > li {
+    overflow: auto;
+    padding: 0.8em 0;
+}
+
+.details, ul.members img {
+    float: left;
+}
+
+.members img {
+    border-radius: 3px;
+}
+
+.details {
+    clear: right;
+    padding-left: 0.8em;
+}
+
+.details ul {
+    padding: 0;
+}
+
+.details li {
+    list-style-type: none;
+}
+
+.joined, .title {
+    color: #666;
+}
+
+h2 {
+    font-family: "Averia Serif Libre", cursive;
+    font-size: 2.5em;
+    margin: 0.32em 0 0;
+}
 
 
 
@@ -190,9 +265,24 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (min-width: 25em) {
+    #container {
+        max-width: 80em;
+        padding: 0 10%;
+    }
+    header {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+    .members {
+        overflow: auto;
+    }
+
+    .members > li {
+        float: left;
+        width: 20em;
+    }
 }
 
 @media print,

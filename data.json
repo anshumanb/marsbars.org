@@ -1,1 +1,153 @@
-{}
+{
+    "active": [
+        {
+            "first_name": "uddhav",
+            "joined": false,
+            "last_name": "naik",
+            "title": "co-founder"
+        },
+        {
+            "first_name": "eshan",
+            "joined": false,
+            "last_name": "gupta",
+            "title": "co-founder"
+        },
+        {
+            "first_name": "anshuman",
+            "joined": 2006,
+            "last_name": "bhaduri"
+        },
+        {
+            "first_name": "smit",
+            "joined": 2006,
+            "last_name": "shah"
+        },
+        {
+            "first_name": "rohit",
+            "joined": 2006,
+            "last_name": "patel"
+        },
+        {
+            "first_name": "kaushik",
+            "joined": 2006,
+            "last_name": "balan"
+        },
+        {
+            "first_name": "akshay",
+            "joined": 2006,
+            "last_name": "thaker"
+        },
+        {
+            "first_name": "abhishek",
+            "joined": 2006,
+            "last_name": "verma"
+        },
+        {
+            "first_name": "amant",
+            "joined": 2006,
+            "last_name": "nauhria"
+        },
+        {
+            "first_name": "amit",
+            "joined": 2006,
+            "last_name": "pothen"
+        },
+        {
+            "first_name": "vijay",
+            "joined": 2006,
+            "last_name": "ravikumar"
+        },
+        {
+            "first_name": "brendan",
+            "joined": 2006,
+            "last_name": "raj"
+        },
+        {
+            "first_name": "chirag",
+            "joined": 2006,
+            "last_name": "ahuja"
+        },
+        {
+            "first_name": "sai",
+            "joined": 2006,
+            "last_name": "karnan"
+        },
+        {
+            "first_name": "kesh",
+            "joined": 2006,
+            "last_name": "wanig"
+        },
+        {
+            "first_name": "rajitha",
+            "joined": 2006,
+            "last_name": "gurusinghe"
+        }
+    ],
+    "inactive": [
+        {
+            "first_name": "ujjal",
+            "joined": 2006,
+            "last_name": "bose"
+        },
+        {
+            "first_name": "jeet",
+            "joined": 2006,
+            "last_name": "chatterji"
+        },
+        {
+            "first_name": "saurabh",
+            "joined": 2006,
+            "last_name": "pisolkar"
+        },
+        {
+            "first_name": "joy",
+            "joined": 2006,
+            "last_name": "chatterji"
+        },
+        {
+            "first_name": "kaval",
+            "joined": 2006,
+            "last_name": "patel"
+        },
+        {
+            "first_name": "kailash",
+            "joined": 2006,
+            "last_name": "satyanarayan"
+        },
+        {
+            "first_name": "rahul",
+            "joined": 2006,
+            "last_name": "chopra"
+        },
+        {
+            "first_name": "pratik",
+            "joined": 2006,
+            "last_name": "waghela"
+        },
+        {
+            "first_name": "mohsin",
+            "joined": 2006,
+            "last_name": "wahab"
+        },
+        {
+            "first_name": "kanishk",
+            "joined": 2006,
+            "last_name": "vaddiraju"
+        },
+        {
+            "first_name": "navin",
+            "joined": 2006,
+            "last_name": "ramakrishnan"
+        },
+        {
+            "first_name": "nishant",
+            "joined": 2006,
+            "last_name": "dogra"
+        },
+        {
+            "first_name": "daley",
+            "joined": 2006,
+            "last_name": "gracious"
+        }
+    ]
+}

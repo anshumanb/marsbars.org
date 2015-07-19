@@ -11,8 +11,18 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+    watch: {
+      scripts: {
+        files: ["data.json", "layout.mustache", "css/*.css"],
+        tasks: ['mustache_render'],
+        options: {
+          spawn: true
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-mustache-render');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 };
