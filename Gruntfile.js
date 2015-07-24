@@ -12,10 +12,24 @@ module.exports = function(grunt) {
         ]
       }
     },
+    sass: {
+      dist: {
+        files: {
+          'css/main.css': 'scss/main.scss'
+        }
+      }
+    },
     watch: {
-      scripts: {
-        files: ["data.json", "layout.mustache", "css/*.css"],
+      template: {
+        files: ["data.json", "layout.mustache"],
         tasks: ['mustache_render'],
+        options: {
+          spawn: true
+        }
+      },
+      scss: {
+        files: ['scss/*.scss'],
+        tasks: ['sass'],
         options: {
           spawn: true
         }
@@ -25,4 +39,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-mustache-render');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-sass');
+
+  grunt.registerTask('default', ['mustache_render', 'sass']);
 };
