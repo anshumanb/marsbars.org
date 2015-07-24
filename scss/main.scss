@@ -21,10 +21,18 @@ $wide-breakpoint: 25em;
 $fs: ms(0);
 $lh: 1.5;
 
+@function line-height($fontsize) {
+    @return $lh * (floor($fontsize/$lh/1em) + 1) * 1em/$fontsize;
+}
+
+@mixin font-size($size) {
+   font-size: $size;
+    line-height: line-height($size);
+}
+
 html {
     color: #222;
-    font-size: $fs;
-    line-height: $lh;
+    @include font-size($fs);
 }
 
 /*
@@ -124,8 +132,7 @@ header {
 
 #sub-logo {
     text-align: center;
-    font-size: ms(2);
-    line-height: $lh*1em/ms(2);
+    @include font-size(ms(2));
     font-family: "Averia Serif Libre", cursive;
     margin: 0;
 }
@@ -142,8 +149,7 @@ header {
 
 .name {
     text-transform: capitalize;
-    font-size: ms(3);
-    line-height: $lh*1em/ms(3);
+    @include font-size(ms(3));
 }
 
 ul.members {
@@ -185,8 +191,7 @@ ul.members > li {
 
 h2 {
     font-family: "Averia Serif Libre", cursive;
-    font-size: ms(9);
-    line-height: $lh*2*1em/ms(9);
+    @include font-size(ms(9));
     margin: ($lh*2*1em)/ms(9)/2*1em 0;
 }
 
