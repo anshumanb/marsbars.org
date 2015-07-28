@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+node-sass \
+  --include-path node_modules/modularscale-sass/stylesheets \
+  --precision 10 \
+  scss/main.scss css/main.css

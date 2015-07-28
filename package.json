@@ -18,7 +18,7 @@
     "yo": "^1.4.7"
   },
   "scripts": {
-    "css": "node-sass --precision 10 scss/main.scss css/main.css",
+    "css": "./build-css",
     "html": "mustache data.json layout.mustache > index.html",
     "watch:html": "nodemon -w layout.mustache -w data.json -x 'npm run html'",
     "watch:css": "node-sass -w --precision 10 scss/main.scss css/main.css",

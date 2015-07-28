@@ -6,8 +6,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-// FIXME: Remove this when we integrate Eyeglass with grunt-sass successfully.
-@import '../node_modules/modularscale-sass/stylesheets/modular-scale';
+@import 'modular-scale';
 
 /* ==========================================================================
    Base styles: opinionated defaults
