@@ -1,13 +1,13 @@
 {
-  "name": "elevenmarsbars-website",
-  "description": "The elevenmarsbars.com website",
+  "name": "marsbars.org",
+  "description": "The marsbars.org website",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elevenmarsbars/elevenmarsbars.com"
+    "url": "https://github.com/anshumanb/marsbars.org"
   },
   "bugs": {
-    "url": "https://github.com/elevenmarsbars/elevenmarsbars.com/issues"
+    "url": "https://github.com/anshumanb/marsbars.org/issues"
   },
   "devDependencies": {
     "generator-h5bp": "^1.2.1",
