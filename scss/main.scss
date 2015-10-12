@@ -186,6 +186,8 @@ ul.members > li {
 
 .joined, .title {
     color: #666;
+    // Hide titles and joined year till these are updated and correct.
+    display: none;
 }
 
 h2 {

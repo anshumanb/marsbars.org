@@ -138,7 +138,8 @@ ul.members > li {
   list-style-type: none; }
 
 .joined, .title {
-  color: #666; }
+  color: #666;
+  display: none; }
 
 h2 {
   font-family: "Averia Serif Libre", cursive;
