@@ -34,9 +34,6 @@
               <div class="details">
                 <ul>
                   <li class="name">{{first_name}} {{last_name}}</li>
-                  {{#joined}}
-                  <li class="joined">joined {{joined}}</li>
-                  {{/joined}}
                   {{#title}}
                   <li class="title">{{title}}</li>
                   {{/title}}
@@ -44,25 +41,6 @@
               </div>
             </li>
             {{/active}}
-        </ul>
-
-        <ul class="members inactive">
-            {{#inactive}}
-            <li>
-              <img src="img/no_photo.png" alt="{{first_name}} {{last_name}}">
-                <div class="details">
-                  <ul>
-                    <li class="name">{{first_name}} {{last_name}}</li>
-                    {{#joined}}
-                    <li class="joined">joined {{joined}}</li>
-                    {{/joined}}
-                    {{#title}}
-                    <li class="title">{{title}}</li>
-                    {{/title}}
-                  </ul>
-                </div>
-            </li>
-            {{/inactive}}
         </ul>
       </div>
 
