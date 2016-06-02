@@ -1,0 +1,5 @@
+context_dir: "data"
+output_dir: "build"
+
+unexpanded_templates:
+  - "404.html"
