@@ -28,19 +28,16 @@
         <h2>Meet the team</h2>
 
         <ul class="members active">
-            {{#active}}
+            {% for player in players.active %}
             <li>
-              <img src="img/{{first_name}}_{{last_name}}.png" alt="{{first_name}} {{last_name}}">
+              <img src="img/{{player.first_name}}_{{player.last_name}}.png" alt="{{player.first_name}} {{player.last_name}}">
               <div class="details">
                 <ul>
-                  <li class="name">{{first_name}} {{last_name}}</li>
-                  {{#title}}
-                  <li class="title">{{title}}</li>
-                  {{/title}}
+                  <li class="name">{{player.first_name}} {{player.last_name}}</li>
                 </ul>
               </div>
             </li>
-            {{/active}}
+            {% endfor %}
         </ul>
       </div>
 
