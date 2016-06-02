@@ -1,1 +1,4 @@
 /node_modules
+/.virtualenv/
+/lib/
+/bin/
