@@ -1,0 +1,39 @@
+datetime: '2016-05-28T19:00:00+12:00'
+league: 2016-super-league
+venue: Waitakere
+court: 4
+opponent: Central Blue
+result: tied
+margin: 0
+skins: 3
+points: 5
+innings:
+-   partnerships:
+    -   score: 23
+    -   score: 33
+    -   score: 27
+    -   score: 59
+        skin: true
+    score: 142
+-   partnerships:
+    -   members:
+        - uddhav-naik
+        - amit-pothen
+        score: 28
+        skin: true
+    -   members:
+        - smit-shah
+        - anshuman-bhaduri
+        score: 42
+        skin: true
+    -   members:
+        - sai-karnan
+        - bhavik-vora
+        score: 31
+        skin: true
+    -   members:
+        - abhishek-verma
+        - brendan-raj
+        score: 41
+    score: 142
+    us: true

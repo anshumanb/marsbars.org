@@ -1,0 +1,39 @@
+datetime: '2016-05-08T20:40:00+12:00'
+league: 2016-central-autumn
+venue: Central
+court: 4
+opponent: Vortex
+result: lost
+margin: 35 runs
+skins: 1
+points: 1
+innings:
+-   score: 122
+    partnerships:
+    -   score: 11
+    -   score: 51
+        skin: true
+    -   score: 16
+        skin: true
+    -   score: 44
+        skin: true
+-   score: 87
+    partnerships:
+    -   score: 29
+        skin: true
+        members:
+        - smit-shah
+        - jared-mascarenhas
+    -   score: 24
+        members:
+        - rohit-patel
+        - anshuman-bhaduri
+    -   score: 8
+        members:
+        - uddhav-naik
+        - raj
+    -   score: 26
+        members:
+        - amit-pothen
+        - brendan-raj
+    us: true

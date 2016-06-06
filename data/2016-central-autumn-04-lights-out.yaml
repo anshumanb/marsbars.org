@@ -1,0 +1,39 @@
+datetime: '2016-04-20T21:30:00+12:00'
+league: 2016-central-autumn
+venue: Central
+court: 4
+opponent: Lights Out
+result: won
+margin: 30 runs
+skins: 2
+points: 6
+innings:
+-   score: 71
+    partnerships:
+    -   score: -8
+    -   score: 18
+    -   score: 34
+        skin: true
+    -   score: 27
+        skin: true
+-   score: 101
+    partnerships:
+    -   score: 16
+        skin: true
+        members:
+        - rohit-patel
+        - jared-mascarenhas
+    -   score: 41
+        skin: true
+        members:
+        - uddhav-naik
+        - amit-pothen
+    -   score: 22
+        members:
+        - smit-shah
+        - anshuman-bhaduri
+    -   score: 22
+        members:
+        - brendan-raj
+        - abhishek-verma
+    us: true

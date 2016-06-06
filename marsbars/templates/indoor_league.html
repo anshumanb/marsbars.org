@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>{{league.name}} League</h2>
+<p>{{league.year}}</p>
+<p>{{league.grade}}</p>
+
+<ul class="matches indoor {{league.slug}}">
+  {% for match in matches %}
+  <li class="match {{match.result}} {{loop.cycle('odd', 'even')}}">
+    <h3 class="no-css">Match details</h3>
+    <dl>
+      <dt>Date and time</dt>
+        <dd class="time">{{match.datetime.strftime('%d-%b')}}</dd>
+      <dt>Indoor centre</dt>
+        <dd class="venue">{{match.venue}}</dd>
+      {% if not match.is_completed %}
+      <dt>Contest</dt>
+        <dd class="contest"><span class="us">Us</span>
+        <span class="vs"> vs </span>
+        <span class="opponent">{{match.opponent}}</span></dd>
+      <dt>Court</dt>
+        <dd class="court">{{match.court}}</dd>
+      {% endif %}
+
+      {% if not match.is_completed %}
+      <dt>Score</dt>
+        <dd class="scores"><span
+            class="score innings-1">{{match.score[0]}}</span><span
+            class="score innings-2">{{match.score[1]}}</span></dd>
+      {% endif %}
+
+      <dt>Innings</dt>
+        <dd>
+          <ol class="innings">
+            {% for innings in match.innings %}
+            <li class="innings-{{loop.index}}
+            {% if innings.us %}us{% else %}opponent{% endif %}">
+              <dl>
+                <dt>Team</dt>
+                  <dd class="team-name">
+                    {% if innings.us %}
+                    Us
+                    {% else %}
+                    {{match.opponent}}
+                    {% endif %}
+                  </dd>
+                <dt>Score</dt>
+                  <dd class="score total">{{innings.score | negative}}</dd>
+                {% if match.has_partnerships %}
+                <dt class="partnerships">Partnerships</dt>
+                  <dd>
+                    <ol class="partnerships">
+                      {% for partnership in innings.partnerships %}
+                      <li{% if partnership.skin %} class="skin"{% endif %}>
+                        <dl>
+                          <dt>Score</dt>
+                            <dd class="score">{{partnership.score | negative}}</dd>
+                          {% if partnership.members %}
+                          <dt>Members</dt>
+                            <dd>
+                              <ul class="members">
+                                {% for member in partnership.members %}
+                                <li class="name">{{member.name}}</li>
+                                <li class="shortened-name">{{member.name | last_name_initial}}</li>
+                                {% endfor %}
+                              </ul>
+                            </dd>
+                          {% endif %}
+                        </dl>
+                      </li>
+                      {% endfor %}
+                    </ol>
+                  </dd>
+                {% endif %}
+              </dl>
+            </li>
+            {% endfor %}
+          </ol>
+      </dd>
+    </dl>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}

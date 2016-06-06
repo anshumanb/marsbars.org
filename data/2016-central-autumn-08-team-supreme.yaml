@@ -1,0 +1,39 @@
+datetime: '2016-05-18T21:30:00+12:00'
+league: 2016-central-autumn
+venue: Central
+court: 4
+opponent: Team Supreme
+result: lost
+margin: 32 runs
+skins: 0
+points: 0
+innings:
+-   score: 112
+    partnerships:
+    -   score: 30
+        members:
+        - smit-shah
+        - sai-karnan
+    -   score: 23
+        members:
+        - bhavik-vora
+        - brendan-raj
+    -   score: 31
+        members:
+        - uddhav-naik
+        - abhishek-verma
+    -   score: 28
+        members:
+        - rohit-patel
+        - imran
+    us: true
+-   score: 144
+    partnerships:
+    -   score: 45
+        skin: true
+    -   score: 36
+        skin: true
+    -   score: 31
+        skin: true
+    -   score: 32
+        skin: true

@@ -20,11 +20,6 @@
   },
   "scripts": {
     "css": "./build-css",
-    "html": "mustache data.json layout.mustache > index.html",
-    "watch:html": "nodemon -w layout.mustache -w data.json -x 'npm run html'",
-    "watch:css": "node-sass -w --precision 10 scss/main.scss css/main.css",
-    "watch": "npm run watch:html & npm run watch:css",
-    "compile": "npm run html && npm run css",
     "validate": "html-validator --file index.html",
     "test": "npm run compile && npm run validate"
   },

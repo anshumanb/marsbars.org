@@ -1,0 +1,39 @@
+datetime: '2016-04-06T18:00:00+12:00'
+league: 2016-central-autumn
+venue: Central
+court: 4
+opponent: Tik Tik
+result: won
+margin: 85 runs
+skins: 4
+points: 8
+innings:
+-   score: 67
+    partnerships:
+    -   score: 38
+    -   score: 1
+    -   score: 20
+    -   score: 8
+-   score: 152
+    partnerships:
+    -   score: 43
+        skin: true
+        members:
+        - uddhav-naik
+        - sai-karnan  
+    -   score: 26
+        skin: true
+        members:
+        - smit-shah
+        - anshuman-bhaduri
+    -   score: 43
+        skin: true
+        members:
+        - nipuna-de-abrew
+        - dasith-goonatilaka
+    -   score: 40 
+        skin: true
+        members:
+        - brendan-raj
+        - abhishek-verma
+    us: true

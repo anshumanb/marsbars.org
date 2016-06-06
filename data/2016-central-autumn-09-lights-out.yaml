@@ -1,0 +1,13 @@
+datetime: '2016-05-25T19:10:00+12:00'
+league: 2016-central-autumn
+venue: Central
+court: 4
+opponent: Lights Out
+result: won
+margin: 74 runs
+skins: 3
+points: 7
+innings:
+-   score: 140
+    us: true
+-   score: 66

@@ -1,0 +1,48 @@
+datetime: '2016-07-09T19:00:00+12:00'
+league: 2016-super-league
+venue: Central
+court: 2
+opponent: Waitakere
+result:
+margin:
+skins:
+points:
+innings:
+-   partnerships:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    score:
+    us:
+-   partnerships:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    score:
+    us:

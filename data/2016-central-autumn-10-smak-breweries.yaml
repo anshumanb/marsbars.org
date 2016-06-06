@@ -1,0 +1,39 @@
+datetime: '2016-06-01T20:20:00+12:00'
+league: 2016-central-autumn
+venue: Central
+court: 4
+opponent: Smak Breweries
+result: lost
+margin: 5 runs
+skins: 2
+points: 2
+innings:
+-   score: 149
+    partnerships:
+    -   score: 51
+        skin: true
+    -   score: 26
+    -   score: 23
+    -   score: 49
+        skin: true
+-   score: 144
+    partnerships:
+    -   score: 26
+        members:
+        - amit-pothen
+        - uddhav-naik
+    -   score: 42
+        skin: true
+        members:
+        - sai-karnan
+        - dasith-goonatilaka
+    -   score: 37
+        skin: true
+        members:
+        - bhavik-vora
+        - rohit-patel
+    -   score: 39
+        members:
+        - brendan-raj
+        - abhishek-verma
+    us: true

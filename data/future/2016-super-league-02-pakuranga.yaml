@@ -1,0 +1,48 @@
+datetime: '2016-06-11T17:00:00+12:00'
+league: 2016-super-league
+venue: Central
+court: 1
+opponent: Pakuranga
+result:
+margin:
+skins:
+points:
+innings:
+-   partnerships:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    score:
+    us:
+-   partnerships:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    -   players:
+        -
+        -
+        score:
+    score:
+    us:

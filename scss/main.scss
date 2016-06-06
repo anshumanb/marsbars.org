@@ -13,25 +13,30 @@
    ========================================================================== */
 
 // Modular scale
-$ms-base: 1em,1.3em;
+$ms-base: 1em, 1.125em;
 $ms-ratio: 1.25;
 
 $wide-breakpoint: 25em;
-$fs: ms(0);
+$fs: ms(1);
 $lh: 1.5;
 
+$bg-color: #ffffff;
+
+// Does not work with rem. Only works with em.
 @function line-height($fontsize) {
     @return $lh * (floor($fontsize/$lh/1em) + 1) * 1em/$fontsize;
 }
 
 @mixin font-size($size) {
    font-size: $size;
-    line-height: line-height($size);
+   line-height: line-height($size);
 }
 
 html {
     color: #222;
-    @include font-size($fs);
+    //@include font-size($fs);
+    font-size: $fs;
+    line-height: $lh;
 }
 
 /*
@@ -112,9 +117,17 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+dl {
+    margin: 0;
+}
+
 body {
-    font-family: "Source Sans Pro", sans-serif;
-    color: #222;
+    font-family: "museo-sans", Verdana, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: "bree-serif", serif;
+    font-weight: normal;
 }
 
 header {
@@ -122,6 +135,137 @@ header {
     background-color: #0d0d0d;
     color: #fef8ce;
 }
+
+.matches {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+    }
+    .match {
+        padding-bottom: $lh*1em * 3;
+        border-bottom: 1px solid #B6AFA9;
+    }
+    .match dt {
+        display: none;
+    }
+    dd {
+        margin: 0;
+    }
+    .partnerships, .innings, .members {
+        padding: 0;
+        margin: 0;
+    }
+    .venue {
+        display: none;
+    }
+    .super-league dd.venue {
+        display: block;
+    }
+}
+
+
+.innings {
+    $total-score-fs: ms(10);
+    $total-score-padding: 0.15em;
+    $score-fs: ms(5);
+    $members-fs: ms(-2);
+    $score-sep: $lh*1em*1em/$score-fs / 4;
+    overflow: auto;
+    & > li {
+        float: left;
+        width: 50%;
+    }
+    .score {
+        font-family: "bree-serif";
+        border: 1px solid $bg-color;
+    }
+    .total.score {
+        clear: both;
+        @include font-size($total-score-fs);
+        bottom-margin: $lh*1em/$total-score-fs*1em - $total-score-padding;
+        padding: 0 $total-score-padding $total-score-padding;
+    }
+    .team-name {
+        $team-name-fs: ms(-1);
+        @include font-size($team-name-fs);
+        padding: 0 ($total-score-padding*$total-score-fs/1em)/$team-name-fs*1em;
+        font-weight: bold;
+        // Cut off long names so it does disalign the partnership scores.
+        //height: $lh*$team-name-fs;
+        //overflow: hidden;
+    }
+    .innings-1 {
+        .members > li {
+            text-align: right;
+        }
+        .score, .team-name {
+            float: right;
+            text-align: right;
+        }
+    }
+    .innings-2 .score {
+        float: left;
+        text-align: right;
+    }
+    .partnerships {
+        clear: both;
+        & > li {
+            overflow: auto;
+        }
+        .name {
+            display: none;
+        }
+        .score {
+            @include font-size($score-fs);
+            max-width: 1.2em;
+            min-width: 1em;
+            padding: 0 ($total-score-padding*$total-score-fs/1em)/$score-fs*1em;
+            margin-top: $score-sep;
+        }
+        .members {
+            $name_lh: 1.2;
+            $space: (line-height($score-fs)*$score-fs - $name_lh*2*$members-fs)*1em/$members-fs;
+            font-size: $members-fs;
+            line-height: $name_lh;
+            padding-top: $space * 2/3 + $score-sep * $score-fs / $members-fs;
+        }
+    }
+    // Not working for some reason
+    .innings-1 .partnerships .score {
+        margin-left: $score-sep / 2;
+    }
+    .innings-2 .partnerships .score {
+        margin-right: $score-sep / 2;
+    }
+}
+.won .us .total.score, .us .skin .score {
+    border-radius: 5px;
+    //background-color: #00688B;
+    //border: 1px solid #003F87;
+    background-color: #FFA500;
+    border: 1px solid #9c661f;
+}
+
+.lost .opponent .total.score, .opponent .skin .score {
+    border-radius: 5px;
+    background-color: #c1cdcd;
+    //background-color: #FFA500;
+    //border: 1px solid #9c661f;
+    border: 1px solid #838B8B;
+}
+
+.tied .total.score {
+    border-radius: 5px;
+    background-color: #E7C6A5;
+    border: 1px solid #9c661f;
+}
+
+
+.no-css {
+    display: none;
+}
+
 
 #logo {
     max-width: 100%;
@@ -142,35 +286,6 @@ header {
     padding: 0 0.8em;
 }
 
-.members li {
-    list-style-type: none;
-}
-
-.name {
-    text-transform: capitalize;
-    @include font-size(ms(3));
-}
-
-ul.members {
-    padding-left: 0;
-    margin: 0;
-}
-
-ul.members > li {
-    overflow: hidden;
-    padding-bottom: $lh*1em;
-    box-sizing: border-box;
-    max-height: $lh*3*1em + ($lh*1em);
-}
-
-.details, ul.members img {
-    float: left;
-}
-
-.members img {
-    border-radius: 3px;
-}
-
 .details {
     clear: right;
     padding-left: 0.8em;
@@ -189,14 +304,6 @@ ul.members > li {
     // Hide titles and joined year till these are updated and correct.
     display: none;
 }
-
-h2 {
-    font-family: "Averia Serif Libre", cursive;
-    @include font-size(ms(9));
-    margin: ($lh*2*1em)/ms(9)/2*1em 0;
-}
-
-
 
 
 
@@ -296,14 +403,6 @@ h2 {
         padding-right: 10%;
     }
 
-    .members {
-        overflow: auto;
-    }
-
-    .members > li {
-        float: left;
-        width: 20em;
-    }
 }
 
 @media print,
