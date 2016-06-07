@@ -1,304 +1,46 @@
-/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 @import 'modular-scale';
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
 // Modular scale
 $ms-base: 1em, 1.125em;
 $ms-ratio: 1.25;
 
+$base-fs: ms(0);
+
+@import '_h5bp';
+@import '_layout';
+@import '_typography';
+@import '_indoor-league';
+
+
 $wide-breakpoint: 25em;
-$fs: ms(1);
-$lh: 1.5;
-
-$bg-color: #ffffff;
-
-// Does not work with rem. Only works with em.
-@function line-height($fontsize) {
-    @return $lh * (floor($fontsize/$lh/1em) + 1) * 1em/$fontsize;
-}
-
-@mixin font-size($size) {
-   font-size: $size;
-   line-height: line-height($size);
-}
 
 html {
-    color: #222;
-    //@include font-size($fs);
-    font-size: $fs;
-    line-height: $lh;
+    color: $body-text-color;
+    font-size: $base-fs;
+    line-height: $base-lh;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-dl {
-    margin: 0;
-}
-
 body {
     font-family: "museo-sans", Verdana, sans-serif;
 }
 
 h1, h2, h3, h4 {
-    font-family: "bree-serif", serif;
-    font-weight: normal;
+    //font-weight: normal;
 }
+
+/* ==========================================================================
+   v1 styles
+   ========================================================================== */
 
 header {
     padding: 0 0.8em 2em;
     background-color: #0d0d0d;
     color: #fef8ce;
 }
-
-.matches {
-    padding: 0;
-    margin: 0;
-    .upcoming {
-        dl {
-            overflow: auto;
-        }
-        &.match .datetime {
-            margin-bottom: 0;
-        }
-    }
-    li {
-        list-style-type: none;
-    }
-    .match {
-        .contest {
-            $contest-fs: $ms-ratio*1em;
-            @include font-size($contest-fs);
-            font-weight: bold;
-            margin-top: line-height($contest-fs) * 1em*1;
-            margin-left: 0.3em/$contest-fs * 1em;
-        }
-        .datetime {
-            margin-bottom: $lh*1em/2;
-            margin-left: 0.3em;
-        }
-        .court {
-            float: left;
-            margin-left: 0.3em;
-        }
-        padding-bottom: $lh*1em;
-        border-bottom: 1px solid #B6AFA9;
-    }
-    .match dt {
-        display: none;
-    }
-    dd {
-        margin: 0;
-    }
-    .partnerships, .members {
-        padding: 0;
-        margin: 0;
-    }
-    .venue {
-        display: none;
-    }
-    &.super-league .venue {
-        display: inherit;
-        clear: both;
-        float: left;
-        margin-left: 0.3em;
-    }
-}
-
-
-.innings {
-    $total-score-fs: ms(10);
-    $total-score-padding: 0.15em;
-    $score-fs: ms(5);
-    $members-fs: ms(-2);
-    $score-sep: $lh*1em*1em/$score-fs / 4;
-    overflow: auto;
-    clear: both;
-    margin: 0 0 $lh*1em/2;
-    padding: 0;
-    & > li {
-        float: left;
-        width: 50%;
-    }
-    .score {
-        //font-family: "bree-serif";
-        border: 1px solid $bg-color;
-    }
-    .total.score {
-        clear: both;
-        @include font-size($total-score-fs);
-        bottom-margin: $lh*1em/$total-score-fs*1em - $total-score-padding;
-        // bottom padding required for bree-serif.
-        //padding: 0 $total-score-padding $total-score-padding;
-        padding: 0 $total-score-padding;
-    }
-    .team-name {
-        $team-name-fs: ms(-1);
-        @include font-size($team-name-fs);
-        padding: 0 ($total-score-padding*$total-score-fs/1em)/$team-name-fs*1em;
-        // Cut off long names so it does disalign the partnership scores.
-        //height: $lh*$team-name-fs;
-        //overflow: hidden;
-        white-space: nowrap;
-    }
-    .innings-1 {
-        .members > li {
-            text-align: right;
-        }
-        .score, .team-name {
-            float: right;
-            text-align: right;
-        }
-    }
-    .innings-2 .score {
-        float: left;
-        text-align: right;
-    }
-    .partnerships {
-        clear: both;
-        & > li {
-            overflow: auto;
-        }
-        .name {
-            display: none;
-        }
-        .score {
-            @include font-size($score-fs);
-            max-width: 1.2em;
-            // bree-serif required 1em
-            min-width: 1.1em;
-            padding: 0 ($total-score-padding*$total-score-fs/1em)/$score-fs*1em;
-            margin-top: $score-sep;
-        }
-        .members {
-            $name_lh: 1.2;
-            $space: (line-height($score-fs)*$score-fs - $name_lh*2*$members-fs)*1em/$members-fs;
-            font-size: $members-fs;
-            line-height: $name_lh;
-            padding-top: $space * 2/3 + $score-sep * $score-fs / $members-fs;
-            white-space: nowrap;
-        }
-    }
-    // Not working for some reason
-    .innings-1 .partnerships .score {
-        margin-left: $score-sep / 2;
-    }
-    .innings-2 .partnerships .score {
-        margin-right: $score-sep / 2;
-    }
-}
-.won .us .total.score, .us .skin .score {
-    border-radius: 5px;
-    //background-color: #00688B;
-    //border: 1px solid #003F87;
-    background-color: #FFA500;
-    border: 1px solid #9c661f;
-}
-
-.lost .opponent .total.score, .opponent .skin .score {
-    border-radius: 5px;
-    background-color: #c1cdcd;
-    //background-color: #FFA500;
-    //border: 1px solid #9c661f;
-    border: 1px solid #838B8B;
-}
-
-.tied .total.score {
-    border-radius: 5px;
-    background-color: #E7C6A5;
-    border: 1px solid #9c661f;
-}
-
-
-.no-css {
-    display: none;
-}
-
 
 #logo {
     max-width: 100%;
@@ -308,7 +50,7 @@ header {
 
 #sub-logo {
     text-align: center;
-    @include font-size(ms(2));
+    @include adjust-font-size(ms(2));
     font-family: "Averia Serif Libre", cursive;
     margin: 0;
 }
@@ -338,184 +80,18 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 @media screen and (min-width: $wide-breakpoint) {
-    #container {
-        max-width: 80em;
-        padding: 0 10%;
-    }
     header {
         padding-left: 10%;
         padding-right: 10%;
     }
-
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}

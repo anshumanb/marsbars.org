@@ -1,0 +1,21 @@
+
+$base-fs: 1em !default;
+$base-lh: 1.5;
+
+$body-text-color: #222;
+$bg-color: #ffffff;
+
+// Does not work with rem. Only works with em.
+@function line-height($fontsize, $lh: $base-lh) {
+    @return $lh * (floor($fontsize/$lh/1em) + 1) * 1em/$fontsize;
+}
+
+@mixin adjust-font-size($size) {
+   font-size: $size;
+   line-height: line-height($size);
+}
+
+@mixin secondary-text {
+    color: #555555;
+}
+

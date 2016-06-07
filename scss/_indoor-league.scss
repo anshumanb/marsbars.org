@@ -1,0 +1,186 @@
+@mixin reset-spacing {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin no-bullets {
+    li {
+        list-style-type: none;
+    }
+}
+
+@mixin contain-floats {
+    overflow: auto;
+}
+
+
+dl {
+    @include reset-spacing;
+}
+
+.matches {
+    @include reset-spacing;
+    @include no-bullets;
+    .upcoming {
+        dl {
+            @include contain-floats;
+        }
+        &.match .datetime {
+            margin-bottom: 0;
+        }
+    }
+    .match {
+        padding-bottom: $base-lh*1em;
+        border-bottom: 1px solid #B6AFA9;
+        .contest {
+            $contest-fs: ms(2);
+            @include adjust-font-size($contest-fs);
+            margin-top: line-height($contest-fs) * 1em*1;
+            margin-left: 0.3em/$contest-fs * 1em;
+        }
+        .datetime, {
+            //$datetime-fs: ms(-1);
+            $datetime-fs: 1em;
+            //@include adjust-font-size($datetime-fs);
+            @include secondary-text;
+            margin-bottom: $base-lh*1em*1em/2/$datetime-fs;
+            margin-left: 0.3em*1em/$datetime-fs;
+            float: left;
+            width: 40%;
+        }
+        .court, .venue {
+            float: left;
+            $location-fs: ms(-1);
+            @include adjust-font-size(ms(-1));
+            @include secondary-text;
+            margin-left: 0.3em*1em/$location-fs;
+        }
+        dt {
+            display: none;
+        }
+    }
+    dd {
+        margin: 0;
+    }
+    .partnerships, .members {
+        padding: 0;
+        margin: 0;
+    }
+    .venue {
+        display: none;
+    }
+    &.super-league .venue {
+        display: inherit;
+    }
+}
+
+
+.all-innings {
+    $total-score-fs: ms(10);
+    $total-score-padding: 0.15em;
+    $score-fs: ms(5);
+    $members-fs: ms(-1);
+    $score-sep: $base-lh*1em*1em/$score-fs / 4;
+    overflow: auto;
+    clear: both;
+    margin: 0 0 $base-lh*1em/2;
+    padding: 0;
+    & > li {
+        float: left;
+        width: 50%;
+    }
+    .score {
+        //font-family: "bree-serif";
+        border: 1px solid $bg-color;
+    }
+    .total.score {
+        clear: both;
+        @include adjust-font-size($total-score-fs);
+        bottom-margin: $base-lh*1em/$total-score-fs*1em - $total-score-padding;
+        // bottom padding required for bree-serif.
+        //padding: 0 $total-score-padding $total-score-padding;
+        padding: 0 $total-score-padding;
+    }
+    .team-name {
+        $team-name-fs: ms(-1);
+        @include adjust-font-size($team-name-fs);
+        padding: 0 ($total-score-padding*$total-score-fs/1em)/$team-name-fs*1em;
+        // Cut off long names so it does disalign the partnership scores.
+        //height: $base-lh*$team-name-fs;
+        //overflow: hidden;
+        white-space: nowrap;
+    }
+    .innings-1 {
+        .members > li {
+            text-align: right;
+        }
+        .score, .team-name {
+            float: right;
+            text-align: right;
+        }
+    }
+    .innings-2 .score {
+        float: left;
+        text-align: right;
+    }
+    .partnerships {
+        clear: both;
+        & > li {
+            overflow: auto;
+        }
+        .name {
+            display: none;
+        }
+        .score {
+            @include adjust-font-size($score-fs);
+            max-width: 1.2em;
+            // bree-serif required 1em
+            min-width: 1.1em;
+            padding: 0 ($total-score-padding*$total-score-fs/1em)/$score-fs*1em;
+            margin-top: $score-sep;
+        }
+        .members {
+            $name_lh: 1.2;
+            $space: (line-height($score-fs)*$score-fs - $name_lh*2*$members-fs)*1em/$members-fs;
+            font-size: $members-fs;
+            line-height: $name_lh;
+            padding-top: $space * 1/2 + $score-sep * $score-fs / $members-fs;
+            white-space: nowrap;
+        }
+    }
+    // Not working for some reason
+    .innings-1 .partnerships .score {
+        margin-left: $score-sep / 2;
+    }
+    .innings-2 .partnerships .score {
+        margin-right: $score-sep / 2;
+    }
+}
+
+// @at-root
+.won .us .total.score, .us .skin .score {
+    border-radius: 5px;
+    //background-color: #00688B;
+    //border: 1px solid #003F87;
+    background-color: #FFA500;
+    border: 1px solid #9c661f;
+}
+
+.lost .opponent .total.score, .opponent .skin .score {
+    border-radius: 5px;
+    background-color: #c1cdcd;
+    //background-color: #FFA500;
+    //border: 1px solid #9c661f;
+    border: 1px solid #838B8B;
+}
+
+.tied .total.score {
+    border-radius: 5px;
+    background-color: #E7C6A5;
+    border: 1px solid #9c661f;
+}
+
+
+.no-css {
+    display: none;
+}

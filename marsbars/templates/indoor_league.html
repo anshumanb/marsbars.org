@@ -6,7 +6,6 @@
 <p>{{league.year}}</p>
 <p>{{league.grade}}</p>
 
-<h3>Upcoming</h3>
 <ul class="matches indoor {{league.slug}}">
   {% for match in league.upcoming_matches %}
   <li class="match upcoming">
@@ -25,7 +24,6 @@
   {% endfor %}
 </ul>
 
-<h3>Results</h3>
 <ul class="matches indoor {{league.slug}}">
   {% for match in league.completed_matches %}
   <li class="match {{match.result}}">
@@ -37,7 +35,7 @@
         <dd class="datetime">{{match.datetime.strftime('%d-%b')}}</dd>
       <dt>Innings</dt>
         <dd>
-          <ol class="innings">
+          <ol class="all-innings">
             {% for innings in match.innings %}
             <li class="innings-{{loop.index}}
             {% if innings.us %}us{% else %}opponent{% endif %}">
