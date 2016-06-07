@@ -95,42 +95,63 @@ header {
 .matches {
   padding: 0;
   margin: 0; }
+  .matches .upcoming dl {
+    overflow: auto; }
+  .matches .upcoming.match .datetime {
+    margin-bottom: 0; }
   .matches li {
     list-style-type: none; }
   .matches .match {
-    padding-bottom: 4.5em;
+    padding-bottom: 1.5em;
     border-bottom: 1px solid #B6AFA9; }
+    .matches .match .contest {
+      font-size: 1.25em;
+      line-height: 1.2;
+      font-weight: bold;
+      margin-top: 1.2em;
+      margin-left: 0.24em; }
+    .matches .match .datetime {
+      margin-bottom: 0.75em;
+      margin-left: 0.3em; }
+    .matches .match .court {
+      float: left;
+      margin-left: 0.3em; }
   .matches .match dt {
     display: none; }
   .matches dd {
     margin: 0; }
-  .matches .partnerships, .matches .innings, .matches .members {
+  .matches .partnerships, .matches .members {
     padding: 0;
     margin: 0; }
   .matches .venue {
     display: none; }
-  .matches .super-league dd.venue {
-    display: block; }
+  .matches.super-league .venue {
+    display: inherit;
+    clear: both;
+    float: left;
+    margin-left: 0.3em; }
 
 .innings {
-  overflow: auto; }
+  overflow: auto;
+  clear: both;
+  margin: 0 0 0.75em;
+  padding: 0; }
   .innings > li {
     float: left;
     width: 50%; }
   .innings .score {
-    font-family: "bree-serif";
     border: 1px solid #ffffff; }
   .innings .total.score {
     clear: both;
     font-size: 3.0517578125em;
     line-height: 1.47456;
     bottom-margin: 0.34152em;
-    padding: 0 0.15em 0.15em; }
+    padding: 0 0.15em; }
   .innings .team-name {
     font-size: 0.9em;
     line-height: 1.6666666667;
     padding: 0 0.5086263021em;
-    font-weight: bold; }
+    white-space: nowrap; }
   .innings .innings-1 .members > li {
     text-align: right; }
   .innings .innings-1 .score, .innings .innings-1 .team-name {
@@ -149,13 +170,14 @@ header {
       font-size: 1.7578125em;
       line-height: 1.7066666667;
       max-width: 1.2em;
-      min-width: 1em;
+      min-width: 1.1em;
       padding: 0 0.2604166667em;
       margin-top: 0.2133333333em; }
     .innings .partnerships .members {
       font-size: 0.8em;
       line-height: 1.2;
-      padding-top: 1.36875em; }
+      padding-top: 1.36875em;
+      white-space: nowrap; }
   .innings .innings-1 .partnerships .score {
     margin-left: 0.1066666667em; }
   .innings .innings-2 .partnerships .score {
@@ -193,8 +215,7 @@ header {
 
 #container {
   max-width: 20em;
-  margin: 0 auto;
-  padding: 0 0.8em; }
+  margin: 0 auto; }
 
 .details {
   clear: right;

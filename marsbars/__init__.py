@@ -3,6 +3,7 @@
 from flask import Flask, render_template, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from flask import Markup
+import pytz
 
 
 app = Flask(__name__, static_url_path='')
@@ -23,6 +24,7 @@ def send_img(path):
     return send_from_directory('assets/img', path)
 
 
+
 @app.route('/')
 def index():
     return render_template('index.html', players=Player.query.filter(Player.active==True))
@@ -31,7 +33,6 @@ def index():
 def league(slug):
     league = IndoorLeague.query.filter_by(slug=slug).first_or_404()
     return render_template('indoor_league.html',
-            matches=league.matches,
             league=league)
 
 @app.template_filter('last_name_initial')
@@ -45,6 +46,14 @@ def last_name_initial(s):
 @app.template_filter('negative')
 def negative(s):
     return Markup(unicode(s).replace(u'-', u'<sup>−</sup>'))
+
+@app.template_filter('localtime')
+def localtime(s):
+    tz = pytz.timezone('Pacific/Auckland')
+    utc = pytz.timezone('UTC')
+    utc_time = s.replace(tzinfo=utc)
+    # stftime format string might be Linux specific.
+    return utc_time.astimezone(tz).strftime('%d-%b %-I:%M%P').replace(':00','')
 
 
 class Player(db.Model):
@@ -92,6 +101,15 @@ class IndoorLeague(db.Model):
     def __repr__(self):
         return '<IndoorLeague {}-{}>'.format(self.year, self.name)
 
+    @property
+    def completed_matches(self):
+        return self.matches.filter(db.not_(IndoorMatch.result==None))
+
+    @property
+    def upcoming_matches(self):
+        return self.matches.filter_by(result=None)
+
+
 class IndoorMatch(db.Model):
     __tablename__ = 'indoor_match'
     id = db.Column(db.Integer, primary_key=True)
@@ -130,7 +148,7 @@ class IndoorMatch(db.Model):
 
     @property
     def is_completed(self):
-        return True
+        return self.result is not None
 
     @property
     def has_partnerships(self):

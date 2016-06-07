@@ -6,31 +6,35 @@
 <p>{{league.year}}</p>
 <p>{{league.grade}}</p>
 
+<h3>Upcoming</h3>
 <ul class="matches indoor {{league.slug}}">
-  {% for match in matches %}
-  <li class="match {{match.result}} {{loop.cycle('odd', 'even')}}">
-    <h3 class="no-css">Match details</h3>
+  {% for match in league.upcoming_matches %}
+  <li class="match upcoming">
+    <h4 class="no-css">Match details</h4>
     <dl>
-      <dt>Date and time</dt>
-        <dd class="time">{{match.datetime.strftime('%d-%b')}}</dd>
-      <dt>Indoor centre</dt>
-        <dd class="venue">{{match.venue}}</dd>
-      {% if not match.is_completed %}
       <dt>Contest</dt>
-        <dd class="contest"><span class="us">Us</span>
-        <span class="vs"> vs </span>
-        <span class="opponent">{{match.opponent}}</span></dd>
+        <dd class="contest">{{match.opponent}}</dd>
+      <dt>Date and time</dt>
+        <dd class="datetime">{{match.datetime | localtime}}</dd>
+      <dt>Indoor centre</dt>
+        <dd class="venue">at {{match.venue}}</dd>
       <dt>Court</dt>
-        <dd class="court">{{match.court}}</dd>
-      {% endif %}
+        <dd class="court">on Court {{match.court}}</dd>
+    </dl>
+  </li>
+  {% endfor %}
+</ul>
 
-      {% if not match.is_completed %}
-      <dt>Score</dt>
-        <dd class="scores"><span
-            class="score innings-1">{{match.score[0]}}</span><span
-            class="score innings-2">{{match.score[1]}}</span></dd>
-      {% endif %}
-
+<h3>Results</h3>
+<ul class="matches indoor {{league.slug}}">
+  {% for match in league.completed_matches %}
+  <li class="match {{match.result}}">
+    <h4 class="no-css">Match details</h4>
+    <dl>
+      <dt>Contest</dt>
+        <dd class="contest">{{match.opponent}}</dd>
+      <dt>Date and time</dt>
+        <dd class="datetime">{{match.datetime.strftime('%d-%b')}}</dd>
       <dt>Innings</dt>
         <dd>
           <ol class="innings">
