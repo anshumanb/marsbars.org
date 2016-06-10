@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -10,7 +10,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.5; }
+  line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -75,83 +75,10 @@ textarea {
   padding: 0.2em 0; }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #222; }
-
-header {
-  padding: 0 0.8em 2em;
-  background-color: #0d0d0d;
-  color: #fef8ce; }
-
-#logo {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto; }
-
-#sub-logo {
-  text-align: center;
-  font-size: 1.25em;
-  line-height: 1.2;
-  font-family: "Averia Serif Libre", cursive;
-  margin: 0; }
-
-#container {
-  max-width: 20em;
-  margin: 0 auto;
-  padding: 0 0.8em; }
-
-.members li {
-  list-style-type: none; }
-
-.name {
-  text-transform: capitalize;
-  font-size: 1.3em;
-  line-height: 1.1538461538; }
-
-ul.members {
-  padding-left: 0;
-  margin: 0; }
-
-ul.members > li {
-  overflow: hidden;
-  padding-bottom: 1.5em;
-  box-sizing: border-box;
-  max-height: 6em; }
-
-.details, ul.members img {
-  float: left; }
-
-.members img {
-  border-radius: 3px; }
-
-.details {
-  clear: right;
-  padding-left: 0.8em; }
-
-.details ul {
-  padding: 0; }
-
-.details li {
-  list-style-type: none; }
-
-.joined, .title {
-  color: #666;
-  display: none; }
-
-h2 {
-  font-family: "Averia Serif Libre", cursive;
-  font-size: 2.5390625em;
-  line-height: 1.1815384615;
-  margin: 0.5907692308em 0; }
-
-/* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
- * Hide visually and from screen readers:
+ * Hide visually and from screen readers
  */
 .hidden {
   display: none !important; }
@@ -216,18 +143,11 @@ h2 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media screen and (min-width: 25em) {
-  #container {
-    max-width: 80em;
-    padding: 0 10%; }
-  header {
-    padding-left: 10%;
-    padding-right: 10%; }
-  .members {
-    overflow: auto; }
-  .members > li {
-    float: left;
-    width: 20em; } }
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
 
 /* ==========================================================================
    Print styles.
@@ -237,7 +157,9 @@ h2 {
 @media print {
   *,
   *:before,
-  *:after {
+  *:after,
+  *:first-letter,
+  *:first-line {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
@@ -281,3 +203,393 @@ h2 {
   h2,
   h3 {
     page-break-after: avoid; } }
+
+h1, h2, h3 {
+  font-weight: normal; }
+
+h2 {
+  font-size: 2.197265625em;
+  line-height: 1.3653333333;
+  margin: 0.3413333333em 0 0.3413333333em 0.2275555556em; }
+
+h3 {
+  font-size: 1.5625em;
+  line-height: 1.92;
+  margin: 0.48em 0 0.48em 0.32em; }
+
+dl, dd {
+  margin: 0;
+  padding: 0; }
+
+.no-css-aid, .active-players dt, .matches dt, .player-league-stats .league dt, .player-partner-stats .league dt, .player-partner-stats .name, .player-partner-stats .name dt, .player-partner-stats .shortened-name dt, .player-partner-stats .player-avatar dt, .active-players .name, .all-innings .partnerships .name {
+  display: none; }
+
+.active-players, .matches, .main-nav ul, #container nav ul, .overall-player-stats, .player-league-stats > li ul, .player-partner-stats > li ul, .player-league-stats, .player-partner-stats {
+  margin: 0;
+  padding: 0; }
+  .active-players li, .matches li, .main-nav ul li, #container nav ul li, .overall-player-stats li, .player-league-stats li, .player-partner-stats li {
+    list-style-type: none; }
+
+.main-nav {
+  text-align: center;
+  background-color: #00688B; }
+  .main-nav li {
+    display: inline; }
+  .main-nav a {
+    padding: 0.3em 0.2em;
+    display: inline-block;
+    width: 8em;
+    text-decoration: none;
+    font-weight: bold; }
+    .main-nav a:link, .main-nav a:visited, .main-nav a:hover, .main-nav a:active {
+      color: white; }
+
+#container nav {
+  text-align: center; }
+  #container nav ul {
+    background-color: #00688B; }
+  #container nav li {
+    display: inline; }
+  #container nav a {
+    font-size: 1.40625em;
+    line-height: 1.0666666667;
+    display: inline-block;
+    padding: 0.5333333333em 1.4222222222em;
+    color: white;
+    text-decoration: none; }
+  #container nav .active a {
+    background-color: #FFA500;
+    border-left: 1px solid #9c661f;
+    border-right: 1px solid #9c661f;
+    color: #222;
+    font-weight: bold; }
+
+h3 {
+  clear: both; }
+
+.profile {
+  float: left;
+  margin: 0 0.5em 0.75em;
+  background-image: url("/img/profile.png");
+  background-size: cover;
+  border-radius: 5px;
+  height: 12em;
+  width: 9em; }
+  .profile.abhishek-verma {
+    background-position: 0em; }
+  .profile.amit-pothen {
+    background-position: -9em; }
+  .profile.anshuman-bhaduri {
+    background-position: -18em; }
+  .profile.bhavik-vora {
+    background-position: -27em; }
+  .profile.brendan-raj {
+    background-position: -36em; }
+  .profile.dasith-goonatilaka {
+    background-position: -45em; }
+  .profile.jared-mascarenhas {
+    background-position: -54em; }
+  .profile.kaushik-balan {
+    background-position: -63em; }
+  .profile.rohit-patel {
+    background-position: -72em; }
+  .profile.sai-karnan {
+    background-position: -81em; }
+  .profile.smit-shah {
+    background-position: -90em; }
+  .profile.uddhav-naik {
+    background-position: -99em; }
+  .profile + h3 {
+    padding-top: 0.96em; }
+
+.avatar {
+  margin: 0 auto;
+  background-image: url("/img/profile.png");
+  background-size: cover;
+  border-radius: 5px;
+  height: 9em;
+  width: 6.75em; }
+  .avatar.abhishek-verma {
+    background-position: 0em; }
+  .avatar.amit-pothen {
+    background-position: -6.75em; }
+  .avatar.anshuman-bhaduri {
+    background-position: -13.5em; }
+  .avatar.bhavik-vora {
+    background-position: -20.25em; }
+  .avatar.brendan-raj {
+    background-position: -27em; }
+  .avatar.dasith-goonatilaka {
+    background-position: -33.75em; }
+  .avatar.jared-mascarenhas {
+    background-position: -40.5em; }
+  .avatar.kaushik-balan {
+    background-position: -47.25em; }
+  .avatar.rohit-patel {
+    background-position: -54em; }
+  .avatar.sai-karnan {
+    background-position: -60.75em; }
+  .avatar.smit-shah {
+    background-position: -67.5em; }
+  .avatar.uddhav-naik {
+    background-position: -74.25em; }
+
+.overall-player-stats, .player-league-stats > li ul, .player-partner-stats > li ul {
+  float: left;
+  text-align: center;
+  width: 7em;
+  margin: 0 1.5em 1.5em 0.5em; }
+  .overall-player-stats li, .player-league-stats > li ul li, .player-partner-stats > li ul li {
+    position: relative; }
+  .overall-player-stats dt, .player-league-stats > li ul dt, .player-partner-stats > li ul dt {
+    font-size: 0.8em;
+    text-transform: lowercase;
+    width: 100%;
+    display: block;
+    position: absolute;
+    color: #555555; }
+  .overall-player-stats .runs dt, .player-league-stats > li ul .runs dt, .player-partner-stats > li ul .runs dt {
+    bottom: 0; }
+  .overall-player-stats .runs dd, .player-league-stats > li ul .runs dd, .player-partner-stats > li ul .runs dd {
+    font-size: 3.0517578125em;
+    line-height: 1.2;
+    padding-bottom: 0.27456em; }
+  .overall-player-stats .average dt, .player-league-stats > li ul .average dt, .player-partner-stats > li ul .average dt, .overall-player-stats .innings dt, .player-league-stats > li ul .innings dt, .player-partner-stats > li ul .innings dt, .overall-player-stats .skin dt, .player-league-stats > li ul .skin dt, .player-partner-stats > li ul .skin dt {
+    bottom: 0; }
+  .overall-player-stats .average, .player-league-stats > li ul .average, .player-partner-stats > li ul .average, .overall-player-stats .innings, .player-league-stats > li ul .innings, .player-partner-stats > li ul .innings {
+    float: left;
+    width: 50%;
+    box-sizing: border-box; }
+    .overall-player-stats .average dd, .player-league-stats > li ul .average dd, .player-partner-stats > li ul .average dd, .overall-player-stats .innings dd, .player-league-stats > li ul .innings dd, .player-partner-stats > li ul .innings dd {
+      font-size: 1.40625em;
+      line-height: 1.0666666667;
+      padding: 0.2666666667em 0 0.8em; }
+  .overall-player-stats .skin, .player-league-stats > li ul .skin, .player-partner-stats > li ul .skin {
+    clear: both; }
+    .overall-player-stats .skin dd, .player-league-stats > li ul .skin dd, .player-partner-stats > li ul .skin dd {
+      font-size: 1.40625em;
+      line-height: 1.0666666667;
+      padding: 0.2666666667em 0 0.8em; }
+
+.player-league-stats > li ul, .player-partner-stats > li ul {
+  margin: 0;
+  padding: 0; }
+
+.player-league-stats .league dd, .player-partner-stats .league dd {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
+  line-height: 1.6666666667; }
+
+.player-league-stats > li {
+  float: left;
+  text-align: center;
+  width: 7em;
+  margin: 0 1.5em 1.5em 0.5em; }
+
+.player-league-stats + h3 {
+  padding-top: 0.96em; }
+
+.player-partner-stats > li {
+  float: left;
+  text-align: center;
+  margin: 0 1em 1em 0em; }
+  .player-partner-stats > li a {
+    width: 7em;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0 0.5em 0.5em;
+    border: 1px solid #ffffff; }
+    .player-partner-stats > li a:link, .player-partner-stats > li a:visited, .player-partner-stats > li a:hover, .player-partner-stats > li a:active {
+      color: #222; }
+    .player-partner-stats > li a:hover, .player-partner-stats > li a:active {
+      background-color: #FFA812;
+      border: 1px solid #9c661f;
+      position: relative;
+      top: -0.5em;
+      padding: 0.5em 0.5em 0; }
+    .player-partner-stats > li a .name, .player-partner-stats > li a .shortened-name {
+      color: #003F87;
+      font-weight: bold; }
+
+.player-partner-stats + h3 {
+  padding-top: 0.96em; }
+
+.active-players li {
+  float: left;
+  text-align: center;
+  margin: 0 1em 1em 0em; }
+  .active-players li a {
+    width: 7em;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0 0.5em 0.5em;
+    border: 1px solid #ffffff; }
+    .active-players li a:link, .active-players li a:visited, .active-players li a:hover, .active-players li a:active {
+      color: #222; }
+    .active-players li a:hover, .active-players li a:active {
+      background-color: #FFA812;
+      border: 1px solid #9c661f;
+      position: relative;
+      top: -0.5em;
+      padding: 0.5em 0.5em 0; }
+    .active-players li a .name, .active-players li a .shortened-name {
+      color: #003F87;
+      font-weight: bold; }
+
+.league-id, .league-grade {
+  color: #555555;
+  font-size: 0.9em;
+  line-height: 1.6666666667;
+  margin: 0 0 0 0.5555555556em;
+  position: relative;
+  top: -0.5555555556em; }
+
+.league-grade {
+  margin-bottom: 1.6666666667em; }
+
+.matches .upcoming dl {
+  overflow: auto; }
+
+.matches .upcoming.match .datetime {
+  margin-bottom: 0; }
+
+.matches .match {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #C4C4C4; }
+  .matches .match .contest {
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin-top: 1.2em;
+    margin-left: 0.4em; }
+  .matches .match .datetime {
+    color: #555555;
+    margin-bottom: 0.75em;
+    margin-left: 0.5em;
+    float: left;
+    width: 40%; }
+  .matches .match .court, .matches .match .venue {
+    float: left;
+    font-size: 0.9em;
+    line-height: 1.6666666667;
+    color: #555555;
+    margin-left: 0.5555555556em; }
+
+.matches dd {
+  margin: 0; }
+
+.matches .partnerships, .matches .members {
+  padding: 0;
+  margin: 0; }
+
+.matches .venue {
+  display: none; }
+
+.matches.super-league .venue {
+  display: inherit; }
+
+.all-innings {
+  overflow: auto;
+  clear: both;
+  margin: 0 0 0.75em;
+  padding: 0; }
+  .all-innings > li {
+    float: left;
+    width: 50%; }
+  .all-innings .score {
+    border: 1px solid #ffffff; }
+  .all-innings .total.score {
+    clear: both;
+    font-size: 3.0517578125em;
+    line-height: 1.47456;
+    bottom-margin: 0.34152em;
+    padding: 0 0.15em; }
+  .all-innings .team-name {
+    font-size: 0.9em;
+    line-height: 1.6666666667;
+    padding: 0 0.5086263021em;
+    white-space: nowrap; }
+  .all-innings .innings-1 .members > li {
+    text-align: right; }
+  .all-innings .innings-1 .score, .all-innings .innings-1 .team-name {
+    float: right;
+    text-align: right; }
+  .all-innings .innings-2 .score {
+    float: left;
+    text-align: right; }
+  .all-innings .partnerships {
+    clear: both; }
+    .all-innings .partnerships > li {
+      overflow: auto; }
+    .all-innings .partnerships .score {
+      font-size: 1.7578125em;
+      line-height: 1.7066666667;
+      max-width: 1.2em;
+      min-width: 1.1em;
+      padding: 0 0.2604166667em;
+      margin-top: 0.2133333333em; }
+    .all-innings .partnerships .members {
+      font-size: 0.9em;
+      line-height: 1.2;
+      padding-top: 0.8833333333em;
+      white-space: nowrap; }
+  .all-innings .innings-1 .partnerships .score {
+    margin-left: 0.1066666667em; }
+  .all-innings .innings-2 .partnerships .score {
+    margin-right: 0.1066666667em; }
+
+.won .us .total.score, .us .skin .score {
+  border-radius: 5px;
+  background-color: #FFA500;
+  border: 1px solid #9c661f; }
+
+.lost .opponent .total.score, .opponent .skin .score {
+  border-radius: 5px;
+  background-color: #c1cdcd;
+  border: 1px solid #838B8B; }
+
+.tied .total.score {
+  border-radius: 5px;
+  background-color: #E7C6A5;
+  border: 1px solid #9c661f; }
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-family: "museo-sans", Verdana, sans-serif; }
+
+/* ==========================================================================
+   v1 styles
+   ========================================================================== */
+header {
+  background-color: #0d0d0d;
+  color: #fef8ce; }
+
+#logo {
+  max-width: 10em;
+  display: block;
+  margin: 0 auto; }
+
+#sub-logo {
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.6666666667;
+  margin: 0; }
+
+#container {
+  max-width: 36em;
+  margin: 0 auto; }
+
+@media screen and (min-width: 25em) {
+  header {
+    padding-left: 10%;
+    padding-right: 10%; } }
