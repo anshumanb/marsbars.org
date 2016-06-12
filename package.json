@@ -19,7 +19,7 @@
     "yo": "^1.4.7"
   },
   "scripts": {
-    "css": "./build-css",
+    "css": "./bin/build-css",
     "validate": "html-validator --file index.html",
     "test": "npm run compile && npm run validate"
   },

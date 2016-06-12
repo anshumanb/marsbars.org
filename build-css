@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-node-sass \
-  -w \
-  --include-path node_modules/modularscale-sass/stylesheets \
-  --precision 10 \
-  scss/main.scss marsbars/assets/css/main.css
