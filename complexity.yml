@@ -1,8 +1,0 @@
-# I don't want to define templates_dir or assets_dir but have to.
-templates_dir: "templates"
-assets_dir: "assets"
-context_dir: "data"
-output_dir: "build"
-
-unexpanded_templates:
-  - "404.html"

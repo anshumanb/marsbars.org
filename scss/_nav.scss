@@ -1,0 +1,48 @@
+.main-nav {
+    text-align: center;
+    background-color: #00688B;
+    ul {
+        @extend %display-list;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        padding: 0.3em 0.2em;
+        display: inline-block;
+        width: 8em;
+        //@include adjust-font-size(ms(-1));
+        text-decoration: none;
+        font-weight: bold;
+        //font-variant: small-caps;
+        &:link, &:visited, &:hover, &:active {
+            color: white;
+        }
+    }
+}
+
+#container nav {
+    text-align: center;
+    ul {
+        @extend %display-list;
+        background-color: #00688B;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        @include adjust-font-size(ms(3));
+        $p: $base-lh*1em*1em / ms(3) / 2;
+        display: inline-block;
+        padding: $p 2em*1em / ms(3);
+        color: white;
+        text-decoration: none;
+    }
+    .active a {
+        background-color: #FFA500;
+        border-left: 1px solid #9c661f;
+        border-right: 1px solid #9c661f;
+        color: $body-text-color;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,36 @@
+@mixin no-bullets {
+    li {
+        list-style-type: none;
+    }
+}
+
+%hidden {
+    display: none;
+}
+
+.no-css-aid {
+    @extend %hidden;
+}
+
+@mixin hidden-dt {
+    dt {
+        @extend %hidden;
+    }
+}
+
+%display-list {
+    @include no-bullets;
+    @include reset-spacing;
+    //@include hidden-dt;
+}
+
+%nice-display-list {
+    @extend %display-list;
+    @include hidden-dt;
+}
+
+@mixin shortened-long-names {
+    .name {
+        @extend %hidden;
+    }
+}

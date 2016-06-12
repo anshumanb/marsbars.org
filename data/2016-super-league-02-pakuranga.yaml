@@ -1,12 +1,39 @@
 datetime: '2016-06-11T17:00:00+12:00'
 league: 2016-super-league
 venue: Central
-court: 1
+court: 3
 opponent: Pakuranga
-result:
-margin:
-skins:
-points:
+result: won
+margin: 46 runs
+skins: 3
+points: 7
 innings:
--   score:
--   score:
+-   partnerships:
+    -   score: 19
+    -   score: 10
+    -   score: -3
+    -   score: 47
+        skin: true
+    score: 73
+-   partnerships:
+    -   members:
+        - uddhav-naik
+        - amit-pothen
+        score: 44
+        skin: true
+    -   members:
+        - rohit-patel
+        - anshuman-bhaduri
+        score: 22
+        skin: true
+    -   members:
+        - sai-karnan
+        - bhavik-vora
+        score: 36
+        skin: true
+    -   members:
+        - abhishek-verma
+        - brendan-raj
+        score: 17
+    score: 119
+    us: true

@@ -1,0 +1,202 @@
+h3 {
+    clear: both;
+}
+
+$sep-color: #C4C4C4;
+
+$profile-sprites: (
+    ("abhishek-verma", 1),
+    ("amit-pothen", 2),
+    ("anshuman-bhaduri", 3),
+    ("bhavik-vora", 4),
+    ("brendan-raj", 5),
+    ("dasith-goonatilaka", 6),
+    ("jared-mascarenhas", 7),
+    ("kaushik-balan", 8),
+    ("rohit-patel", 9),
+    ("sai-karnan", 10),
+    ("smit-shah", 11),
+    ("uddhav-naik", 12)
+);
+
+@mixin profile-pic($height) {
+    //img {
+    background-image: url('/img/profile.png');
+    background-size: cover;
+    border-radius: 5px;
+    height: $height;
+    width: $height * 0.75;
+    @each $player, $pos in $profile-sprites {
+        @at-root &.#{$player} {
+            background-position: $height*0.75 * ($pos - 1)*-1;
+        }
+    }
+}
+
+@mixin trim-long-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    @include adjust-font-size(ms(-1));
+}
+
+.profile {
+    float: left;
+    margin: 0 0.5em 0.75em;
+    @include profile-pic(12em);
+    & + h3 {
+        padding-top: $base-lh*1em*1em / ms(4);
+    }
+}
+.avatar {
+    margin: 0 auto;
+    @include profile-pic(9em);
+}
+
+@mixin cards {
+    float: left;
+    text-align: center;
+}
+
+@mixin non-click-cards {
+    @include cards;
+    width: 7em;
+    margin: 0 1.5em $base-lh*1em 0.5em;
+}
+
+@mixin click-cards {
+    @include cards;
+    margin: 0 1.5em-0.5em $base-lh*1em-0.5em 0.5em-0.5em;
+    a {
+        width: 7em;
+        display: inline-block;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 0 0.5em 0.5em;
+        border: 1px solid $bg-color;
+        &:link, &:visited, &:hover, &:active {
+            color: $body-text-color;
+        }
+        &:hover, &:active {
+            background-color: #FFA812;
+            border: 1px solid #9c661f;
+            position: relative;
+            top: -0.5em;
+            padding: 0.5em 0.5em 0;
+        }
+        .name, .shortened-name {
+            color: #003F87;
+            font-weight: bold;
+        }
+
+    }
+}
+
+%stats {
+    @extend %display-list;
+    @include non-click-cards;
+    //margin: 0 1.5em $base-lh*1em 0.5em;
+    li {
+        position: relative;
+    }
+    dt {
+        font-size: ms(-2);
+        text-transform: lowercase;
+        width: 100%;
+        display: block;
+        position: absolute;
+        @include secondary-text;
+    }
+    .runs {
+        dt {
+            bottom: 0;
+        }
+        dd {
+            $fs: ms(10);
+            $lh: 1.2;
+            font-size: $fs;
+            line-height: $lh;
+            padding-bottom: (line-height($fs) - $lh)*1em;
+            //@include adjust-font-size($fs);
+            //padding-bottom: $base-lh*1em*1em / $fs * 2/3;
+            //margin-top: $base-lh*1em*1em / $fs * 1/3;
+        }
+        //border-bottom: 1px solid $sep-color;
+    }
+    .average, .innings, .skin {
+        dt {
+            bottom: 0;
+        }
+    }
+    .average, .innings {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        dd {
+            $fs: ms(3);
+            $padding: $base-lh*1em*1em / $fs;
+            @include adjust-font-size($fs);
+            padding: $padding*1/4 0 $padding*3/4;
+        }
+    }
+    .skin {
+        //border-top: 1px solid $sep-color;
+        clear: both;
+        dd {
+            $fs: ms(3);
+            $padding: $base-lh*1em*1em / $fs;
+            @include adjust-font-size($fs);
+            padding: $padding*1/4 0 $padding*3/4;
+        }
+    }
+
+}
+
+
+.overall-player-stats {
+    @extend %stats;
+}
+
+%stats-list {
+    @extend %display-list;
+    //@include contains-floats;
+    & > li ul {
+        @include reset-spacing;
+        @extend %stats;
+    }
+    .league {
+        //border-bottom: 1px solid $sep-color;
+        dd {
+            @include trim-long-text;
+        }
+        dt {
+            @extend %hidden;
+        }
+    }
+}
+
+.player-league-stats {
+    @extend %stats-list;
+    & > li {
+        @include non-click-cards;
+    }
+    & + h3 {
+        padding-top: $base-lh*1em*1em / ms(4);
+    }
+}
+
+.player-partner-stats {
+    @extend %stats-list;
+    @include shortened-long-names;
+    & > li {
+        @include click-cards;
+    }
+    .name, .shortened-name, .player-avatar {
+        dt {
+            @extend %hidden;
+        }
+    }
+    & + h3 {
+        padding-top: $base-lh*1em*1em / ms(4);
+    }
+}

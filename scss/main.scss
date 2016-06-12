@@ -7,8 +7,12 @@ $ms-ratio: 1.25;
 $base-fs: ms(0);
 
 @import '_h5bp';
-@import '_layout';
 @import '_typography';
+@import '_layout';
+@import '_styling';
+@import '_nav';
+@import '_player-stats';
+@import '_stats_landing';
 @import '_indoor-league';
 
 
@@ -37,48 +41,27 @@ h1, h2, h3, h4 {
    ========================================================================== */
 
 header {
-    padding: 0 0.8em 2em;
+    //padding: 0 0.8em 2em;
     background-color: #0d0d0d;
     color: #fef8ce;
 }
 
 #logo {
-    max-width: 100%;
+    max-width: 10em;
     display: block;
     margin: 0 auto;
 }
 
 #sub-logo {
     text-align: center;
-    @include adjust-font-size(ms(2));
-    font-family: "Averia Serif Libre", cursive;
+    @include adjust-font-size(ms(-1));
     margin: 0;
 }
 
 #container {
-    max-width: 20em;
+    max-width: 0.5em + 35em + 0.5em;
     margin: 0 auto;
 }
-
-.details {
-    clear: right;
-    padding-left: 0.8em;
-}
-
-.details ul {
-    padding: 0;
-}
-
-.details li {
-    list-style-type: none;
-}
-
-.joined, .title {
-    color: #666;
-    // Hide titles and joined year till these are updated and correct.
-    display: none;
-}
-
 
 @media screen and (min-width: $wide-breakpoint) {
     header {

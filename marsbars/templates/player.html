@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>{{player.name}}</h2>
+
+<h3 class="no-css-aid">Player Statistics</h3>
+<ul class="overall-player-stats">
+  <li class="runs">
+    <dl><dt>Partnership runs</dt><dd>{{player.partnership_runs}}</dd></dl>
+  </li>
+  <li class="average">
+    <dl><dt>Average</dt><dd>{{player.ave_partnership_runs}}</dd></dl>
+  </li>
+  <li class="innings">
+    <dl><dt>Innings</dt><dd>{{player.innings}}</dd></dl>
+  </li>
+  <li class="skin">
+    <dl><dt>Skins</dt><dd>{{player.skins_won}}</dd></dl>
+  </li>
+</ul>
+<div class="profile {{player.slug}}"></div>
+
+<!--<h3>Current Form</h3>
+<p>Insert graph</p>-->
+<h3>This Season</h3>
+<ul class="player-league-stats">
+  {% for league in player.leagues %}
+  <li class="{{league.slug}}">
+    <ul> 
+      <li class="league">
+        <dl><dt>League</dt><dd>{{league.short_name}}</dd></dl>
+      </li>
+      <li class="runs">
+        <dl><dt>Partnership runs</dt><dd>{{league.partnership_runs}}</dd></dl>
+      </li>
+      <li class="average">
+        <dl><dt>Average</dt><dd>{{league.ave_partnership_runs}}</dd></dl>
+      </li>
+      <li class="innings">
+        <dl><dt>Innings</dt><dd>{{league.innings}}</dd></dl>
+      </li>
+      <li class="skin">
+        <dl><dt>Skins</dt><dd>{{league.skins_won}}</dd></dl>
+      </li>
+    </ul>
+  </li>
+  {% endfor %}
+</ul>
+
+<h3>Favourite Partners</h3>
+<ol class="player-partner-stats">
+  {% for partner in (player.partners|sort(True, attribute='partnership_runs'))[:4] %}
+  <li>
+    <a href="{{url_for('player', slug=partner.slug)}}">
+      <ul>
+        <li class="player-avatar">
+          <dl><dt>Partner image</dt><dd class="avatar {{partner.slug}}"></dd></dl>
+        </li>
+        <li class="name">
+          <dl><dt>Partner name</dt><dd>{{partner.name}}</dd></dl>
+        </li>
+        <li class="shortened-name">
+          <dl>
+            <dt>Partner name</dt><dd>{{partner.name | last_name_initial}}</dd>
+          </dl>
+        </li>
+        <li class="runs">
+          <dl><dt>Partnership runs</dt><dd>{{partner.partnership_runs}}</dd></dl>
+        </li>
+        <li class="average">
+          <dl><dt>Average</dt><dd>{{partner.ave_partnership_runs}}</dd></dl>
+        </li>
+        <li class="innings">
+          <dl><dt>Innings</dt><dd>{{partner.innings}}</dd></dl>
+        </li>
+        <li class="skin">
+          <dl><dt>Skins</dt><dd>{{partner.skins_won}}</dd></dl>
+        </li>
+      </ul>
+    </a>
+  </li>
+  {% endfor %}
+</ol>
+
+{% endblock content %}

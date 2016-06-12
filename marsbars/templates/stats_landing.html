@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Player Statistics</h2>
+<ul class="active-players">
+  {% for player in players %}
+  <li>
+    <a href="{{url_for('player', slug=player.slug)}}">
+      <dl>
+        <dt>Avatar</dt>
+          <dd class="avatar {{player.slug}}"></dd>
+        <dt>Name</dt>
+          <dd class="name">{{player.name}}</dd>
+        <dt>Name</dt>
+          <dd class="shortened-name">{{player.name | last_name_initial}}</dd>
+      </dl>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}

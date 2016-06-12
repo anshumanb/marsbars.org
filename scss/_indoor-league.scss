@@ -1,29 +1,20 @@
-@mixin reset-spacing {
-    margin: 0;
-    padding: 0;
+.league-id, .league-grade {
+    @include secondary-text;
+    @include adjust-font-size(ms(-1));
+    margin: 0 0 0 0.5em*1em / ms(-1);
+    position: relative;
+    top: -0.5em*1em / ms(-1);
 }
 
-@mixin no-bullets {
-    li {
-        list-style-type: none;
-    }
-}
-
-@mixin contain-floats {
-    overflow: auto;
-}
-
-
-dl {
-    @include reset-spacing;
+.league-grade {
+    margin-bottom: $base-lh*1em*1em / ms(-1);
 }
 
 .matches {
-    @include reset-spacing;
-    @include no-bullets;
+    @extend %nice-display-list;
     .upcoming {
         dl {
-            @include contain-floats;
+            @include contains-floats;
         }
         &.match .datetime {
             margin-bottom: 0;
@@ -31,12 +22,13 @@ dl {
     }
     .match {
         padding-bottom: $base-lh*1em;
-        border-bottom: 1px solid #B6AFA9;
+        //border-bottom: 1px solid #B6AFA9;
+        border-bottom: 1px solid $sep-color;
         .contest {
             $contest-fs: ms(2);
             @include adjust-font-size($contest-fs);
             margin-top: line-height($contest-fs) * 1em*1;
-            margin-left: 0.3em/$contest-fs * 1em;
+            margin-left: 0.5em/$contest-fs * 1em;
         }
         .datetime, {
             //$datetime-fs: ms(-1);
@@ -44,7 +36,7 @@ dl {
             //@include adjust-font-size($datetime-fs);
             @include secondary-text;
             margin-bottom: $base-lh*1em*1em/2/$datetime-fs;
-            margin-left: 0.3em*1em/$datetime-fs;
+            margin-left: 0.5em*1em/$datetime-fs;
             float: left;
             width: 40%;
         }
@@ -53,10 +45,7 @@ dl {
             $location-fs: ms(-1);
             @include adjust-font-size(ms(-1));
             @include secondary-text;
-            margin-left: 0.3em*1em/$location-fs;
-        }
-        dt {
-            display: none;
+            margin-left: 0.5em*1em/$location-fs;
         }
     }
     dd {
@@ -124,12 +113,10 @@ dl {
         text-align: right;
     }
     .partnerships {
+        @include shortened-long-names;
         clear: both;
         & > li {
             overflow: auto;
-        }
-        .name {
-            display: none;
         }
         .score {
             @include adjust-font-size($score-fs);
@@ -178,9 +165,4 @@ dl {
     border-radius: 5px;
     background-color: #E7C6A5;
     border: 1px solid #9c661f;
-}
-
-
-.no-css {
-    display: none;
 }

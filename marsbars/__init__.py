@@ -23,17 +23,33 @@ def send_css(path):
 def send_img(path):
     return send_from_directory('assets/img', path)
 
-
+def league(slug, template):
+    league = IndoorLeague.query.filter_by(slug=slug).first_or_404()
+    return render_template(template,
+            league=league)
 
 @app.route('/')
 def index():
     return render_template('index.html', players=Player.query.filter(Player.active==True))
 
-@app.route('/2016/<slug>/')
-def league(slug):
-    league = IndoorLeague.query.filter_by(slug=slug).first_or_404()
-    return render_template('indoor_league.html',
-            league=league)
+@app.route('/2016/<slug>/fixtures/')
+def fixtures(slug):
+    return league(slug, 'fixtures.html')
+
+@app.route('/2016/<slug>/results/')
+def results(slug):
+    return league(slug, 'results.html')
+
+@app.route('/stats/')
+def stats():
+    return render_template('stats_landing.html',
+            players=Player.query.filter(Player.active==True).order_by(Player.name))
+
+@app.route('/<slug>/')
+def player(slug):
+    player = Player.query.filter_by(active=True, slug=slug).first_or_404()
+    return render_template('player.html',
+            player=player)
 
 @app.template_filter('last_name_initial')
 def last_name_initial(s):
@@ -56,7 +72,53 @@ def localtime(s):
     return utc_time.astimezone(tz).strftime('%d-%b %-I:%M%P').replace(':00','')
 
 
-class Player(db.Model):
+class StatisticsMixin(object):
+    @property
+    def pships(self):
+        return self.query.all()
+
+    @property
+    def innings(self):
+        return len(self.pships)
+
+    @property
+    def partnership_runs(self):
+        return reduce(lambda x, y: x+y.score, self.pships, 0)
+
+    @property
+    def skins_won(self):
+        add_skins = lambda x, y: x + 1 if y.skin else x + 0
+        return reduce(add_skins, self.pships, 0)
+
+    @property
+    def ave_partnership_runs(self):
+        if self.innings == 0:
+            return 0
+        return int(round(float(self.partnership_runs) / self.innings))
+
+
+class PlayerBase(StatisticsMixin):
+    def __init__(self, **kwargs):
+        self.query = kwargs['query']
+
+
+class PlayerLeague(PlayerBase):
+    def __init__(self, **kwargs):
+        super(PlayerLeague, self).__init__(**kwargs)
+        league = kwargs['league']
+        self.short_name = league.short_name
+        self.slug = league.slug
+
+
+class PlayerPartner(PlayerBase):
+    def __init__(self, **kwargs):
+        super(PlayerPartner, self).__init__(**kwargs)
+        partner = kwargs['partner']
+        self.name = partner.name
+        self.slug = partner.slug
+
+
+class Player(db.Model, StatisticsMixin):
     __tablename__ = 'player'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255))
@@ -77,17 +139,54 @@ class Player(db.Model):
     def get(slug):
         return db.session.query(Player).filter_by(slug=slug).one()
 
+    # Following stats per league and total
+    # Line graph of -- partnership runs + team total percentage
+    # Pie graph of partner preference + partner runs percentage: Favourite partner
+    # For now, assumes each player only has one innings per match.
+    #def matches(self):
+    #    pass
+    @property
+    def pships(self):
+        return self.partnerships.all()
+
+    @property
+    def leagues(self):
+        leagues = []
+        for league in IndoorLeague.query.all():
+            query = self.partnerships.join(
+                    IndoorInnings, IndoorMatch, IndoorLeague).order_by(
+                    IndoorMatch.datetime).filter(
+                    IndoorLeague.slug==league.slug)
+            if query.count() > 0:
+                leagues.append(PlayerLeague(league=league, query=query))
+        return leagues
+
+    @property
+    def partners(self):
+        _ = []
+        for p in self.partnerships.all():
+            _.extend([q for q in p.members if q != self and q.active])
+        unique_partners = set(_)
+        partners = []
+        for up in unique_partners:
+            query = self.partnerships.join(Player, 'members').filter(
+                    Player.id==up.id)
+            partners.append(PlayerPartner(partner=up, query=query))
+        return partners
+
 
 class IndoorLeague(db.Model):
     __tablename__ = 'indoor_league'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255))
+    short_name = db.Column(db.String(255))
     year = db.Column(db.Integer)
     grade = db.Column(db.String(255))
     slug = db.Column(db.String(255))
 
-    def __init__(self, name, year, grade, slug):
+    def __init__(self, name, short_name, year, grade, slug):
         self.name = name
+        self.short_name = short_name
         self.year = year
         self.grade = grade
         self.slug = slug

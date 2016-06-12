@@ -2,88 +2,28 @@
 
 {% block content %}
 
-<h2>{{league.name}} League</h2>
-<p>{{league.year}}</p>
-<p>{{league.grade}}</p>
+<h2>{{league.short_name}}</h2>
+<p class="league-id">{{league.year}} {{league.name}}</p>
+<p class="league-grade">{{league.grade}}</p>
 
-<ul class="matches indoor {{league.slug}}">
-  {% for match in league.upcoming_matches %}
-  <li class="match upcoming">
-    <h4 class="no-css">Match details</h4>
-    <dl>
-      <dt>Contest</dt>
-        <dd class="contest">{{match.opponent}}</dd>
-      <dt>Date and time</dt>
-        <dd class="datetime">{{match.datetime | localtime}}</dd>
-      <dt>Indoor centre</dt>
-        <dd class="venue">at {{match.venue}}</dd>
-      <dt>Court</dt>
-        <dd class="court">on Court {{match.court}}</dd>
-    </dl>
-  </li>
-  {% endfor %}
-</ul>
+{% set navigation_bar = [
+  (url_for('fixtures', slug=league.slug), 'fixtures', 'Fixtures'),
+  (url_for('results', slug=league.slug), 'results', 'Results'),
+] -%}
+{% set active_page = active_page|default('fixtures') -%}
 
-<ul class="matches indoor {{league.slug}}">
-  {% for match in league.completed_matches %}
-  <li class="match {{match.result}}">
-    <h4 class="no-css">Match details</h4>
-    <dl>
-      <dt>Contest</dt>
-        <dd class="contest">{{match.opponent}}</dd>
-      <dt>Date and time</dt>
-        <dd class="datetime">{{match.datetime.strftime('%d-%b')}}</dd>
-      <dt>Innings</dt>
-        <dd>
-          <ol class="all-innings">
-            {% for innings in match.innings %}
-            <li class="innings-{{loop.index}}
-            {% if innings.us %}us{% else %}opponent{% endif %}">
-              <dl>
-                <dt>Team</dt>
-                  <dd class="team-name">
-                    {% if innings.us %}
-                    Us
-                    {% else %}
-                    {{match.opponent}}
-                    {% endif %}
-                  </dd>
-                <dt>Score</dt>
-                  <dd class="score total">{{innings.score | negative}}</dd>
-                {% if match.has_partnerships %}
-                <dt class="partnerships">Partnerships</dt>
-                  <dd>
-                    <ol class="partnerships">
-                      {% for partnership in innings.partnerships %}
-                      <li{% if partnership.skin %} class="skin"{% endif %}>
-                        <dl>
-                          <dt>Score</dt>
-                            <dd class="score">{{partnership.score | negative}}</dd>
-                          {% if partnership.members %}
-                          <dt>Members</dt>
-                            <dd>
-                              <ul class="members">
-                                {% for member in partnership.members %}
-                                <li class="name">{{member.name}}</li>
-                                <li class="shortened-name">{{member.name | last_name_initial}}</li>
-                                {% endfor %}
-                              </ul>
-                            </dd>
-                          {% endif %}
-                        </dl>
-                      </li>
-                      {% endfor %}
-                    </ol>
-                  </dd>
-                {% endif %}
-              </dl>
-            </li>
-            {% endfor %}
-          </ol>
-      </dd>
-    </dl>
-  </li>
-  {% endfor %}
-</ul>
+<nav>
+  <ul>
+    {% for href, id, caption in navigation_bar %}
+    <li
+      {% if id == active_page %}
+      class="active"{% endif %}><a 
+      href="{{ href|e }}">{{ caption|e }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{% block league_details %}
+{% endblock league_details %}
 
 {% endblock content %}

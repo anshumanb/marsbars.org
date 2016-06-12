@@ -24,16 +24,17 @@
         <![endif]-->
 
         <header>
-            <img id="logo" src="/img/logo.png" alt="Mars Bars logo">
+            <a href="/"><img id="logo" src="/img/logo.png" alt="Mars Bars logo"></a>
             <p id="sub-logo">est. 2007</p>
         </header>
-        <nav>
+        <nav class="main-nav">
             <ul>
-                <li><a href="{{url_for('league', slug='super-league')}}">
-                    Indoor.Super League</a></li>
-                <li><a href="{{url_for('league', slug='central-autumn')}}">
-                    Indoor.Central Autumn</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="{{url_for('fixtures', slug='super-league')}}">
+                    Super League</a></li>
+                <li><a href="{{url_for('fixtures', slug='central-autumn')}}">
+                    Central Autumn</a></li>
+                <li><a href="{{url_for('stats')}}">
+                    Stats</a></li>
             </ul>
         </nav>
         <div id="container">
