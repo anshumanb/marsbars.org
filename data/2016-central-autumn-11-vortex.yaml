@@ -3,10 +3,37 @@ league: 2016-central-autumn
 venue: Central
 court: 4
 opponent: Vortex
-result:
-margin:
-skins:
-points:
+result: won
+margin: 48 runs
+skins: 2
+points: 6
 innings:
--   score:
--   score:
+-   score: 126
+    partnerships:
+    -   score: 20
+    -   score: 42
+        skin: true
+    -   score: 37
+        skin: true
+    -   score: 27
+-   score: 174
+    partnerships:
+    -   score: 48
+        members:
+        - uddhav-naik
+        - jared-mascarenhas
+        skin: true
+    -   score: 29
+        members:
+        - rohit-patel
+        - anshuman-bhaduri
+    -   score: 31
+        members:
+        - bhavik-vora
+        - dasith-goonatilaka
+    -   score: 66
+        members:
+        - amit-pothen
+        - brendan-raj
+        skin: true
+    us: true
