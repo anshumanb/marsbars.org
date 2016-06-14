@@ -4,6 +4,7 @@ import yaml
 import iso8601
 import pytz
 import glob
+from sqlalchemy.orm.exc import NoResultFound
 
 
 db.create_all()
@@ -22,6 +23,21 @@ def load_leagues(filename):
     for league in leagues:
         db.session.add(IndoorLeague(**league))
     db.session.commit()
+
+
+def unslugify(slug):
+    return slug.replace('-', ' ').title()
+
+
+def get_player(slug):
+    try:
+        player = Player.get(slug)
+    except(NoResultFound):
+        player = Player(name=unslugify(slug), slug=slug, active=False)
+        db.session.add(player)
+        db.session.commit()
+    return player
+
 
 def load_match(filename):
     print('Processing ' + filename + ' ...')
@@ -46,7 +62,7 @@ def load_match(filename):
         for p, pship in enumerate(inning['partnerships']):
             members = []
             if 'members' in pship:
-                members = map(lambda n: Player.get(n), pship['members'])
+                members = map(lambda n: get_player(n), pship['members'])
             db.session.add(IndoorPartnership(
                     inn, position=p, score=pship['score'],
                     skin=pship.get('skin', False), members=members))

@@ -50,6 +50,77 @@ class Innings(object):
                         self.el.xpath(bowler_sel))
 
 
+class Compat(object):
+    """ Provides extra scorecard information so that existing code can
+        continue working as before.
+        Points, skins and margin are unused so leave them out."""
+    team_sel = './/table[@class="Summary"]//tr[not(@class="SummaryTitle")][{}]/td'
+    def __init__(self, results):
+        self.results = results
+
+    def team_score(self, team_num):
+        sel = self.team_sel.format(team_num)
+        return int(self.results.xpath(sel)[5].text_content().partition(' (')[0])
+
+    def _is_us(self, team_name):
+        return 'Mars Bars' in team_name or 'Central Black' in team_name
+
+    def add_us(self, team_name, innings):
+        if self._is_us(team_name):
+            innings['us'] = True
+        return innings
+
+    def partnership_score(self, innings_num, pship_num):
+        sel = self.team_sel.format(innings_num)
+        return int(self.results.xpath(sel)[pship_num].text_content())
+
+    def result(self):
+        team1_name = self.results.xpath(self.team_sel.format(1))[0].text_content()
+        if self._is_us(team1_name):
+            us = self.team_score(1)
+            them = self.team_score(2)
+        else:
+            them = self.team_score(1)
+            us = self.team_score(2)
+        if us == them:
+            return 'tied'
+        elif us > them:
+            return 'won'
+        elif us < them:
+            return 'lost'
+        return 'unknown'
+
+    def _team_pships(self, team_num):
+        return map(lambda e: int(e.text_content()),
+                   self.results.xpath(self.team_sel.format(team_num))[1:5])
+
+
+    def skin(self, innings_num, pship_num):
+        # Can only handle only tied partnership.
+        # Will fail for two consecutive tied partnerships.
+        team1_pships = self._team_pships(1)
+        team2_pships = self._team_pships(2)
+        pships = zip(team1_pships, team2_pships)
+        num = pship_num - 1
+        a, b = pships[num]
+        if a > b and innings_num == 1:
+            return True
+        elif a < b and innings_num == 2:
+            return True
+        elif a == b:
+            if num == 3:
+                # Last partnership
+                num = 2
+            else:
+                num = num + 1
+            c, d = pships[num]
+            if c > d and innings_num == 1:
+                return True
+            elif c < d and innings_num == 2:
+                return True
+        return False
+
+
 def format_over(deliveries):
     de = map(lambda d: d.replace('', '.'), deliveries)
     de = [d if d != '' else '.' for d in deliveries]
@@ -73,6 +144,8 @@ class Extractor(object):
         return teams
 
     def extract(self):
+        compat = Compat(self.results)
+
         teams = self.get_team_names()
         innings = []
         for innings_num, team in enumerate(teams):
@@ -113,16 +186,20 @@ class Extractor(object):
                         slugify(batsman1.name),
                         slugify(batsman2.name)
                     ],
-                    'overs': overs
+                    'overs': overs,
+                    'score': compat.partnership_score(innings_num + 1, pship_num + 1),
+                    'skin': compat.skin(innings_num + 1, pship_num + 1)
                 }
                 partnerships.append(partnership)
             inning = {
-                'partnerships': partnerships
+                'partnerships': partnerships,
+                'score': compat.team_score(innings_num + 1)
             }
-            innings.append(inning)
+            innings.append(compat.add_us(team, inning))
 
         return {
-            'innings': innings
+            'innings': innings,
+            'result': compat.result()
         }
 
 

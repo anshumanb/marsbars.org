@@ -8,32 +8,248 @@ margin: 0
 skins: 3
 points: 5
 innings:
--   partnerships:
-    -   score: 23
-    -   score: 33
-    -   score: 27
-    -   score: 59
-        skin: true
-    score: 142
--   partnerships:
-    -   members:
-        - uddhav-naik
-        - amit-pothen
-        score: 28
-        skin: true
-    -   members:
-        - smit-shah
-        - anshuman-bhaduri
-        score: 42
-        skin: true
-    -   members:
-        - sai-karnan
-        - bhavik-vora
-        score: 31
-        skin: true
-    -   members:
-        - abhishek-verma
-        - brendan-raj
-        score: 41
-    score: 142
-    us: true
+- partnerships:
+  - members:
+    - josh-curran
+    - sam-curran
+    overs:
+    - batsman:
+      - name: josh-curran
+        over: 0 w w c 2 . . .
+      - name: sam-curran
+        over: . . . . . 0 0 2
+      bowler: amit-pothen
+    - batsman:
+      - name: josh-curran
+        over: . . . . 0 c 1 .
+      - name: sam-curran
+        over: w w 0 2 . . . 1
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: josh-curran
+        over: . . 2 nb1 . . w w
+      - name: sam-curran
+        over: 0 1 . . 0 2 . .
+      bowler: bhavik-vora
+    - batsman:
+      - name: josh-curran
+        over: 1 . . . 2 . . .
+      - name: sam-curran
+        over: . 0 0 1 . 0 0 1
+      bowler: smit-shah
+    score: 23
+    skin: false
+  - members:
+    - robert-gilmore
+    - james-baker
+    overs:
+    - batsman:
+      - name: robert-gilmore
+        over: w nb 2 . . . . 0
+      - name: james-baker
+        over: . . . c nb nb 2 .
+      bowler: brendon-raj
+    - batsman:
+      - name: robert-gilmore
+        over: . 2 . 2 . c 2 .
+      - name: james-baker
+        over: 1 . 2 . 2 . . 0
+      bowler: sai-karnan
+    - batsman:
+      - name: robert-gilmore
+        over: 4 . 1 . 2 . . .
+      - name: james-baker
+        over: . 1 . 1 . 0 0 2
+      bowler: amit-pothen
+    - batsman:
+      - name: robert-gilmore
+        over: . 1 . . . . . 2 .
+      - name: james-baker
+        over: 2 . 0 0 w 0 2 . 0
+      bowler: bhavik-vora
+    score: 33
+    skin: false
+  - members:
+    - rahul-chopra
+    - brent-humphrey
+    overs:
+    - batsman:
+      - name: rahul-chopra
+        over: 2 . b 2 . 2 . b
+      - name: brent-humphrey
+        over: . 2 . . 5 . c .
+      bowler: smit-shah
+    - batsman:
+      - name: rahul-chopra
+        over: . 0 7 . 4 . 0 4
+      - name: brent-humphrey
+        over: 1 . . 2 . 2 . .
+      bowler: abhishek-verma
+    - batsman:
+      - name: rahul-chopra
+        over: 2 . . m . 0 2 .
+      - name: brent-humphrey
+        over: . 0 0 . 2 . . 2
+      bowler: sai-karnan
+    - batsman:
+      - name: rahul-chopra
+        over: . . 0 r 7 . . 0
+      - name: brent-humphrey
+        over: 0 2 . . . 0 2 .
+      bowler: uddhav-naik
+    score: 27
+    skin: false
+  - members:
+    - jacob-buick
+    - aue-parima
+    overs:
+    - batsman:
+      - name: jacob-buick
+        over: 2 . 2 . 2 . 3 .
+      - name: aue-parima
+        over: . 1 . nb2 . 2 . 0
+      bowler: brendon-raj
+    - batsman:
+      - name: jacob-buick
+        over: 5 . 5 . . 1 . .
+      - name: aue-parima
+        over: . 2 . 0 2 . 1 r
+      bowler: uddhav-naik
+    - batsman:
+      - name: jacob-buick
+        over: . w 2 . . 1 . 2
+      - name: aue-parima
+        over: 2 . . 0 2 . 1 .
+      bowler: abhishek-verma
+    - batsman:
+      - name: jacob-buick
+        over: 2 . 4 . 2 . 0 2 . 2
+      - name: aue-parima
+        over: . 2 . nb1 . 2 . . 1 .
+      bowler: anshuman-bhaduri
+    score: 59
+    skin: true
+  score: 142
+- partnerships:
+  - members:
+    - uddhav-naik
+    - amit-pothen
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: w 2 . . w 2 . 0
+      - name: amit-pothen
+        over: . . w c . . 1 .
+      bowler: josh-curran
+    - batsman:
+      - name: uddhav-naik
+        over: . w 0 2 . 0 2 .
+      - name: amit-pothen
+        over: 1 . . . 2 . . c
+      bowler: james-baker
+    - batsman:
+      - name: uddhav-naik
+        over: . . 1 . w 0 5 .
+      - name: amit-pothen
+        over: 0 2 . 1 . . . 0
+      bowler: rahul-chopra
+    - batsman:
+      - name: uddhav-naik
+        over: 0 3 . 2 . . 1 . . r
+      - name: amit-pothen
+        over: . . nb1 . 0 1 . nb 0 .
+      bowler: jacob-buick
+    score: 28
+    skin: true
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 2 . . 2 . . 0 1
+      - name: anshuman-bhaduri
+        over: . w 1 . 0 2 . .
+      bowler: robert-gilmore
+    - batsman:
+      - name: smit-shah
+        over: 2 . 0 3 . . 0 1
+      - name: anshuman-bhaduri
+        over: . 1 . . 0 2 . .
+      bowler: aue-parima
+    - batsman:
+      - name: smit-shah
+        over: 0 2 . nb w 0 7 .
+      - name: anshuman-bhaduri
+        over: . . 2 . . . . 2
+      bowler: brent-humphrey
+    - batsman:
+      - name: smit-shah
+        over: . 0 2 . 0 r . . 2
+      - name: anshuman-bhaduri
+        over: 2 . . 2 . . 0 nb1 .
+      bowler: jacob-buick
+    score: 42
+    skin: true
+  - members:
+    - bhavik-vora
+    - sai-karnan
+    overs:
+    - batsman:
+      - name: bhavik-vora
+        over: 2 . . 0 0 2 . 2
+      - name: sai-karnan
+        over: . 0 2 . . . 2 .
+      bowler: robert-gilmore
+    - batsman:
+      - name: bhavik-vora
+        over: r . 1 . . . . 2
+      - name: sai-karnan
+        over: . 2 . r 0 0 2 .
+      bowler: aue-parima
+    - batsman:
+      - name: bhavik-vora
+        over: 7 . 7 . 4 . c .
+      - name: sai-karnan
+        over: . 1 . 1 . r . 5
+      bowler: sam-curran
+    - batsman:
+      - name: bhavik-vora
+        over: . . 0 2 . 0 2 . .
+      - name: sai-karnan
+        over: 0 1 . . 7 . . nb r
+      bowler: james-baker
+    score: 31
+    skin: true
+  - members:
+    - brendon-raj
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: brendon-raj
+        over: 2 . 2 . . . w w
+      - name: abhishek-verma
+        over: . 2 . w w c . .
+      bowler: rahul-chopra
+    - batsman:
+      - name: brendon-raj
+        over: . 3 . w 5 . . 0
+      - name: abhishek-verma
+        over: 2 . 5 . . w 2 .
+      bowler: sam-curran
+    - batsman:
+      - name: brendon-raj
+        over: . . c . 2 . . 2
+      - name: abhishek-verma
+        over: 0 1 . 5 . 0 3 .
+      bowler: josh-curran
+    - batsman:
+      - name: brendon-raj
+        over: c 1 r . . 2 . 1
+      - name: abhishek-verma
+        over: . . . 0 7 . 2 .
+      bowler: brent-humphrey
+    score: 41
+    skin: false
+  score: 142
+  us: true

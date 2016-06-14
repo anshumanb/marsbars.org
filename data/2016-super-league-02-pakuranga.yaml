@@ -8,32 +8,248 @@ margin: 46 runs
 skins: 3
 points: 7
 innings:
--   partnerships:
-    -   score: 19
-    -   score: 10
-    -   score: -3
-    -   score: 47
-        skin: true
-    score: 73
--   partnerships:
-    -   members:
-        - uddhav-naik
-        - amit-pothen
-        score: 44
-        skin: true
-    -   members:
-        - rohit-patel
-        - anshuman-bhaduri
-        score: 22
-        skin: true
-    -   members:
-        - sai-karnan
-        - bhavik-vora
-        score: 36
-        skin: true
-    -   members:
-        - abhishek-verma
-        - brendan-raj
-        score: 17
-    score: 119
-    us: true
+- partnerships:
+  - members:
+    - rohan-oberoi
+    - ajay-balaraman
+    overs:
+    - batsman:
+      - name: rohan-oberoi
+        over: w 0 2 . . . b 0
+      - name: ajay-balaraman
+        over: . . . 0 0 1 . .
+      bowler: brendon-raj
+    - batsman:
+      - name: rohan-oberoi
+        over: . 0 2 . 2 . 0 0
+      - name: ajay-balaraman
+        over: 2 . . 2 . 2 . .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: rohan-oberoi
+        over: . 2 . 2 . 4 . .
+      - name: ajay-balaraman
+        over: 1 . 1 . 2 . 0 2
+      bowler: rohit-patel
+    - batsman:
+      - name: rohan-oberoi
+        over: . . . . 0 1 . r
+      - name: ajay-balaraman
+        over: 0 s 0 2 . . 2 .
+      bowler: uddhav-naik
+    score: 19
+    skin: false
+  - members:
+    - jono-moffat
+    - richard-greenwood
+    overs:
+    - batsman:
+      - name: jono-moffat
+        over: w 0 w 4 . . 0 5
+      - name: richard-greenwood
+        over: . . . . 0 2 . .
+      bowler: amit-pothen
+    - batsman:
+      - name: jono-moffat
+        over: 0 b 0 0 7 . . . .
+      - name: richard-greenwood
+        over: . . . . . 0 0 m 0
+      bowler: sai-karnan
+    - batsman:
+      - name: jono-moffat
+        over: 0 w 0 c r . . 2
+      - name: richard-greenwood
+        over: . . . . . 0 2 .
+      bowler: bhavik-vora
+    - batsman:
+      - name: jono-moffat
+        over: 3 . . 0 0 2 . .
+      - name: richard-greenwood
+        over: . 0 c . . . 0 2
+      bowler: uddhav-naik
+    score: 10
+    skin: false
+  - members:
+    - daniel-foster
+    - gurpreet-singh
+    overs:
+    - batsman:
+      - name: daniel-foster
+        over: 0 w r . . 0 2 .
+      - name: gurpreet-singh
+        over: . . . 0 1 . . 0
+      bowler: amit-pothen
+    - batsman:
+      - name: daniel-foster
+        over: 2 . 0 2 . 0 1 .
+      - name: gurpreet-singh
+        over: . 1 . . 4 . . w
+      bowler: abhishek-verma
+    - batsman:
+      - name: daniel-foster
+        over: c . 2 . 1 . . 0
+      - name: gurpreet-singh
+        over: . r . r . 2 r .
+      bowler: sai-karnan
+    - batsman:
+      - name: daniel-foster
+        over: . c 2 . . 2 . 2
+      - name: gurpreet-singh
+        over: 1 . . c 2 . 1 .
+      bowler: bhavik-vora
+    score: -3
+    skin: false
+  - members:
+    - donovan-grobbelar
+    - damien-gillen
+    overs:
+    - batsman:
+      - name: donovan-grobbelar
+        over: 4 . 2 . 2 . . r
+      - name: damien-gillen
+        over: . 2 . 1 . w 2 .
+      bowler: brendon-raj
+    - batsman:
+      - name: donovan-grobbelar
+        over: 2 . 7 . . 4 . w
+      - name: damien-gillen
+        over: . 1 . r 2 . 1 .
+      bowler: rohit-patel
+    - batsman:
+      - name: donovan-grobbelar
+        over: . 2 . 5 . . . .
+      - name: damien-gillen
+        over: 2 . 2 . w w w r
+      bowler: abhishek-verma
+    - batsman:
+      - name: donovan-grobbelar
+        over: . 0 2 . c . 4 .
+      - name: damien-gillen
+        over: 2 . . 1 . 5 . 2
+      bowler: anshuman-bhaduri
+    score: 47
+    skin: true
+  score: 73
+- partnerships:
+  - members:
+    - uddhav-naik
+    - amit-pothen
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: w w 2 . . 2 . 2
+      - name: amit-pothen
+        over: . . . 0 2 . 2 .
+      bowler: daniel-foster
+    - batsman:
+      - name: uddhav-naik
+        over: w 2 . w 0 0 2 .
+      - name: amit-pothen
+        over: . . 2 . . . . 2
+      bowler: jono-moffat
+    - batsman:
+      - name: uddhav-naik
+        over: . 2 . w 2 . . 0
+      - name: amit-pothen
+        over: 2 . 2 . . 0 3 .
+      bowler: richard-greenwood
+    - batsman:
+      - name: uddhav-naik
+        over: . . . . w 2 . 2
+      - name: amit-pothen
+        over: 0 s 0 2 . . 2 .
+      bowler: rohan-oberoi
+    score: 44
+    skin: true
+  - members:
+    - rohit-patel
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: 2 . . . 2 . 2 .
+      - name: anshuman-bhaduri
+        over: . 0 0 1 . 2 . 0
+      bowler: gurpreet-singh
+    - batsman:
+      - name: rohit-patel
+        over: 0 3 . . . 2 . c
+      - name: anshuman-bhaduri
+        over: . . 0 c 2 . 2 .
+      bowler: ajay-balaraman
+    - batsman:
+      - name: rohit-patel
+        over: . 0 1 . 0 2 . 2
+      - name: anshuman-bhaduri
+        over: w . . 2 . . 3 .
+      bowler: damien-gillen
+    - batsman:
+      - name: rohit-patel
+        over: 0 0 1 . . 2 . . b
+      - name: anshuman-bhaduri
+        over: . . . 0 1 . nb 1 .
+      bowler: donovan-grobbelar
+    score: 22
+    skin: true
+  - members:
+    - bhavik-vora
+    - sai-karnan
+    overs:
+    - batsman:
+      - name: bhavik-vora
+        over: 2 . . 0 1 . . 0
+      - name: sai-karnan
+        over: . w 2 . . 0 r .
+      bowler: gurpreet-singh
+    - batsman:
+      - name: bhavik-vora
+        over: . 2 . . . s 2 .
+      - name: sai-karnan
+        over: 5 . 0 0 2 . . 0
+      bowler: richard-greenwood
+    - batsman:
+      - name: bhavik-vora
+        over: 5 . . 0 1 . 0 3
+      - name: sai-karnan
+        over: . 0 5 . . 1 . .
+      bowler: daniel-foster
+    - batsman:
+      - name: bhavik-vora
+        over: w 1 . . . 5 . 2 . c
+      - name: sai-karnan
+        over: . . 0 w 2 . 2 . 2 .
+      bowler: jono-moffat
+    score: 36
+    skin: true
+  - members:
+    - brendon-raj
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: brendon-raj
+        over: 2 . . . 2 . . 0
+      - name: abhishek-verma
+        over: . 0 0 2 . 0 7 .
+      bowler: damien-gillen
+    - batsman:
+      - name: brendon-raj
+        over: w . . . . . nb 2
+      - name: abhishek-verma
+        over: . 2 2 0 w 2 . .
+      bowler: rohan-oberoi
+    - batsman:
+      - name: brendon-raj
+        over: 0 1 . . . s 2 .
+      - name: abhishek-verma
+        over: . . 0 0 3 . . 0
+      bowler: ajay-balaraman
+    - batsman:
+      - name: brendon-raj
+        over: 2 . . . 0 2 . .
+      - name: abhishek-verma
+        over: . 0 0 r . . b b
+      bowler: donovan-grobbelar
+    score: 17
+    skin: false
+  score: 119
+  us: true

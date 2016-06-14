@@ -8,32 +8,248 @@ margin: 5 runs
 skins: 2
 points: 2
 innings:
--   score: 149
-    partnerships:
-    -   score: 51
-        skin: true
-    -   score: 26
-    -   score: 23
-    -   score: 49
-        skin: true
--   score: 144
-    partnerships:
-    -   score: 26
-        members:
-        - amit-pothen
-        - uddhav-naik
-    -   score: 42
-        skin: true
-        members:
-        - sai-karnan
-        - dasith-goonatilaka
-    -   score: 37
-        skin: true
-        members:
-        - bhavik-vora
-        - rohit-patel
-    -   score: 39
-        members:
-        - brendan-raj
-        - abhishek-verma
-    us: true
+- partnerships:
+  - members:
+    - ben-jackett
+    - james-baker
+    overs:
+    - batsman:
+      - name: ben-jackett
+        over: w 0 nb 3 . 0
+      - name: james-baker
+        over: . . . . 3 .
+      bowler: brendan-raj
+    - batsman:
+      - name: ben-jackett
+        over: . 7 . . . .
+      - name: james-baker
+        over: 3 . 0 3 r 0
+      bowler: abhishek-verma
+    - batsman:
+      - name: ben-jackett
+        over: 3 . 7 . 3 .
+      - name: james-baker
+        over: . 3 . 2 . 5
+      bowler: uddhav-naik
+    - batsman:
+      - name: ben-jackett
+        over: . . 1 . 7 .
+      - name: james-baker
+        over: w c . 3 . 0
+      bowler: sai-karnan
+    score: 51
+    skin: true
+  - members:
+    - rick-goodwin
+    - adis-kulasic
+    overs:
+    - batsman:
+      - name: rick-goodwin
+        over: w r 0 3 . 1
+      - name: adis-kulasic
+        over: . . . . 3 .
+      bowler: amit-pothen
+    - batsman:
+      - name: rick-goodwin
+        over: . . 5 . . .
+      - name: adis-kulasic
+        over: r 3 . 0 0 c
+      bowler: bhavik-vora
+    - batsman:
+      - name: rick-goodwin
+        over: . c 2 . 7 .
+      - name: adis-kulasic
+        over: 1 . . r . 3
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: rick-goodwin
+        over: . . . 4 . w
+      - name: adis-kulasic
+        over: w w 4 . 3 .
+      bowler: rohit-patel
+    score: 26
+    skin: false
+  - members:
+    - brent-humphrey
+    - jason-macwilliam
+    overs:
+    - batsman:
+      - name: brent-humphrey
+        over: 1 . . . . .
+      - name: jason-macwilliam
+        over: . w w r c 0
+      bowler: bhavik-vora
+    - batsman:
+      - name: brent-humphrey
+        over: w 2 . . 4 .
+      - name: jason-macwilliam
+        over: . . 1 r . 0
+      bowler: rohit-patel
+    - batsman:
+      - name: brent-humphrey
+        over: 0 4 . . 3 .
+      - name: jason-macwilliam
+        over: . . 0 nb2 . 3
+      bowler: sai-karnan
+    - batsman:
+      - name: brent-humphrey
+        over: . . . 0 3 .
+      - name: jason-macwilliam
+        over: w 0 1 . . 0
+      bowler: amit-pothen
+    score: 23
+    skin: false
+  - members:
+    - kelsey-fagan
+    - peter-lane
+    overs:
+    - batsman:
+      - name: kelsey-fagan
+        over: w 3 . w 0 3
+      - name: peter-lane
+        over: . . 3 . . .
+      bowler: abhishek-verma
+    - batsman:
+      - name: kelsey-fagan
+        over: 0 2 . 1 . 0
+      - name: peter-lane
+        over: . . 3 . 3 .
+      bowler: brendan-raj
+    - batsman:
+      - name: kelsey-fagan
+        over: . 3 . 3 . 0
+      - name: peter-lane
+        over: 3 . 3 . 4 .
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: kelsey-fagan
+        over: . . 2 . 3 r 0
+      - name: peter-lane
+        over: w 3 . 3 . . .
+      bowler: uddhav-naik
+    score: 49
+    skin: true
+  score: 149
+- partnerships:
+  - members:
+    - amit-pothen
+    - uddhav-naik
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: w 3 . . 0 2
+      - name: uddhav-naik
+        over: . . 0 3 . .
+      bowler: ben-jackett
+    - batsman:
+      - name: amit-pothen
+        over: 3 . . 3 . w
+      - name: uddhav-naik
+        over: . 0 6 . 3 .
+      bowler: adis-kulasic
+    - batsman:
+      - name: amit-pothen
+        over: . 3 . r r .
+      - name: uddhav-naik
+        over: 3 . 0 . . w
+      bowler: rick-goodwin
+    - batsman:
+      - name: amit-pothen
+        over: 2 . r 3 . .
+      - name: uddhav-naik
+        over: . 0 . . r w
+      bowler: james-baker
+    score: 26
+    skin: false
+  - members:
+    - sai-karnan
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: sai-karnan
+        over: 3 . 7 . . .
+      - name: dasith-goonatilaka
+        over: . r . 0 w 3
+      bowler: peter-lane
+    - batsman:
+      - name: sai-karnan
+        over: . . 4 . 3 .
+      - name: dasith-goonatilaka
+        over: w 2 . 3 . 6
+      bowler: jason-macwilliam
+    - batsman:
+      - name: sai-karnan
+        over: . . . 0 6 .
+      - name: dasith-goonatilaka
+        over: 0 0 3 . . 0
+      bowler: brent-humphrey
+    - batsman:
+      - name: sai-karnan
+        over: 0 3 . . . 3
+      - name: dasith-goonatilaka
+        over: . . 0 0 r .
+      bowler: kelsey-fagan
+    score: 42
+    skin: true
+  - members:
+    - bhavik-vora
+    - rohit-patel
+    overs:
+    - batsman:
+      - name: bhavik-vora
+        over: 1 . . 0 3 .
+      - name: rohit-patel
+        over: . 0 3 . . w
+      bowler: ben-jackett
+    - batsman:
+      - name: bhavik-vora
+        over: w 3 . 3 . 0
+      - name: rohit-patel
+        over: . . 3 . 3 .
+      bowler: adis-kulasic
+    - batsman:
+      - name: bhavik-vora
+        over: . w nb3 . . .
+      - name: rohit-patel
+        over: 2 . . w w 0
+      bowler: rick-goodwin
+    - batsman:
+      - name: bhavik-vora
+        over: 0 c . . c .
+      - name: rohit-patel
+        over: . . nb 1 . 3
+      bowler: jason-macwilliam
+    score: 37
+    skin: true
+  - members:
+    - brendan-raj
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: brendan-raj
+        over: 3 . . 3 . 3
+      - name: abhishek-verma
+        over: . 2 r . 4 .
+      bowler: peter-lane
+    - batsman:
+      - name: brendan-raj
+        over: 0 0 4 . 0 0
+      - name: abhishek-verma
+        over: . . . 3 . .
+      bowler: james-baker
+    - batsman:
+      - name: brendan-raj
+        over: . 2 . 1 . .
+      - name: abhishek-verma
+        over: 1 . 2 . 0 4
+      bowler: brent-humphrey
+    - batsman:
+      - name: brendan-raj
+        over: . . . 3 . .
+      - name: abhishek-verma
+        over: 0 0 2 . 0 7
+      bowler: kelsey-fagan
+    score: 39
+    skin: false
+  score: 144
+  us: true
