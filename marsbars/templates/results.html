@@ -40,7 +40,7 @@
                         <dl>
                           <dt>Score</dt>
                             <dd class="score">{{partnership.score | negative}}</dd>
-                          {% if partnership.members %}
+                          {% if partnership.members and innings.us %}
                           <dt>Members</dt>
                             <dd>
                               <ul class="members">
