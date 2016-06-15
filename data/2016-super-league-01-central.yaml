@@ -48,7 +48,7 @@ innings:
         over: w nb 2 . . . . 0
       - name: james-baker
         over: . . . c nb nb 2 .
-      bowler: brendon-raj
+      bowler: brendan-raj
     - batsman:
       - name: robert-gilmore
         over: . 2 . 2 . c 2 .
@@ -108,7 +108,7 @@ innings:
         over: 2 . 2 . 2 . 3 .
       - name: aue-parima
         over: . 1 . nb2 . 2 . 0
-      bowler: brendon-raj
+      bowler: brendan-raj
     - batsman:
       - name: jacob-buick
         over: 5 . 5 . . 1 . .
@@ -222,29 +222,29 @@ innings:
     score: 31
     skin: true
   - members:
-    - brendon-raj
+    - brendan-raj
     - abhishek-verma
     overs:
     - batsman:
-      - name: brendon-raj
+      - name: brendan-raj
         over: 2 . 2 . . . w w
       - name: abhishek-verma
         over: . 2 . w w c . .
       bowler: rahul-chopra
     - batsman:
-      - name: brendon-raj
+      - name: brendan-raj
         over: . 3 . w 5 . . 0
       - name: abhishek-verma
         over: 2 . 5 . . w 2 .
       bowler: sam-curran
     - batsman:
-      - name: brendon-raj
+      - name: brendan-raj
         over: . . c . 2 . . 2
       - name: abhishek-verma
         over: 0 1 . 5 . 0 3 .
       bowler: josh-curran
     - batsman:
-      - name: brendon-raj
+      - name: brendan-raj
         over: c 1 r . . 2 . 1
       - name: abhishek-verma
         over: . . . 0 7 . 2 .

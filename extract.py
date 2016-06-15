@@ -9,6 +9,8 @@ def slugify(name):
     name = name.lower().replace(' ', '-')
     if name == 'sai-ganesh':
         return 'sai-karnan'
+    elif name == 'brendon-raj':
+        return 'brendan-raj'
     elif name == 'neil-unknown':
         return 'anshuman-bhaduri'
     return name

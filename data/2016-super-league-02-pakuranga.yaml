@@ -18,7 +18,7 @@ innings:
         over: w 0 2 . . . b 0
       - name: ajay-balaraman
         over: . . . 0 0 1 . .
-      bowler: brendon-raj
+      bowler: brendan-raj
     - batsman:
       - name: rohan-oberoi
         over: . 0 2 . 2 . 0 0
@@ -108,7 +108,7 @@ innings:
         over: 4 . 2 . 2 . . r
       - name: damien-gillen
         over: . 2 . 1 . w 2 .
-      bowler: brendon-raj
+      bowler: brendan-raj
     - batsman:
       - name: donovan-grobbelar
         over: 2 . 7 . . 4 . w
@@ -222,29 +222,29 @@ innings:
     score: 36
     skin: true
   - members:
-    - brendon-raj
+    - brendan-raj
     - abhishek-verma
     overs:
     - batsman:
-      - name: brendon-raj
+      - name: brendan-raj
         over: 2 . . . 2 . . 0
       - name: abhishek-verma
         over: . 0 0 2 . 0 7 .
       bowler: damien-gillen
     - batsman:
-      - name: brendon-raj
+      - name: brendan-raj
         over: w . . . . . nb 2
       - name: abhishek-verma
         over: . 2 2 0 w 2 . .
       bowler: rohan-oberoi
     - batsman:
-      - name: brendon-raj
+      - name: brendan-raj
         over: 0 1 . . . s 2 .
       - name: abhishek-verma
         over: . . 0 0 3 . . 0
       bowler: ajay-balaraman
     - batsman:
-      - name: brendon-raj
+      - name: brendan-raj
         over: 2 . . . 0 2 . .
       - name: abhishek-verma
         over: . 0 0 r . . b b
