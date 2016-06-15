@@ -69,7 +69,9 @@ def localtime(s):
     utc = pytz.timezone('UTC')
     utc_time = s.replace(tzinfo=utc)
     # stftime format string might be Linux specific.
-    return utc_time.astimezone(tz).strftime('%d-%b %-I:%M%P').replace(':00','')
+    date = utc_time.astimezone(tz).strftime('%d-%b')
+    time = utc_time.astimezone(tz).strftime('%-I:%M%P').replace(':00','')
+    return Markup(u'{} <span class="time">{}</span>'.format(date, time))
 
 
 class StatisticsMixin(object):

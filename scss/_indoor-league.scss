@@ -38,7 +38,13 @@
             margin-bottom: $base-lh*1em*1em/2/$datetime-fs;
             margin-left: 0.5em*1em/$datetime-fs;
             float: left;
-            width: 40%;
+            width: 8em;
+            position: relative;
+            .time {
+                display: inline-block;
+                position: absolute;
+                left: 4em;
+            }
         }
         .court, .venue {
             float: left;
