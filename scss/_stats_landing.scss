@@ -1,7 +1,7 @@
+
 .active-players {
     @extend %nice-display-list;
-    @include shortened-long-names;
     li {
-        @include click-cards;
+        @include basic-id-card;
     }
 }

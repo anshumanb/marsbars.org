@@ -10,14 +10,39 @@ $bg-color: #ffffff;
     @return $lh * (floor($fontsize/$lh/1em) + 1) * 1em/$fontsize;
 }
 
-@mixin adjust-font-size($size, $lh_fs: null) {
-   $lh_fs: if($lh_fs, $lh_fs, $size);
+@mixin adjust-font-size($size) {
    font-size: $size;
-   line-height: line-height($lh_fs);
+   line-height: line-height($size);
 }
 
 @mixin secondary-text {
     color: #555555;
+}
+
+// Takes ratio of line-height. Returns em.
+@function rhythm($ratio, $fs: $base-fs, $lh: $base-lh) {
+    @return $lh * $ratio * 1em * 1em / $fs;
+}
+
+@function root-em($val, $fs: $base-fs) {
+    @return $val * 1em / $fs;
+}
+
+// Works with em units for horizontal spacing and ratio for vertical.
+@mixin spacing($property, $north, $east, $south, $west, $fs: $base-fs) {
+    $top: rhythm($north, $fs);
+    $bottom: rhythm($south, $fs);
+    $right: root-em($east, $fs);
+    $left: root-em($west, $fs);
+    #{$property}: $top $right $bottom $left;
+}
+
+@mixin padding($north, $east: $north, $south: $north, $west: $east, $fs: $base-fs) {
+    @include spacing('padding', $north, $east, $south, $west, $fs);
+}
+
+@mixin margin($north, $east: $north, $south: $north, $west: $east, $fs: $base-fs) {
+    @include spacing('margin', $north, $east, $south, $west, $fs);
 }
 
 h1, h2, h3 {

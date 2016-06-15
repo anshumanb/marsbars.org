@@ -6,6 +6,8 @@ $ms-ratio: 1.25;
 
 $base-fs: ms(0);
 
+$narrow-breakpoint: 19em; //320px-1em
+
 @import '_h5bp';
 @import '_typography';
 @import '_layout';
