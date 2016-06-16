@@ -45,16 +45,17 @@ $profile-sprites: (
 
 .profile {
     float: left;
-    margin: 0 0.5em 0.75em;
+    margin: 0 10/3*1% rhythm(1/2);
     border-radius: 5px;
-    @include profile-pic(12em);
+    @include profile-pic($avatar-height);
     //@include profile-pic($avatar-height);
     & + h3 {
         padding-top: rhythm(1, ms(4));
     }
-    //@media screen and (min-width: $narrow-breakpoint) {
-    //    @include profile-pic(12em);
-    //}
+    @media screen and (min-width: $narrow-breakpoint) {
+        @include profile-pic(12em);
+        @include margin(0, 0.5em, 1/2);
+    }
 }
 .avatar {
     @include profile-pic($avatar-height);
@@ -68,7 +69,10 @@ $profile-sprites: (
 @mixin non-click-cards {
     @include cards;
     width: 7em;
-    margin: 0 1.5em $base-lh*1em 0.5em;
+    margin: 0 0 rhythm(1) 5/3*1%;
+    @media screen and (min-width: $narrow-breakpoint) {
+        @include margin(0, 1.5em, 1, 0.5em);
+    }
 }
 
 %stats {
