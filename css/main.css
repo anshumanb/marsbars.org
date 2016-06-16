@@ -221,7 +221,7 @@ dl, dd {
   margin: 0;
   padding: 0; }
 
-.no-css-aid, .active-players dt, .matches dt, .player-league-stats .league dt, .player-partner-stats .league dt, .player-partner-stats .name, .player-partner-stats .name dt, .player-partner-stats .shortened-name dt, .player-partner-stats .player-avatar dt, .active-players .name, .all-innings .partnerships .name {
+.no-css-aid, .active-players dt, .matches dt, .player-league-stats .league dt, .player-partner-stats .league dt, .player-partner-stats .name, .player-partner-stats > li .name dt, .player-partner-stats > li .shortened-name dt, .player-partner-stats > li .avatar-frame dt, .all-innings .partnerships .name {
   display: none; }
 
 .active-players, .matches, .main-nav ul, #container nav ul, .overall-player-stats, .player-league-stats > li ul, .player-partner-stats > li ul, .player-league-stats, .player-partner-stats {
@@ -269,44 +269,73 @@ h3 {
 
 .profile {
   float: left;
-  margin: 0 0.5em 0.75em;
+  margin: 0 3.3333333333% 0.75em;
+  border-radius: 5px;
   background-image: url("/img/profile.png");
   background-size: cover;
-  border-radius: 5px;
-  height: 12em;
-  width: 9em; }
+  height: 9em;
+  width: 6.75em; }
   .profile.abhishek-verma {
     background-position: 0em; }
   .profile.amit-pothen {
-    background-position: -9em; }
+    background-position: -6.75em; }
   .profile.anshuman-bhaduri {
-    background-position: -18em; }
+    background-position: -13.5em; }
   .profile.bhavik-vora {
-    background-position: -27em; }
+    background-position: -20.25em; }
   .profile.brendan-raj {
-    background-position: -36em; }
+    background-position: -27em; }
   .profile.dasith-goonatilaka {
-    background-position: -45em; }
+    background-position: -33.75em; }
   .profile.jared-mascarenhas {
-    background-position: -54em; }
+    background-position: -40.5em; }
   .profile.kaushik-balan {
-    background-position: -63em; }
+    background-position: -47.25em; }
   .profile.rohit-patel {
-    background-position: -72em; }
+    background-position: -54em; }
   .profile.sai-karnan {
-    background-position: -81em; }
+    background-position: -60.75em; }
   .profile.smit-shah {
-    background-position: -90em; }
+    background-position: -67.5em; }
   .profile.uddhav-naik {
-    background-position: -99em; }
+    background-position: -74.25em; }
   .profile + h3 {
     padding-top: 0.96em; }
+  @media screen and (min-width: 19em) {
+    .profile {
+      background-image: url("/img/profile.png");
+      background-size: cover;
+      height: 12em;
+      width: 9em;
+      margin: 0em 0.5em 0.75em 0.5em; }
+      .profile.abhishek-verma {
+        background-position: 0em; }
+      .profile.amit-pothen {
+        background-position: -9em; }
+      .profile.anshuman-bhaduri {
+        background-position: -18em; }
+      .profile.bhavik-vora {
+        background-position: -27em; }
+      .profile.brendan-raj {
+        background-position: -36em; }
+      .profile.dasith-goonatilaka {
+        background-position: -45em; }
+      .profile.jared-mascarenhas {
+        background-position: -54em; }
+      .profile.kaushik-balan {
+        background-position: -63em; }
+      .profile.rohit-patel {
+        background-position: -72em; }
+      .profile.sai-karnan {
+        background-position: -81em; }
+      .profile.smit-shah {
+        background-position: -90em; }
+      .profile.uddhav-naik {
+        background-position: -99em; } }
 
 .avatar {
-  margin: 0 auto;
   background-image: url("/img/profile.png");
   background-size: cover;
-  border-radius: 5px;
   height: 9em;
   width: 6.75em; }
   .avatar.abhishek-verma {
@@ -335,10 +364,7 @@ h3 {
     background-position: -74.25em; }
 
 .overall-player-stats, .player-league-stats > li ul, .player-partner-stats > li ul {
-  float: left;
-  text-align: center;
-  width: 7em;
-  margin: 0 1.5em 1.5em 0.5em; }
+  text-align: center; }
   .overall-player-stats li, .player-league-stats > li ul li, .player-partner-stats > li ul li {
     position: relative; }
   .overall-player-stats dt, .player-league-stats > li ul dt, .player-partner-stats > li ul dt {
@@ -347,29 +373,38 @@ h3 {
     width: 100%;
     display: block;
     position: absolute;
+    bottom: 0;
     color: #555555; }
-  .overall-player-stats .runs dt, .player-league-stats > li ul .runs dt, .player-partner-stats > li ul .runs dt {
-    bottom: 0; }
-  .overall-player-stats .runs dd, .player-league-stats > li ul .runs dd, .player-partner-stats > li ul .runs dd {
-    font-size: 3.0517578125em;
-    line-height: 1.2;
-    padding-bottom: 0.27456em; }
-  .overall-player-stats .average dt, .player-league-stats > li ul .average dt, .player-partner-stats > li ul .average dt, .overall-player-stats .innings dt, .player-league-stats > li ul .innings dt, .player-partner-stats > li ul .innings dt, .overall-player-stats .skin dt, .player-league-stats > li ul .skin dt, .player-partner-stats > li ul .skin dt {
-    bottom: 0; }
+  .overall-player-stats .runs, .player-league-stats > li ul .runs, .player-partner-stats > li ul .runs {
+    width: 7em; }
+    .overall-player-stats .runs dd, .player-league-stats > li ul .runs dd, .player-partner-stats > li ul .runs dd {
+      font-size: 3.0517578125em;
+      line-height: 1.2;
+      padding-bottom: 0.27456em; }
   .overall-player-stats .average, .player-league-stats > li ul .average, .player-partner-stats > li ul .average, .overall-player-stats .innings, .player-league-stats > li ul .innings, .player-partner-stats > li ul .innings {
-    float: left;
-    width: 50%;
-    box-sizing: border-box; }
+    width: 3.5em;
+    float: left; }
     .overall-player-stats .average dd, .player-league-stats > li ul .average dd, .player-partner-stats > li ul .average dd, .overall-player-stats .innings dd, .player-league-stats > li ul .innings dd, .player-partner-stats > li ul .innings dd {
       font-size: 1.40625em;
       line-height: 1.0666666667;
-      padding: 0.2666666667em 0 0.8em; }
+      padding: 0.2666666667em 0 0.8em 0; }
   .overall-player-stats .skin, .player-league-stats > li ul .skin, .player-partner-stats > li ul .skin {
+    width: 7em;
     clear: both; }
     .overall-player-stats .skin dd, .player-league-stats > li ul .skin dd, .player-partner-stats > li ul .skin dd {
       font-size: 1.40625em;
       line-height: 1.0666666667;
-      padding: 0.2666666667em 0 0.8em; }
+      padding: 0.2666666667em 0 0.8em 0; }
+
+.overall-player-stats {
+  float: left;
+  text-align: center;
+  width: 7em;
+  margin: 0 0 1.5em 1.6666666667%;
+  float: left; }
+  @media screen and (min-width: 19em) {
+    .overall-player-stats {
+      margin: 0em 1.5em 1.5em 0.5em; } }
 
 .player-league-stats > li ul, .player-partner-stats > li ul {
   margin: 0;
@@ -386,65 +421,74 @@ h3 {
   float: left;
   text-align: center;
   width: 7em;
-  margin: 0 1.5em 1.5em 0.5em; }
+  margin: 0 0 1.5em 1.6666666667%; }
+  @media screen and (min-width: 19em) {
+    .player-league-stats > li {
+      margin: 0em 1.5em 1.5em 0.5em; } }
 
 .player-league-stats + h3 {
   padding-top: 0.96em; }
 
-.player-partner-stats > li {
-  float: left;
-  text-align: center;
-  margin: 0 1em 1em 0em; }
-  .player-partner-stats > li a {
-    width: 7em;
-    display: inline-block;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 0 0.5em 0.5em;
-    border: 1px solid #ffffff; }
-    .player-partner-stats > li a:link, .player-partner-stats > li a:visited, .player-partner-stats > li a:hover, .player-partner-stats > li a:active {
+.player-partner-stats > li, .active-players li {
+  position: relative;
+  border-top: 1px solid #C4C4C4; }
+  .player-partner-stats > li a, .active-players li a {
+    min-height: 9em;
+    display: block;
+    text-decoration: none; }
+    .player-partner-stats > li a:link, .active-players li a:link, .player-partner-stats > li a:visited, .active-players li a:visited, .player-partner-stats > li a:hover, .active-players li a:hover, .player-partner-stats > li a:active, .active-players li a:active {
       color: #222; }
-    .player-partner-stats > li a:hover, .player-partner-stats > li a:active {
-      background-color: #FFA812;
-      border: 1px solid #9c661f;
-      position: relative;
-      top: -0.5em;
-      padding: 0.5em 0.5em 0; }
-    .player-partner-stats > li a .name, .player-partner-stats > li a .shortened-name {
-      color: #003F87;
-      font-weight: bold; }
+
+.player-partner-stats > li {
+  /*@media screen and (min-width: 15em * 2) {
+        float: left;
+        border-bottom: 1px solid $sep-color;
+        border-top: none;
+        border-right: 1px solid $sep-color;
+        border-radius: 0 0 5px 0;
+        padding-right: 0.5em;
+    }*/ }
+  .player-partner-stats > li .avatar-frame {
+    position: absolute;
+    top: 0.75em;
+    left: 0; }
+  .player-partner-stats > li ul {
+    margin-left: 7.25em; }
+  .player-partner-stats > li .shortened-name {
+    position: absolute;
+    top: 9.75em;
+    left: 0;
+    width: 6.75em; }
+  .player-partner-stats > li a {
+    padding: 0.75em 0; }
+    .player-partner-stats > li a .avatar {
+      border-radius: 0 5px 5px 0; }
 
 .player-partner-stats + h3 {
   padding-top: 0.96em; }
 
-.active-players li {
-  float: left;
-  text-align: center;
-  margin: 0 1em 1em 0em; }
-  .active-players li a {
-    width: 7em;
-    display: inline-block;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 0 0.5em 0.5em;
-    border: 1px solid #ffffff; }
-    .active-players li a:link, .active-players li a:visited, .active-players li a:hover, .active-players li a:active {
-      color: #222; }
-    .active-players li a:hover, .active-players li a:active {
-      background-color: #FFA812;
-      border: 1px solid #9c661f;
-      position: relative;
-      top: -0.5em;
-      padding: 0.5em 0.5em 0; }
-    .active-players li a .name, .active-players li a .shortened-name {
-      color: #003F87;
-      font-weight: bold; }
+.active-players li .avatar {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.active-players li a > dl {
+  margin-left: 7.25em; }
+
+.active-players li .name {
+  font-size: 1.25em;
+  line-height: 1.2;
+  padding: 0.6em 0 0.6em 0;
+  width: 5em; }
+  @media screen and (min-width: 19em) {
+    .active-players li .name {
+      width: auto; } }
 
 .league-id, .league-grade {
   color: #555555;
   font-size: 0.9em;
   line-height: 1.6666666667;
-  margin: 0 0 0 0.5555555556em;
+  margin: 0em 0 0em 0.5555555556em;
   position: relative;
   top: -0.5555555556em; }
 
@@ -463,14 +507,17 @@ h3 {
   .matches .match .contest {
     font-size: 1.25em;
     line-height: 1.2;
-    margin-top: 1.2em;
-    margin-left: 0.4em; }
+    margin: 1.2em 0 0em 0.4em; }
   .matches .match .datetime {
     color: #555555;
-    margin-bottom: 0.75em;
-    margin-left: 0.5em;
+    margin: 0em 0 0.75em 0.5em;
     float: left;
-    width: 40%; }
+    width: 8em;
+    position: relative; }
+    .matches .match .datetime .time {
+      display: inline-block;
+      position: absolute;
+      left: 4em; }
   .matches .match .court, .matches .match .venue {
     float: left;
     font-size: 0.9em;
