@@ -1,17 +1,21 @@
-{% extends "indoor_league.html" %}
+{% extends "base.html" %}
 
 {% set active_page = "results" %}
 
-{% block league_details %}
+{% block content %}
 
-{% if league.completed_matches.count() %}
-<ul class="matches indoor {{league.slug}}">
-  {% for match in league.completed_matches %}
-  <li class="match {{match.result}}">
+<h2>Results</h2>
+
+{% if matches.count() %}
+<ul class="matches results">
+  {% for match in matches %}
+  <li class="match {{match.league.slug}} {{match.result}}">
     <h4 class="no-css-aid">Match details</h4>
     <dl>
       <dt>Contest</dt>
         <dd class="contest">{{match.opponent}}</dd>
+      <dt>League</dt>
+        <dd class="league">{{match.league.short_name}}</dd>
       <dt>Date and time</dt>
         <dd class="datetime">{{match.datetime.strftime('%d-%b')}}</dd>
       <dt>Innings</dt>
@@ -70,4 +74,4 @@
 <p>No results yet, buddy.</p>
 {% endif %}
 
-{% endblock league_details %}
+{% endblock content %}

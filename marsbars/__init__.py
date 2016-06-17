@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, send_from_directory
+from flask import (Flask, render_template, send_from_directory,
+                   Markup, url_for)
 from flask_sqlalchemy import SQLAlchemy
-from flask import Markup
 import pytz
 
 
@@ -28,21 +28,51 @@ def league(slug, template):
     return render_template(template,
             league=league)
 
+def redirect(to):
+    return render_template('redirect.html', to=url_for(to))
+
 @app.route('/')
 def index():
     return render_template('index.html', players=Player.query.filter(Player.active==True))
 
-@app.route('/2016/<slug>/fixtures/')
-def fixtures(slug):
-    return league(slug, 'fixtures.html')
+@app.route('/fixtures/')
+def fixtures():
+    matches = IndoorMatch.query.filter_by(result=None).order_by(
+                    IndoorMatch.datetime.desc())
+    return render_template('fixtures.html', matches=matches)
 
-@app.route('/2016/<slug>/results/')
-def results(slug):
-    return league(slug, 'results.html')
+@app.route('/results/')
+def results():
+    matches = IndoorMatch.query.filter(db.not_(
+                    IndoorMatch.result==None)).order_by(
+                    IndoorMatch.datetime.desc())
+    return render_template('results.html', matches=matches)
+
+# Combining multiple routes into one function resulted in only
+# one URL being frozen
+@app.route('/2016/central-autumn/fixtures/')
+def central_autumn_fixtures():
+    return redirect('fixtures')
+
+@app.route('/2016/super-league/fixtures/')
+def super_league_fixtures():
+    return redirect('fixtures')
+
+@app.route('/2016/central-autumn/results/')
+def central_autumn_results():
+    return redirect('results')
+
+@app.route('/2016/super-league/results/')
+def super_league_results():
+    return redirect('results')
 
 @app.route('/stats/')
 def stats():
-    return render_template('stats_landing.html',
+    return redirect('profiles')
+
+@app.route('/profiles/')
+def profiles():
+    return render_template('profiles.html',
             players=Player.query.filter(Player.active==True).order_by(Player.name))
 
 @app.route('/<slug>/')

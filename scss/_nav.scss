@@ -1,23 +1,36 @@
+nav {
+    .active a {
+        background-color: #FFA500;
+        border-left: 1px solid #9c661f;
+        border-right: 1px solid #9c661f;
+        color: $body-text-color;
+        font-weight: bold;
+    }
+}
+
 .main-nav {
     text-align: center;
     background-color: #00688B;
     ul {
         @extend %display-list;
+        @include contains-floats;
+        max-width: 36em;
+        margin: 0 auto;
     }
     li {
-        display: inline;
+        float: left;
+        width: 33%;
     }
     a {
-        padding: 0.3em 0.2em;
-        display: inline-block;
-        width: 8em;
+        $fs: ms(2);
+        @include adjust-font-size($fs);
+        @include padding(1/2, 0.2em, $fs: $fs);
+        display: block;
         //@include adjust-font-size(ms(-1));
         text-decoration: none;
-        font-weight: bold;
+        //font-weight: bold;
         //font-variant: small-caps;
-        &:link, &:visited, &:hover, &:active {
-            color: white;
-        }
+        color: white;
     }
 }
 
@@ -37,12 +50,5 @@
         padding: $p 2em*1em / ms(3);
         color: white;
         text-decoration: none;
-    }
-    .active a {
-        background-color: #FFA500;
-        border-left: 1px solid #9c661f;
-        border-right: 1px solid #9c661f;
-        color: $body-text-color;
-        font-weight: bold;
     }
 }

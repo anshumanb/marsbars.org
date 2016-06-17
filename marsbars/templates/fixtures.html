@@ -1,23 +1,25 @@
-{% extends "indoor_league.html" %}
+{% extends "base.html" %}
 
 {% set active_page = "fixtures" %}
 
-{% block league_details %}
+{% block content %}
 
-{% if league.upcoming_matches.count() %}
-<ul class="matches indoor {{league.slug}}">
-  {% for match in league.upcoming_matches|reverse %}
-  <li class="match upcoming">
+<h2>Fixtures</h2>
+
+{% if matches.count() %}
+<ul class="matches fixtures">
+  {% for match in matches | reverse %}
+  <li class="match upcoming {{match.league.slug}}">
     <h4 class="no-css-aid">Match details</h4>
     <dl>
       <dt>Contest</dt>
         <dd class="contest">{{match.opponent}}</dd>
+      <dt>League</dt>
+        <dd class="league">{{match.league.short_name}}</dd>
       <dt>Date and time</dt>
         <dd class="datetime">{{match.datetime | localtime}}</dd>
-      <dt>Indoor centre</dt>
-        <dd class="venue">at {{match.venue}}</dd>
-      <dt>Court</dt>
-        <dd class="court">on Court {{match.court}}</dd>
+      <dt>Venue</dt>
+        <dd class="venue">at {{match.venue}} on Court {{match.court}}</dd>
     </dl>
   </li>
   {% endfor %}
@@ -26,4 +28,4 @@
 <p>Sorry, no upcoming matches.</p>
 {% endif %}
 
-{% endblock league_details %}
+{% endblock content %}

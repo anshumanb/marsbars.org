@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 
+{% set active_page = "profiles" %}
+
 {% block content %}
 
-<h2>Player Statistics</h2>
+<h2>Player Profiles</h2>
 <ul class="active-players">
   {% for player in players %}
   <li>

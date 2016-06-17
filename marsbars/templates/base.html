@@ -1,3 +1,9 @@
+{% set navigation_bar = [
+  (url_for('fixtures'), 'fixtures', 'Fixtures'),
+  (url_for('results'), 'results', 'Results'),
+  (url_for('profiles'), 'profiles', 'Profiles'),
+] -%}
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -29,12 +35,12 @@
         </header>
         <nav class="main-nav">
             <ul>
-                <li><a href="{{url_for('fixtures', slug='super-league')}}">
-                    Super League</a></li>
-                <li><a href="{{url_for('fixtures', slug='central-autumn')}}">
-                    Central Autumn</a></li>
-                <li><a href="{{url_for('stats')}}">
-                    Stats</a></li>
+                {% for href, id, caption in navigation_bar %}
+                <li
+                  {% if id == active_page %}
+                  class="active"{% endif %}><a 
+                  href="{{ href|e }}">{{ caption|e }}</a></li>
+                {% endfor %}
             </ul>
         </nav>
         <div id="container">
