@@ -104,6 +104,19 @@ def localtime(s):
     return Markup(u'{} <span class="time">{}</span>'.format(date, time))
 
 
+OUTS = ['ro', 'r', 'st', 's', 'lbw', 'lb', 'h', 'hw', 'm', 'c', 'b']
+
+def calc_run(outcome, inhouse_league):
+    if outcome in OUTS:
+        result = -5
+    elif 'w' in outcome or 'nb' in outcome:
+        additional = outcome.strip('nbw')
+        result = 3 if 'w' in outcome  and inhouse_league else 2
+        result += int(additional) if additional != '' else 0
+    else:
+        result = int(outcome)
+    return result
+
 class StatisticsMixin(object):
     @property
     def pships(self):
@@ -126,7 +139,7 @@ class StatisticsMixin(object):
     def ave_partnership_runs(self):
         if self.innings == 0:
             return 0
-        return int(round(float(self.partnership_runs) / self.innings))
+        return float(self.partnership_runs) / self.innings
 
 
 class PlayerBase(StatisticsMixin):
@@ -192,6 +205,69 @@ class Player(db.Model, StatisticsMixin):
             if query.count() > 0:
                 leagues.append(PlayerLeague(league=league, query=query))
         return leagues
+
+    def _calc_runs(self, deliveries):
+        balls = [calc_run(d.outcome, d.over._is_central_inhouse())
+                 for d in deliveries]
+        return sum(balls)
+
+
+    @property
+    def runs_scored(self):
+        return self._calc_runs(self.balls_faced.all())
+
+    @property
+    def deliveries_faced(self):
+        return self.balls_faced.count()
+
+    @property
+    def batting_ave(self):
+        outs = self.outs
+        return float(self.runs_scored)/outs if outs != 0 else 0
+
+    @property
+    def batting_strike_rate(self):
+        balls = self.deliveries_faced
+        return float(self.runs_scored)*100/balls if balls != 0 else 0
+
+    @property
+    def outs(self):
+        return len([i for i in self.balls_faced.all() if i.outcome in OUTS])
+
+    @property
+    def sevens(self):
+        return len([i for i in self.balls_faced.all()
+                    if calc_run(i.outcome, False) >= 7])
+
+    @property
+    def bowling_economy(self):
+        overs = self.num_overs_bowled
+        return float(self.runs_conceded)/overs if overs != 0 else 0
+
+    @property
+    def wickets(self):
+        return reduce(lambda x, y: x + y.wickets, self.overs_bowled.all(), 0)
+
+    @property
+    def bowling_ave(self):
+        wickets = self.wickets
+        return float(self.runs_conceded)/wickets if wickets != 0 else 0
+
+    @property
+    def num_overs_bowled(self):
+        return self.overs_bowled.count()
+
+    @property
+    def runs_conceded(self):
+        return reduce(lambda x, y: x + y.runs, self.overs_bowled.all(), 0)
+
+    @property
+    def wides(self):
+        return reduce(lambda x, y: x + y.wides, self.overs_bowled.all(), 0)
+
+    @property
+    def no_balls(self):
+        return reduce(lambda x, y: x + y.no_balls, self.overs_bowled.all(), 0)
 
     @property
     def partners(self):
@@ -338,3 +414,81 @@ class IndoorPartnership(db.Model):
 
     def __repr__(self):
         return '<IndoorPartnership {}:{}>'.format(self.position, self.score)
+
+class IndoorOver(db.Model):
+    __tablname__ = 'indoor_over'
+    id = db.Column(db.Integer, primary_key=True)
+    position = db.Column(db.Integer)
+    partnership_id = db.Column(db.Integer, db.ForeignKey('indoor_partnership.id'))
+    partnership = db.relationship('IndoorPartnership',
+                      backref=db.backref('overs',
+                                order_by='IndoorOver.position',
+                                lazy='dynamic'))
+    bowler_id = db.Column(db.Integer, db.ForeignKey('player.id'))
+    bowler = db.relationship('Player',
+                      backref=db.backref('overs_bowled',
+                                lazy='dynamic'))
+
+    def _detail(self):
+        return map(lambda d: d.outcome, self.deliveries)
+
+    def _is_central_inhouse(self):
+        return self.partnership.innings.match.league.slug != 'super-league'
+
+    @property
+    def runs(self):
+        total = 0
+        for i in self._detail():
+            total += calc_run(i, self._is_central_inhouse())
+        return total
+
+    @property
+    def wickets(self):
+        total = 0
+        for i in self._detail():
+            total += 1 if i in OUTS else 0
+        return total
+
+    def _calc_extras(self, extra):
+        total = 0
+        for i in self._detail():
+            if extra in i:
+                total += 1
+                additional = i.strip(extra)
+                total += int(additional) if additional != '' else 0
+        return total
+
+    @property
+    def wides(self):
+        return self._calc_extras('w')
+
+    @property
+    def no_balls(self):
+        return self._calc_extras('nb')
+
+    def __init__(self, position, partnership, bowler):
+        self.position = position
+        self.partnership = partnership
+        self.bowler = bowler
+
+
+class IndoorBall(db.Model):
+    __tablename__ = 'indoor_ball'
+    id = db.Column(db.Integer, primary_key=True)
+    over_id = db.Column(db.Integer, db.ForeignKey('indoor_over.id'))
+    over = db.relationship('IndoorOver',
+                      backref=db.backref('deliveries',
+                                order_by='IndoorBall.position',
+                                lazy='dynamic'))
+    position = db.Column(db.Integer)
+    batsman_id = db.Column(db.Integer, db.ForeignKey('player.id'))
+    batsman = db.relationship('Player',
+                      backref=db.backref('balls_faced',
+                                lazy='dynamic'))
+    outcome = db.Column(db.String(5))
+
+    def __init__(self, position, over, batsman, outcome):
+        self.position = position
+        self.over = over
+        self.batsman = batsman
+        self.outcome = outcome

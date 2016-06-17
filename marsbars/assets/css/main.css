@@ -221,28 +221,39 @@ dl, dd {
   margin: 0;
   padding: 0; }
 
-.no-css-aid, .active-players dt, .matches dt, .player-league-stats .league dt, .player-partner-stats .league dt, .player-partner-stats .name, .player-partner-stats > li .name dt, .player-partner-stats > li .shortened-name dt, .player-partner-stats > li .avatar-frame dt, .all-innings .partnerships .name {
+.no-css-aid, .active-players dt, .matches dt, .player-league-stats .league dt, .player-individual-stats .league dt, .player-partner-stats .league dt, .player-league-stats .facet dt, .player-individual-stats .facet dt, .player-partner-stats .facet dt, .player-partner-stats .name, .player-partner-stats > li .name dt, .player-partner-stats > li .shortened-name dt, .player-partner-stats > li .avatar-frame dt, .all-innings .partnerships .name {
   display: none; }
 
-.active-players, .matches, .main-nav ul, #container nav ul, .overall-player-stats, .player-league-stats > li ul, .player-partner-stats > li ul, .player-league-stats, .player-partner-stats {
+.active-players, .matches, .main-nav ul, #container nav ul, .overall-player-stats, .player-league-stats > li ul, .player-individual-stats > li ul, .player-partner-stats > li ul, .player-league-stats, .player-individual-stats, .player-partner-stats {
   margin: 0;
   padding: 0; }
-  .active-players li, .matches li, .main-nav ul li, #container nav ul li, .overall-player-stats li, .player-league-stats li, .player-partner-stats li {
+  .active-players li, .matches li, .main-nav ul li, #container nav ul li, .overall-player-stats li, .player-league-stats li, .player-individual-stats li, .player-partner-stats li {
     list-style-type: none; }
+
+nav .active a {
+  background-color: #FFA500;
+  border-left: 1px solid #9c661f;
+  border-right: 1px solid #9c661f;
+  color: #222;
+  font-weight: bold; }
 
 .main-nav {
   text-align: center;
   background-color: #00688B; }
+  .main-nav ul {
+    overflow: auto;
+    max-width: 36em;
+    margin: 0 auto; }
   .main-nav li {
-    display: inline; }
+    float: left;
+    width: 33%; }
   .main-nav a {
-    padding: 0.3em 0.2em;
-    display: inline-block;
-    width: 8em;
+    font-size: 1.25em;
+    line-height: 1.2;
+    padding: 0.6em 0.16em 0.6em 0.16em;
+    display: block;
     text-decoration: none;
-    font-weight: bold; }
-    .main-nav a:link, .main-nav a:visited, .main-nav a:hover, .main-nav a:active {
-      color: white; }
+    color: white; }
 
 #container nav {
   text-align: center; }
@@ -257,12 +268,6 @@ dl, dd {
     padding: 0.5333333333em 1.4222222222em;
     color: white;
     text-decoration: none; }
-  #container nav .active a {
-    background-color: #FFA500;
-    border-left: 1px solid #9c661f;
-    border-right: 1px solid #9c661f;
-    color: #222;
-    font-weight: bold; }
 
 h3 {
   clear: both; }
@@ -363,11 +368,11 @@ h3 {
   .avatar.uddhav-naik {
     background-position: -74.25em; }
 
-.overall-player-stats, .player-league-stats > li ul, .player-partner-stats > li ul {
+.overall-player-stats, .player-league-stats > li ul, .player-individual-stats > li ul, .player-partner-stats > li ul {
   text-align: center; }
-  .overall-player-stats li, .player-league-stats > li ul li, .player-partner-stats > li ul li {
+  .overall-player-stats li, .player-league-stats > li ul li, .player-individual-stats > li ul li, .player-partner-stats > li ul li {
     position: relative; }
-  .overall-player-stats dt, .player-league-stats > li ul dt, .player-partner-stats > li ul dt {
+  .overall-player-stats dt, .player-league-stats > li ul dt, .player-individual-stats > li ul dt, .player-partner-stats > li ul dt {
     font-size: 0.8em;
     text-transform: lowercase;
     width: 100%;
@@ -375,23 +380,23 @@ h3 {
     position: absolute;
     bottom: 0;
     color: #555555; }
-  .overall-player-stats .runs, .player-league-stats > li ul .runs, .player-partner-stats > li ul .runs {
+  .overall-player-stats .runs, .player-league-stats > li ul .runs, .player-individual-stats > li ul .runs, .player-partner-stats > li ul .runs, .overall-player-stats .bowling-economy, .player-league-stats > li ul .bowling-economy, .player-individual-stats > li ul .bowling-economy, .player-partner-stats > li ul .bowling-economy {
     width: 7em; }
-    .overall-player-stats .runs dd, .player-league-stats > li ul .runs dd, .player-partner-stats > li ul .runs dd {
+    .overall-player-stats .runs dd, .player-league-stats > li ul .runs dd, .player-individual-stats > li ul .runs dd, .player-partner-stats > li ul .runs dd, .overall-player-stats .bowling-economy dd, .player-league-stats > li ul .bowling-economy dd, .player-individual-stats > li ul .bowling-economy dd, .player-partner-stats > li ul .bowling-economy dd {
       font-size: 3.0517578125em;
       line-height: 1.2;
       padding-bottom: 0.27456em; }
-  .overall-player-stats .average, .player-league-stats > li ul .average, .player-partner-stats > li ul .average, .overall-player-stats .innings, .player-league-stats > li ul .innings, .player-partner-stats > li ul .innings {
+  .overall-player-stats .average, .player-league-stats > li ul .average, .player-individual-stats > li ul .average, .player-partner-stats > li ul .average, .overall-player-stats .innings, .player-league-stats > li ul .innings, .player-individual-stats > li ul .innings, .player-partner-stats > li ul .innings, .overall-player-stats .strike-rate, .player-league-stats > li ul .strike-rate, .player-individual-stats > li ul .strike-rate, .player-partner-stats > li ul .strike-rate, .overall-player-stats .wickets, .player-league-stats > li ul .wickets, .player-individual-stats > li ul .wickets, .player-partner-stats > li ul .wickets, .overall-player-stats .bowling-average, .player-league-stats > li ul .bowling-average, .player-individual-stats > li ul .bowling-average, .player-partner-stats > li ul .bowling-average, .overall-player-stats .outs, .player-league-stats > li ul .outs, .player-individual-stats > li ul .outs, .player-partner-stats > li ul .outs, .overall-player-stats .sevens, .player-league-stats > li ul .sevens, .player-individual-stats > li ul .sevens, .player-partner-stats > li ul .sevens, .overall-player-stats .wides, .player-league-stats > li ul .wides, .player-individual-stats > li ul .wides, .player-partner-stats > li ul .wides, .overall-player-stats .no-balls, .player-league-stats > li ul .no-balls, .player-individual-stats > li ul .no-balls, .player-partner-stats > li ul .no-balls {
     width: 3.5em;
     float: left; }
-    .overall-player-stats .average dd, .player-league-stats > li ul .average dd, .player-partner-stats > li ul .average dd, .overall-player-stats .innings dd, .player-league-stats > li ul .innings dd, .player-partner-stats > li ul .innings dd {
+    .overall-player-stats .average dd, .player-league-stats > li ul .average dd, .player-individual-stats > li ul .average dd, .player-partner-stats > li ul .average dd, .overall-player-stats .innings dd, .player-league-stats > li ul .innings dd, .player-individual-stats > li ul .innings dd, .player-partner-stats > li ul .innings dd, .overall-player-stats .strike-rate dd, .player-league-stats > li ul .strike-rate dd, .player-individual-stats > li ul .strike-rate dd, .player-partner-stats > li ul .strike-rate dd, .overall-player-stats .wickets dd, .player-league-stats > li ul .wickets dd, .player-individual-stats > li ul .wickets dd, .player-partner-stats > li ul .wickets dd, .overall-player-stats .bowling-average dd, .player-league-stats > li ul .bowling-average dd, .player-individual-stats > li ul .bowling-average dd, .player-partner-stats > li ul .bowling-average dd, .overall-player-stats .outs dd, .player-league-stats > li ul .outs dd, .player-individual-stats > li ul .outs dd, .player-partner-stats > li ul .outs dd, .overall-player-stats .sevens dd, .player-league-stats > li ul .sevens dd, .player-individual-stats > li ul .sevens dd, .player-partner-stats > li ul .sevens dd, .overall-player-stats .wides dd, .player-league-stats > li ul .wides dd, .player-individual-stats > li ul .wides dd, .player-partner-stats > li ul .wides dd, .overall-player-stats .no-balls dd, .player-league-stats > li ul .no-balls dd, .player-individual-stats > li ul .no-balls dd, .player-partner-stats > li ul .no-balls dd {
       font-size: 1.40625em;
       line-height: 1.0666666667;
       padding: 0.2666666667em 0 0.8em 0; }
-  .overall-player-stats .skin, .player-league-stats > li ul .skin, .player-partner-stats > li ul .skin {
+  .overall-player-stats .skin, .player-league-stats > li ul .skin, .player-individual-stats > li ul .skin, .player-partner-stats > li ul .skin {
     width: 7em;
     clear: both; }
-    .overall-player-stats .skin dd, .player-league-stats > li ul .skin dd, .player-partner-stats > li ul .skin dd {
+    .overall-player-stats .skin dd, .player-league-stats > li ul .skin dd, .player-individual-stats > li ul .skin dd, .player-partner-stats > li ul .skin dd {
       font-size: 1.40625em;
       line-height: 1.0666666667;
       padding: 0.2666666667em 0 0.8em 0; }
@@ -406,27 +411,33 @@ h3 {
     .overall-player-stats {
       margin: 0em 1.5em 1.5em 0.5em; } }
 
-.player-league-stats > li ul, .player-partner-stats > li ul {
+.player-league-stats > li ul, .player-individual-stats > li ul, .player-partner-stats > li ul {
   margin: 0;
   padding: 0; }
 
-.player-league-stats .league dd, .player-partner-stats .league dd {
+.player-league-stats .league dd, .player-individual-stats .league dd, .player-partner-stats .league dd, .player-league-stats .facet dd, .player-individual-stats .facet dd, .player-partner-stats .facet dd {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.player-league-stats .league dd, .player-individual-stats .league dd, .player-partner-stats .league dd {
+  font-size: 0.9em;
+  line-height: 1.5; }
+
+.player-league-stats .facet dd, .player-individual-stats .facet dd, .player-partner-stats .facet dd {
   font-size: 0.9em;
   line-height: 1.6666666667; }
 
-.player-league-stats > li {
+.player-league-stats > li, .player-individual-stats > li {
   float: left;
   text-align: center;
   width: 7em;
   margin: 0 0 1.5em 1.6666666667%; }
   @media screen and (min-width: 19em) {
-    .player-league-stats > li {
+    .player-league-stats > li, .player-individual-stats > li {
       margin: 0em 1.5em 1.5em 0.5em; } }
 
-.player-league-stats + h3 {
+.player-league-stats + h3, .player-individual-stats + h3 {
   padding-top: 0.96em; }
 
 .player-partner-stats > li, .active-players li {
@@ -492,38 +503,58 @@ h3 {
   position: relative;
   top: -0.5555555556em; }
 
-.league-grade {
-  margin-bottom: 1.6666666667em; }
-
 .matches .upcoming dl {
   overflow: auto; }
 
 .matches .upcoming.match .datetime {
   margin-bottom: 0; }
 
+.matches.fixtures .contest {
+  min-width: 8em; }
+
 .matches .match {
-  padding-bottom: 1.5em;
+  padding: 1.5em 0 1.5em 0;
   border-bottom: 1px solid #C4C4C4; }
   .matches .match .contest {
     font-size: 1.25em;
     line-height: 1.2;
-    margin: 1.2em 0 0em 0.4em; }
+    margin: 0em 0 0em 0.4em;
+    float: left; }
+  .matches .match .league {
+    float: left;
+    font-size: 0.9em;
+    line-height: 1.2777777778;
+    margin-top: 0.2222222222em;
+    margin-left: 0.5555555556em;
+    padding: 0 0.5555555556em; }
+  .central-autumn .league {
+    border: 1px solid #C77826;
+    background-color: #FFCC99;
+    color: #8B4500;
+    border-radius: 5px; }
+  .super-league .league {
+    border: 1px solid #4682B4;
+    background-color: #82CFFD;
+    color: #0D4F8B;
+    border-radius: 5px; }
   .matches .match .datetime {
     color: #555555;
     margin: 0em 0 0.75em 0.5em;
     float: left;
-    width: 8em;
+    clear: left;
+    width: 10em;
     position: relative; }
     .matches .match .datetime .time {
       display: inline-block;
       position: absolute;
       left: 4em; }
-  .matches .match .court, .matches .match .venue {
+  .matches .match .venue {
     float: left;
     font-size: 0.9em;
     line-height: 1.6666666667;
     color: #555555;
-    margin-left: 0.5555555556em; }
+    margin-left: 0.5555555556em;
+    min-width: 11.1111111111em; }
 
 .matches dd {
   margin: 0; }
@@ -531,12 +562,6 @@ h3 {
 .matches .partnerships, .matches .members {
   padding: 0;
   margin: 0; }
-
-.matches .venue {
-  display: none; }
-
-.matches.super-league .venue {
-  display: inherit; }
 
 .all-innings {
   overflow: auto;
@@ -582,7 +607,8 @@ h3 {
       font-size: 0.9em;
       line-height: 1.2;
       padding-top: 0.8833333333em;
-      white-space: nowrap; }
+      white-space: nowrap;
+      overflow: hidden; }
   .all-innings .innings-1 .partnerships .score {
     margin-left: 0.1066666667em; }
   .all-innings .innings-2 .partnerships .score {

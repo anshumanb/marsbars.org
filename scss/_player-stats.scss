@@ -2,7 +2,6 @@ h3 {
     clear: both;
 }
 
-$sep-color: #C4C4C4;
 $avatar-height: rhythm(6);
 $profile-img-ratio: 0.75;
 $avatar-width: $avatar-height * $profile-img-ratio;
@@ -40,7 +39,6 @@ $profile-sprites: (
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    @include adjust-font-size(ms(-1));
 }
 
 .profile {
@@ -90,7 +88,7 @@ $profile-sprites: (
         bottom: 0;
         @include secondary-text;
     }
-    .runs {
+    .runs, .bowling-economy {
         width: 7em;
         dd {
             $fs: ms(10);
@@ -100,7 +98,8 @@ $profile-sprites: (
             padding-bottom: (line-height($fs) - $lh)*1em;
         }
     }
-    .average, .innings {
+    .average, .innings, .strike-rate, .wickets, .bowling-average,
+    .outs, .sevens, .wides, .no-balls  {
         width: 3.5em;
         float: left;
         dd {
@@ -133,7 +132,7 @@ $profile-sprites: (
         @include reset-spacing;
         @extend %stats;
     }
-    .league {
+    .league, .facet {
         dd {
             @include trim-long-text;
         }
@@ -141,9 +140,16 @@ $profile-sprites: (
             @extend %hidden;
         }
     }
+    .league dd {
+        font-size: ms(-1);
+        line-height: 1.5;
+    }
+    .facet dd {
+        @include adjust-font-size(ms(-1));
+    }
 }
 
-.player-league-stats {
+.player-league-stats, .player-individual-stats {
     @extend %stats-list;
     & > li {
         @include non-click-cards;

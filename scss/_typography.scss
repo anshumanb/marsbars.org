@@ -4,6 +4,7 @@ $base-lh: 1.5;
 
 $body-text-color: #222;
 $bg-color: #ffffff;
+$sep-color: #C4C4C4;
 
 // Does not work with rem. Only works with em.
 @function line-height($fontsize, $lh: $base-lh) {

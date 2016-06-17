@@ -12,7 +12,7 @@
     <dl><dt>Partnership runs</dt><dd>{{player.partnership_runs}}</dd></dl>
   </li>
   <li class="average">
-    <dl><dt>Average</dt><dd>{{player.ave_partnership_runs}}</dd></dl>
+    <dl><dt>Average</dt><dd>{{player.ave_partnership_runs|round|int}}</dd></dl>
   </li>
   <li class="innings">
     <dl><dt>Innings</dt><dd>{{player.innings}}</dd></dl>
@@ -22,6 +22,55 @@
   </li>
 </ul>
 <div class="profile {{player.slug}}"></div>
+
+<h3>Individual Performance</h3>
+
+<ul class="player-individual-stats">
+  <li class="batting">
+    <ul> 
+      <li class="facet">
+        <dl><dt>Facet</dt><dd>Batting</dd></dl>
+      </li>
+      <li class="runs">
+        <dl><dt>Runs</dt><dd>{{player.runs_scored}}</dd></dl>
+      </li>
+      <li class="average">
+        <dl><dt>Average</dt><dd>{{player.batting_ave|round|int}}</dd></dl>
+      </li>
+      <li class="strike-rate">
+        <dl><dt>S/R</dt><dd>{{player.batting_strike_rate|round|int}}</dd></dl>
+      </li>
+      <li class="outs">
+        <dl><dt>Outs</dt><dd>{{player.outs}}</dd></dl>
+      </li>
+      <li class="sevens">
+        <dl><dt>7s</dt><dd>{{player.sevens}}</dd></dl>
+      </li>
+    </ul>
+  </li>
+  <li class="bowling">
+    <ul> 
+      <li class="facet">
+        <dl><dt>Facet</dt><dd>Bowling</dd></dl>
+      </li>
+      <li class="bowling-economy">
+        <dl><dt>Economy</dt><dd>{{player.bowling_economy|round(1)}}</dd></dl>
+      </li>
+      <li class="wickets">
+        <dl><dt>Wickets</dt><dd>{{player.wickets}}</dd></dl>
+      </li>
+      <li class="bowling-average">
+        <dl><dt>Average</dt><dd>{{player.bowling_ave|round|int}}</dd></dl>
+      </li>
+      <li class="wides">
+        <dl><dt>Wides</dt><dd>{{player.wides}}</dd></dl>
+      </li>
+      <li class="no-balls">
+        <dl><dt>No Balls</dt><dd>{{player.no_balls}}</dd></dl>
+      </li>
+    </ul>
+  </li>
+</ul>
 
 <!--<h3>Current Form</h3>
 <p>Insert graph</p>-->
@@ -37,7 +86,7 @@
         <dl><dt>Partnership runs</dt><dd>{{league.partnership_runs}}</dd></dl>
       </li>
       <li class="average">
-        <dl><dt>Average</dt><dd>{{league.ave_partnership_runs}}</dd></dl>
+        <dl><dt>Average</dt><dd>{{league.ave_partnership_runs|round|int}}</dd></dl>
       </li>
       <li class="innings">
         <dl><dt>Innings</dt><dd>{{league.innings}}</dd></dl>
@@ -71,7 +120,7 @@
           <dl><dt>Partnership runs</dt><dd>{{partner.partnership_runs}}</dd></dl>
         </li>
         <li class="average">
-          <dl><dt>Average</dt><dd>{{partner.ave_partnership_runs}}</dd></dl>
+          <dl><dt>Average</dt><dd>{{partner.ave_partnership_runs|round|int}}</dd></dl>
         </li>
         <li class="innings">
           <dl><dt>Innings</dt><dd>{{partner.innings}}</dd></dl>

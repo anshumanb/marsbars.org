@@ -1,5 +1,6 @@
 from marsbars import (db, Player, IndoorMatch,
-        IndoorInnings, IndoorPartnership, IndoorLeague)
+        IndoorInnings, IndoorPartnership, IndoorLeague, IndoorOver,
+        IndoorBall)
 import yaml
 import iso8601
 import pytz
@@ -63,11 +64,33 @@ def load_match(filename):
             members = []
             if 'members' in pship:
                 members = map(lambda n: get_player(n), pship['members'])
-            db.session.add(IndoorPartnership(
+            partnership = IndoorPartnership(
                     inn, position=p, score=pship['score'],
-                    skin=pship.get('skin', False), members=members))
+                    skin=pship.get('skin', False), members=members)
+            db.session.add(partnership)
+            if 'overs' in pship:
+                for o, over in enumerate(pship['overs']):
+                    indoor_over = IndoorOver(o, partnership, get_player(over['bowler']))
+                    db.session.add(indoor_over)
+                    for b, ball in enumerate(process_over(over)):
+                        db.session.add(IndoorBall(b, indoor_over, **ball))
 
     db.session.commit()
+
+
+def process_over(over):
+    bat1 = get_player(over['batsman'][0]['name'])
+    bat2 = get_player(over['batsman'][1]['name'])
+    over_bat1 = over['batsman'][0]['over']
+    over_bat2 = over['batsman'][1]['over']
+
+    o = []
+    for b1, b2 in zip(over_bat1.split(), over_bat2.split()):
+        if b1 != '.' and b2 == '.':
+            o.append({'outcome': b1, 'batsman': bat1})
+        elif b1 == '.' and b2 != '.':
+            o.append({'outcome': b2, 'batsman': bat2})
+    return o
 
 
 if __name__ == '__main__':
