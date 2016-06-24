@@ -3,10 +3,253 @@ league: 2016-central-autumn
 venue: Central
 court: 4
 opponent: Team Supreme
-result:
-margin:
-skins:
-points:
+result: won
+margin: 6 runs
+skins: 2
+points: 6
 innings:
--   score:
--   score:
+- partnerships:
+  - members:
+    - tyron-nixon
+    - jacob-buick
+    overs:
+    - batsman:
+      - name: tyron-nixon
+        over: 3 . 1 . . 1
+      - name: jacob-buick
+        over: . 3 . b 2 .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: tyron-nixon
+        over: w 0 5 . r .
+      - name: jacob-buick
+        over: . . . 3 . 3
+      bowler: jared-mascarenhas
+    - batsman:
+      - name: tyron-nixon
+        over: . . . 0 5 .
+      - name: jacob-buick
+        over: nb w 1 . . 1
+      bowler: amit-pothen
+    - batsman:
+      - name: tyron-nixon
+        over: . w 1 . w w
+      - name: jacob-buick
+        over: 4 . . 3 . .
+      bowler: sai-karnan
+    score: 43
+    skin: true
+  - members:
+    - james-baker
+    - damien-unknown
+    overs:
+    - batsman:
+      - name: james-baker
+        over: 1 . w 1 r .
+      - name: damien-unknown
+        over: . 3 . . . 3
+      bowler: minesh-patel
+    - batsman:
+      - name: james-baker
+        over: . 0 1 . 0 3
+      - name: damien-unknown
+        over: 7 . . 6 . .
+      bowler: uddhav-naik
+    - batsman:
+      - name: james-baker
+        over: 3 . 3 . 1 .
+      - name: damien-unknown
+        over: . c . 2 . 3
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: james-baker
+        over: . . 0 3 . w
+      - name: damien-unknown
+        over: 0 1 . . 4 .
+      bowler: abhishek-verma
+    score: 41
+    skin: true
+  - members:
+    - rahul-chopra
+    - simon-fenwick
+    overs:
+    - batsman:
+      - name: rahul-chopra
+        over: w . . . 3 .
+      - name: simon-fenwick
+        over: . r 0 1 . 5
+      bowler: amit-pothen
+    - batsman:
+      - name: rahul-chopra
+        over: . w 1 . . .
+      - name: simon-fenwick
+        over: c . . 0 0 1
+      bowler: uddhav-naik
+    - batsman:
+      - name: rahul-chopra
+        over: . . . 4 . 3
+      - name: simon-fenwick
+        over: 0 w 3 . 3 .
+      bowler: sai-karnan
+    - batsman:
+      - name: rahul-chopra
+        over: 3 . . 0 c . b
+      - name: simon-fenwick
+        over: . 0 3 . . r .
+      bowler: dasith-goonatilaka
+    score: 14
+    skin: false
+  - members:
+    - ben-jackett
+    - rahul-chopra
+    overs:
+    - batsman:
+      - name: ben-jackett
+        over: 0 w . . w 0
+      - name: rahul-chopra
+        over: . . r c . .
+      bowler: jared-mascarenhas
+    - batsman:
+      - name: ben-jackett
+        over: . . 0 7 . .
+      - name: rahul-chopra
+        over: 0 5 . . w 0
+      bowler: minesh-patel
+    - batsman:
+      - name: ben-jackett
+        over: 0 nb4 . . . r 0
+      - name: rahul-chopra
+        over: . . 0 0 r . .
+      bowler: abhishek-verma
+    - batsman:
+      - name: ben-jackett
+        over: . 4 . c . 0
+      - name: rahul-chopra
+        over: 5 . 3 . 7 .
+      bowler: anshuman-bhaduri
+    score: 21
+    skin: false
+  score: 119
+- partnerships:
+  - members:
+    - uddhav-naik
+    - jared-mascarenhas
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: nb3 . 0 3 . .
+      - name: jared-mascarenhas
+        over: . 2 . . 0 0
+      bowler: ben-jackett
+    - batsman:
+      - name: uddhav-naik
+        over: 5 . 0 3 . .
+      - name: jared-mascarenhas
+        over: . 3 . . 0 1
+      bowler: rahul-chopra
+    - batsman:
+      - name: uddhav-naik
+        over: . . 0 5 . r
+      - name: jared-mascarenhas
+        over: w 3 . . 3 .
+      bowler: simon-fenwick
+    - batsman:
+      - name: uddhav-naik
+        over: . . . 3 . . r 0
+      - name: jared-mascarenhas
+        over: w 0 1 . 4 m . .
+      bowler: tyron-nixon
+    score: 32
+    skin: false
+  - members:
+    - sai-karnan
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: sai-karnan
+        over: 0 6 r 5 . .
+      - name: dasith-goonatilaka
+        over: . . . . 5 r
+      bowler: damien-unknown
+    - batsman:
+      - name: sai-karnan
+        over: 3 . s 4 . 0
+      - name: dasith-goonatilaka
+        over: . 3 . . 3 .
+      bowler: james-baker
+    - batsman:
+      - name: sai-karnan
+        over: . . 6 . 2 .
+      - name: dasith-goonatilaka
+        over: w 3 . 3 . c
+      bowler: jacob-buick
+    - batsman:
+      - name: sai-karnan
+        over: w w . . . .
+      - name: dasith-goonatilaka
+        over: . . r 0 0 1
+      bowler: tyron-nixon
+    score: 28
+    skin: false
+  - members:
+    - amit-pothen
+    - minesh-patel
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: 3 . 2 . . .
+      - name: minesh-patel
+        over: . 3 . 0 0 w1
+      bowler: rahul-chopra
+    - batsman:
+      - name: amit-pothen
+        over: . . 0 0 c 1
+      - name: minesh-patel
+        over: 0 3 . . . .
+      bowler: simon-fenwick
+    - batsman:
+      - name: amit-pothen
+        over: w 3 . 1 . 3
+      - name: minesh-patel
+        over: . . 4 . 2 .
+      bowler: damien-unknown
+    - batsman:
+      - name: amit-pothen
+        over: 3 . . 0 0 3
+      - name: minesh-patel
+        over: . 0 nb3 . . .
+      bowler: james-baker
+    score: 38
+    skin: true
+  - members:
+    - anshuman-bhaduri
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: anshuman-bhaduri
+        over: 0 3 . 3 . .
+      - name: abhishek-verma
+        over: . . 2 . 0 2
+      bowler: jacob-buick
+    - batsman:
+      - name: anshuman-bhaduri
+        over: . . . 0 2 .
+      - name: abhishek-verma
+        over: 0 0 3 . . 0
+      bowler: ben-jackett
+    - batsman:
+      - name: anshuman-bhaduri
+        over: 0 1 . . . .
+      - name: abhishek-verma
+        over: . . w 0 w 3
+      bowler: rahul-chopra
+    - batsman:
+      - name: anshuman-bhaduri
+        over: . . . 0 1 .
+      - name: abhishek-verma
+        over: 0 0 1 . . 0
+      bowler: simon-fenwick
+    score: 27
+    skin: true
+  score: 125
+  us: true

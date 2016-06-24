@@ -3,10 +3,37 @@ league: 2016-super-league
 venue: Manukau
 court: 1
 opponent: Harbour
-result:
-margin:
-skins:
-points:
+result: won
+margin: 36 runs
+skins: 3
+points: 7
 innings:
--   score:
--   score:
+- score: 73
+  partnerships:
+  - score: 22
+  - score: 46
+    skin: true
+  - score: 15
+  - score: -10
+- score: 109
+  partnerships:
+  -   score: 24
+      skin: true
+      members:
+      - uddhav-naik
+      - dasith-goonatilaka
+  -   score: 26
+      members:
+      - rohit-patel
+      - anshuman-bhaduri
+  -   score: 16
+      skin: true
+      members:
+      - smit-shah
+      - sai-karnan
+  -   score: 43
+      skin: true
+      members:
+      - amit-pothen
+      - abhishek-verma
+  us: true
