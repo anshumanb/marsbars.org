@@ -13,6 +13,8 @@ def slugify(name):
         return 'brendan-raj'
     elif name == 'neil-unknown':
         return 'anshuman-bhaduri'
+    elif name == 'jared-mascherenas':
+        return 'jared-mascarenhas'
     return name
 
 

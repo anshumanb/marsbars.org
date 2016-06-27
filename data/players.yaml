@@ -25,6 +25,9 @@
     slug: jared-mascarenhas
 -   name: Sai Karnan
     slug: sai-karnan
+-   name: Minesh Patel
+    slug: minesh-patel
+    active: false
 -   active: false
     name: Eshan Gupta
     slug: eshan-gupta

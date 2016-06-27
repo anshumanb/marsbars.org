@@ -3,10 +3,253 @@ league: 2016-super-league
 venue: Waitakere
 court: 3
 opponent: Saints Green
-result:
-margin:
-skins:
-points:
+result: lost
+margin: 16 runs
+skins: 1
+points: 1
 innings:
--   score:
--   score:
+- partnerships:
+  - members:
+    - smit-shah
+    - jared-mascarenhas
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 0 w 2 . . . 0 0
+      - name: jared-mascarenhas
+        over: . . . 0 0 r . .
+      bowler: ross-deans
+    - batsman:
+      - name: smit-shah
+        over: . 0 1 . . . 0 .
+      - name: jared-mascarenhas
+        over: 1 . . r 0 2 . r
+      bowler: josh-gardner
+    - batsman:
+      - name: smit-shah
+        over: w 0 0 b 0 3 . c
+      - name: jared-mascarenhas
+        over: . . . . . . 1 .
+      bowler: scott-van-syp
+    - batsman:
+      - name: smit-shah
+        over: 3 . 1 . 1 . . .
+      - name: jared-mascarenhas
+        over: . c . 1 . c c 0
+      bowler: blair-o'brien
+    score: -20
+    skin: false
+  - members:
+    - rohit-patel
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: 1 . 0 2 . 2 . .
+      - name: anshuman-bhaduri
+        over: . 2 . . 2 . 0 0
+      bowler: arun-christopher-williams
+    - batsman:
+      - name: rohit-patel
+        over: 2 . 0 w1 . 1 . .
+      - name: anshuman-bhaduri
+        over: . 2 . . nb2 . 0 2
+      bowler: parampreet-singh
+    - batsman:
+      - name: rohit-patel
+        over: . . . 1 . 0 b 0
+      - name: anshuman-bhaduri
+        over: 0 0 1 . 1 . . .
+      bowler: josh-gardner
+    - batsman:
+      - name: rohit-patel
+        over: . 0 0 2 . 2 . 0
+      - name: anshuman-bhaduri
+        over: 1 . . . 3 . 2 .
+      bowler: ross-deans
+    score: 31
+    skin: false
+  - members:
+    - amit-pothen
+    - minesh-patel
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: 0 1 . 1 . 1 . 7
+      - name: minesh-patel
+        over: . . 2 . 1 . 2 .
+      bowler: diinkant-ravichandran
+    - batsman:
+      - name: amit-pothen
+        over: 2 . . 2 . 0 0 1
+      - name: minesh-patel
+        over: . 0 2 . 1 . . .
+      bowler: harrison-caldwell
+    - batsman:
+      - name: amit-pothen
+        over: 2 . . . 2 . 0 2
+      - name: minesh-patel
+        over: . 0 s 2 . 2 . .
+      bowler: parampreet-singh
+    - batsman:
+      - name: amit-pothen
+        over: 2 . 2 . nb2 . . . 0 2
+      - name: minesh-patel
+        over: . 1 . 2 . w 0 c . .
+      bowler: arun-christopher-williams
+    score: 38
+    skin: false
+  - members:
+    - uddhav-naik
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: r . . 2 . 2 . 0
+      - name: brendan-raj
+        over: . w 2 . 4 . 1 .
+      bowler: scott-van-syp
+    - batsman:
+      - name: uddhav-naik
+        over: . . 2 . . . 2 .
+      - name: brendan-raj
+        over: w 5 . nb w 1 . 2
+      bowler: george-hanham
+    - batsman:
+      - name: uddhav-naik
+        over: . w 2 . r . 0 3
+      - name: brendan-raj
+        over: 1 . . 2 . 2 . .
+      bowler: diinkant-ravichandran
+    - batsman:
+      - name: uddhav-naik
+        over: 0 3 . . 0 1 . .
+      - name: brendan-raj
+        over: . . 0 2 . . 0 0
+      bowler: blair-o'brien
+    score: 39
+    skin: true
+  score: 88
+  us: true
+- partnerships:
+  - members:
+    - arun-christopher-williams
+    - harrison-caldwell
+    overs:
+    - batsman:
+      - name: arun-christopher-williams
+        over: 2 . . . . . 2 .
+      - name: harrison-caldwell
+        over: . 0 w w 0 1 . 1
+      bowler: jared-mascarenhas
+    - batsman:
+      - name: arun-christopher-williams
+        over: . 2 . . w w 1 .
+      - name: harrison-caldwell
+        over: 1 . s 2 . . . w
+      bowler: amit-pothen
+    - batsman:
+      - name: arun-christopher-williams
+        over: 2 . 2 . . . . w
+      - name: harrison-caldwell
+        over: . 2 . w w 0 2 .
+      bowler: minesh-patel
+    - batsman:
+      - name: arun-christopher-williams
+        over: . 0 s 3 . 4 . 1
+      - name: harrison-caldwell
+        over: 1 . . . 2 . 2 .
+      bowler: smit-shah
+    score: 39
+    skin: true
+  - members:
+    - ross-deans
+    - parampreet-singh
+    overs:
+    - batsman:
+      - name: ross-deans
+        over: 2 . . 0 2 . 2 .
+      - name: parampreet-singh
+        over: . 0 1 . . 1 . 5
+      bowler: brendan-raj
+    - batsman:
+      - name: ross-deans
+        over: . 0 r . 1 . 0 1
+      - name: parampreet-singh
+        over: 2 . . 2 . 2 . .
+      bowler: uddhav-naik
+    - batsman:
+      - name: ross-deans
+        over: 1 . . 0 3 . w r
+      - name: parampreet-singh
+        over: . 0 4 . . 1 . .
+      bowler: rohit-patel
+    - batsman:
+      - name: ross-deans
+        over: 2 . 2 . 0 2 . 0
+      - name: parampreet-singh
+        over: . 1 . 2 . . 5 .
+      bowler: anshuman-bhaduri
+    score: 36
+    skin: true
+  - members:
+    - diinkant-ravichandran
+    - blair-o'brien
+    overs:
+    - batsman:
+      - name: diinkant-ravichandran
+        over: 0 2 . . 0 1 . .
+      - name: blair-o'brien
+        over: . . 0 2 . . 0 0
+      bowler: brendan-raj
+    - batsman:
+      - name: diinkant-ravichandran
+        over: 1 . . . r . . .
+      - name: blair-o'brien
+        over: . w c 4 . 0 0 7
+      bowler: jared-mascarenhas
+    - batsman:
+      - name: diinkant-ravichandran
+        over: . . . 0 3 . 1 .
+      - name: blair-o'brien
+        over: 0 0 nb1 . . 2 . 2
+      bowler: rohit-patel
+    - batsman:
+      - name: diinkant-ravichandran
+        over: . 2 . 2 . 4 . .
+      - name: blair-o'brien
+        over: 2 . 7 . 2 . 0 0
+      bowler: uddhav-naik
+    score: 39
+    skin: true
+  - members:
+    - josh-gardner
+    - scott-van-syp
+    overs:
+    - batsman:
+      - name: josh-gardner
+        over: 0 2 . r . . 2 .
+      - name: scott-van-syp
+        over: . . 2 . 0 2 . 2
+      bowler: amit-pothen
+    - batsman:
+      - name: josh-gardner
+        over: . r . 3 . . r .
+      - name: scott-van-syp
+        over: 1 . 1 . 0 c . c
+      bowler: minesh-patel
+    - batsman:
+      - name: josh-gardner
+        over: 0 1 . w 1 . . 1
+      - name: scott-van-syp
+        over: . . 2 . . c 2 .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: josh-gardner
+        over: 0 2 . c . . . 1
+      - name: scott-van-syp
+        over: . . 1 . b 0 2 .
+      bowler: smit-shah
+    score: -10
+    skin: false
+  score: 104
