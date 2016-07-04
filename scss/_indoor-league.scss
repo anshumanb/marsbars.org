@@ -142,7 +142,6 @@
         }
         .score {
             @include adjust-font-size($score-fs);
-            max-width: 1.2em;
             min-width: 1.1em;
             padding: 0 ($total-score-padding*$total-score-fs/1em)/$score-fs*1em;
             margin-top: $score-sep;
