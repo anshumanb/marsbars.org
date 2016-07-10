@@ -3,10 +3,253 @@ league: 2016-central-autumn
 venue: Central
 court: 4
 opponent: Smak Breweries
-result:
-margin:
-skins:
-points:
+result: lost
+margin: 55 runs
+skins: 2
+points: 2
 innings:
--   score:
--   score:
+- partnerships:
+  - members:
+    - uddhav-naik
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: 0 1 . 3 . 0
+      - name: dasith-goonatilaka
+        over: . . 3 . 3 .
+      bowler: mike-meharag
+    - batsman:
+      - name: uddhav-naik
+        over: . . 2 . w nb
+      - name: dasith-goonatilaka
+        over: w 3 . 2 . .
+      bowler: adis-kulasic
+    - batsman:
+      - name: uddhav-naik
+        over: . . 0 3 . 4
+      - name: dasith-goonatilaka
+        over: 0 3 . . 2 .
+      bowler: rick-goodwin
+    - batsman:
+      - name: uddhav-naik
+        over: 4 . 3 . . 0
+      - name: dasith-goonatilaka
+        over: . 3 . w 3 .
+      bowler: rob-gilmore
+    score: 53
+    skin: true
+  - members:
+    - smit-shah
+    - yohan
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 0 4 . . . 3
+      - name: yohan
+        over: . . 0 0 3 .
+      bowler: peter-lane
+    - batsman:
+      - name: smit-shah
+        over: 3 . . 1 . 3
+      - name: yohan
+        over: . 0 3 . 3 .
+      bowler: adis-kulasic
+    - batsman:
+      - name: smit-shah
+        over: 0 r . nb 0 3
+      - name: yohan
+        over: . . 3 . . .
+      bowler: brent-humphrey
+    - batsman:
+      - name: smit-shah
+        over: r . . w w 3
+      - name: yohan
+        over: . 0 1 . . .
+      bowler: kelsey-fagan
+    score: 31
+    skin: false
+  - members:
+    - bhavik-vora
+    - rohit-patel
+    overs:
+    - batsman:
+      - name: bhavik-vora
+        over: 0 nb3 . . 3 .
+      - name: rohit-patel
+        over: . . c 1 . 3
+      bowler: mike-meharag
+    - batsman:
+      - name: bhavik-vora
+        over: . 0 r . . .
+      - name: rohit-patel
+        over: 3 . . 0 0 2
+      bowler: rob-gilmore
+    - batsman:
+      - name: bhavik-vora
+        over: . 0 2 . . 1
+      - name: rohit-patel
+        over: 4 . . 0 4 .
+      bowler: brent-humphrey
+    - batsman:
+      - name: bhavik-vora
+        over: s r . 0 w 0
+      - name: rohit-patel
+        over: . . 3 . . .
+      bowler: rick-goodwin
+    score: 14
+    skin: false
+  - members:
+    - brendan-raj
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: brendan-raj
+        over: 3 . 0 3 . 0
+      - name: abhishek-verma
+        over: . 3 . . 2 .
+      bowler: kelsey-fagan
+    - batsman:
+      - name: brendan-raj
+        over: . . . . . .
+      - name: abhishek-verma
+        over: w c 0 0 w 0
+      bowler: peter-lane
+    - batsman:
+      - name: brendan-raj
+        over: w . . . . w
+      - name: abhishek-verma
+        over: . r w 0 2 .
+      bowler: adis-kulasic
+    - batsman:
+      - name: brendan-raj
+        over: . 0 1 . 0 2
+      - name: abhishek-verma
+        over: 3 . . 1 . .
+      bowler: rob-gilmore
+    score: 25
+    skin: true
+  score: 123
+  us: true
+- partnerships:
+  - members:
+    - kelsey-fagan
+    - mike-meharag
+    overs:
+    - batsman:
+      - name: kelsey-fagan
+        over: 3 . 3 . 2 .
+      - name: mike-meharag
+        over: . 3 . 3 . 3
+      bowler: smit-shah
+    - batsman:
+      - name: kelsey-fagan
+        over: . w 3 . w 3
+      - name: mike-meharag
+        over: 5 . . 3 . .
+      bowler: yohan
+    - batsman:
+      - name: kelsey-fagan
+        over: 1 . 0 3 . b
+      - name: mike-meharag
+        over: . 3 . . 1 .
+      bowler: brendan-raj
+    - batsman:
+      - name: kelsey-fagan
+        over: . 1 . r . 1
+      - name: mike-meharag
+        over: 2 . 1 . 4 .
+      bowler: dasith-goonatilaka
+    score: 44
+    skin: false
+  - members:
+    - rob-gilmore
+    - brent-humphrey
+    overs:
+    - batsman:
+      - name: rob-gilmore
+        over: 4 . . 2 . .
+      - name: brent-humphrey
+        over: . 0 1 . w 1
+      bowler: uddhav-naik
+    - batsman:
+      - name: rob-gilmore
+        over: . . 3 . . 0
+      - name: brent-humphrey
+        over: 0 3 . w 3 .
+      bowler: rohit-patel
+    - batsman:
+      - name: rob-gilmore
+        over: . 0 3 . . 3
+      - name: brent-humphrey
+        over: 3 . . 0 3 .
+      bowler: bhavik-vora
+    - batsman:
+      - name: rob-gilmore
+        over: w 0 w 2 . 3
+      - name: brent-humphrey
+        over: . . . . 3 .
+      bowler: abhishek-verma
+    score: 49
+    skin: true
+  - members:
+    - peter-lane
+    - rick-goodwin
+    overs:
+    - batsman:
+      - name: peter-lane
+        over: 3 . 2 . . .
+      - name: rick-goodwin
+        over: . 4 . 0 w 3
+      bowler: yohan
+    - batsman:
+      - name: peter-lane
+        over: . 4 . 3 . .
+      - name: rick-goodwin
+        over: 3 . 2 . 0 1
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: peter-lane
+        over: . 3 . 1 . 1
+      - name: rick-goodwin
+        over: 2 . 1 . 4 .
+      bowler: smit-shah
+    - batsman:
+      - name: peter-lane
+        over: 3 . 5 . 3 .
+      - name: rick-goodwin
+        over: . 3 . 7 . 3
+      bowler: bhavik-vora
+    score: 64
+    skin: true
+  - members:
+    - adis-kulasic
+    - mike-meharag
+    overs:
+    - batsman:
+      - name: adis-kulasic
+        over: 0 0 b . 3 . 3
+      - name: mike-meharag
+        over: . . . r . c .
+      bowler: brendan-raj
+    - batsman:
+      - name: adis-kulasic
+        over: c . r . . 3
+      - name: mike-meharag
+        over: . 0 . w 6 .
+      bowler: rohit-patel
+    - batsman:
+      - name: adis-kulasic
+        over: w w 3 . 3 .
+      - name: mike-meharag
+        over: . . . 7 . 3
+      bowler: abhishek-verma
+    - batsman:
+      - name: adis-kulasic
+        over: . 0 b 1 . 4
+      - name: mike-meharag
+        over: 3 . . . 3 .
+      bowler: uddhav-naik
+    score: 21
+    skin: false
+  score: 178

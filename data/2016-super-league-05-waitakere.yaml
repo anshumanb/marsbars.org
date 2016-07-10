@@ -3,10 +3,253 @@ league: 2016-super-league
 venue: Central
 court: 2
 opponent: Waitakere
-result:
-margin:
-skins:
-points:
+result: won
+margin: 37 runs
+skins: 3
+points: 7
 innings:
--   score:
--   score:
+- partnerships:
+  - members:
+    - uddhav-naik
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: w 0 r 0 2 . . .
+      - name: dasith-goonatilaka
+        over: . . . . . w 0 2
+      bowler: jason-smith
+    - batsman:
+      - name: uddhav-naik
+        over: . . . 0 0 1 . 0
+      - name: dasith-goonatilaka
+        over: 0 0 1 . . . 3 .
+      bowler: don-radonich
+    - batsman:
+      - name: uddhav-naik
+        over: . . 2 r w 3 . 0
+      - name: dasith-goonatilaka
+        over: 0 1 . . . . 2 .
+      bowler: greg-simpson
+    - batsman:
+      - name: uddhav-naik
+        over: . . . 0 1 . 0 1 . .
+      - name: dasith-goonatilaka
+        over: w 0 1 . . 1 . . w 1
+      bowler: richard-everiss
+    score: 22
+    skin: true
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 0 3 . 0 1 . 3 .
+      - name: anshuman-bhaduri
+        over: . . 1 . . 2 . 3
+      bowler: jason-smith
+    - batsman:
+      - name: smit-shah
+        over: . . 2 . . 0 0 w
+      - name: anshuman-bhaduri
+        over: 0 2 . 0 1 . . .
+      bowler: andrew-holmes
+    - batsman:
+      - name: smit-shah
+        over: . 2 . . 0 2 . .
+      - name: anshuman-bhaduri
+        over: 2 . 0 1 . . 2 r
+      bowler: logan-jacobs
+    - batsman:
+      - name: smit-shah
+        over: 0 0 r . 2 . 2 .
+      - name: anshuman-bhaduri
+        over: . . . 2 . 2 . 3
+      bowler: mike-marshall
+    score: 30
+    skin: true
+  - members:
+    - bhavik-vora
+    - rohit-patel
+    overs:
+    - batsman:
+      - name: bhavik-vora
+        over: w 0 3 . . . . .
+      - name: rohit-patel
+        over: . . . c r 0 c 0
+      bowler: philip-jones
+    - batsman:
+      - name: bhavik-vora
+        over: 2 . 2 . 1 . . 0
+      - name: rohit-patel
+        over: . 2 . 1 . 0 5 .
+      bowler: logan-jacobs
+    - batsman:
+      - name: bhavik-vora
+        over: . w 0 0 w 2 . .
+      - name: rohit-patel
+        over: 2 . . . . . nb 2
+      bowler: andrew-holmes
+    - batsman:
+      - name: bhavik-vora
+        over: . . 4 . . w 2 . 2
+      - name: rohit-patel
+        over: 0 2 . 0 1 . . 2 .
+      bowler: mike-marshall
+    score: 30
+    skin: false
+  - members:
+    - brendan-raj
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: brendan-raj
+        over: w 1 . . w w r .
+      - name: abhishek-verma
+        over: . . 0 2 . . . 0
+      bowler: philip-jones
+    - batsman:
+      - name: brendan-raj
+        over: w 2 . 2 . 0 0 1
+      - name: abhishek-verma
+        over: . . 5 . 3 . . .
+      bowler: don-radonich
+    - batsman:
+      - name: brendan-raj
+        over: 3 . . 0 0 2 . .
+      - name: abhishek-verma
+        over: . 0 2 . . . c 0
+      bowler: greg-simpson
+    - batsman:
+      - name: brendan-raj
+        over: w 1 . c . . . . 4
+      - name: abhishek-verma
+        over: . . 2 . 0 0 r 2 .
+      bowler: richard-everiss
+    score: 22
+    skin: true
+  score: 104
+  us: true
+- partnerships:
+  - members:
+    - mike-marshall
+    - don-radonich
+    overs:
+    - batsman:
+      - name: mike-marshall
+        over: w w . . . . . 0
+      - name: don-radonich
+        over: . . r c 0 0 2 .
+      bowler: brendan-raj
+    - batsman:
+      - name: mike-marshall
+        over: . . . 0 0 2 . 2
+      - name: don-radonich
+        over: w 0 2 . . . 2 .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: mike-marshall
+        over: 0 c c w w 2 . .
+      - name: don-radonich
+        over: . . . . . . 0 3
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: mike-marshall
+        over: . . 4 . . 0 1 . 2
+      - name: don-radonich
+        over: 0 1 . w 2 . . r .
+      bowler: smit-shah
+    score: 12
+    skin: false
+  - members:
+    - richard-everiss
+    - greg-simpson
+    overs:
+    - batsman:
+      - name: richard-everiss
+        over: w 0 0 c . . . 0
+      - name: greg-simpson
+        over: . . . . w 0 1 .
+      bowler: bhavik-vora
+    - batsman:
+      - name: richard-everiss
+        over: . . . 2 . . 2 .
+      - name: greg-simpson
+        over: 0 r r . w 1 . 2
+      bowler: rohit-patel
+    - batsman:
+      - name: richard-everiss
+        over: . 2 . 1 . 0 1 .
+      - name: greg-simpson
+        over: 2 . 2 . 1 . . 2
+      bowler: abhishek-verma
+    - batsman:
+      - name: richard-everiss
+        over: . 0 1 . . 0 0 1
+      - name: greg-simpson
+        over: 2 . . 0 1 . . .
+      bowler: uddhav-naik
+    score: 15
+    skin: false
+  - members:
+    - philip-jones
+    - jason-smith
+    overs:
+    - batsman:
+      - name: philip-jones
+        over: 2 . nb 3 . 2 . 2
+      - name: jason-smith
+        over: . r . . 2 . 2 .
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: philip-jones
+        over: c . 0 1 . . . .
+      - name: jason-smith
+        over: . 2 . . w w 0 2
+      bowler: bhavik-vora
+    - batsman:
+      - name: philip-jones
+        over: . . . 2 . 1 . 0
+      - name: jason-smith
+        over: w w w1 . 7 . 1 .
+      bowler: abhishek-verma
+    - batsman:
+      - name: philip-jones
+        over: r . . 5 . 2 . .
+      - name: jason-smith
+        over: . 0 2 . 2 . 0 2
+      bowler: smit-shah
+    score: 40
+    skin: true
+  - members:
+    - andrew-holmes
+    - logan-jacobs
+    overs:
+    - batsman:
+      - name: andrew-holmes
+        over: 0 2 . . . 4 . .
+      - name: logan-jacobs
+        over: . . st 0 r . 0 1
+      bowler: brendan-raj
+    - batsman:
+      - name: andrew-holmes
+        over: . . 7 . 3 . . w
+      - name: logan-jacobs
+        over: w c . 2 . 0 3 .
+      bowler: rohit-patel
+    - batsman:
+      - name: andrew-holmes
+        over: . 0 0 2 r . 1 .
+      - name: logan-jacobs
+        over: 1 . . . . c . 3
+      bowler: uddhav-naik
+    - batsman:
+      - name: andrew-holmes
+        over: 0 c 1 . . 0 1 .
+      - name: logan-jacobs
+        over: . . . 0 c . . 0
+      bowler: anshuman-bhaduri
+    score: 0
+    skin: false
+  score: 67
