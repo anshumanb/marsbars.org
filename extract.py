@@ -15,6 +15,8 @@ def slugify(name):
         return 'anshuman-bhaduri'
     elif name == 'jared-mascherenas':
         return 'jared-mascarenhas'
+    elif name == 'daz-goonatilaka':
+        return 'dasith-goonatilaka'
     return name
 
 

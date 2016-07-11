@@ -30,7 +30,7 @@ innings:
         over: w 1 . 5 . 2 . c
       - name: scott-oxley
         over: . . 1 . 2 . 2 .
-      bowler: daz-goonatilaka
+      bowler: dasith-goonatilaka
     - batsman:
       - name: mathew-cowdry
         over: . 2 . . . 1 . 2 .
@@ -120,7 +120,7 @@ innings:
         over: 0 s 0 1 . . . 0
       - name: roopesh-vanamala
         over: . . . . 0 0 r .
-      bowler: daz-goonatilaka
+      bowler: dasith-goonatilaka
     - batsman:
       - name: rodney-ball
         over: . c c 0 w 0 1 . 0
@@ -133,30 +133,30 @@ innings:
 - partnerships:
   - members:
     - uddhav-naik
-    - daz-goonatilaka
+    - dasith-goonatilaka
     overs:
     - batsman:
       - name: uddhav-naik
         over: 1 . 0 2 . 0 w 0
-      - name: daz-goonatilaka
+      - name: dasith-goonatilaka
         over: . 2 . . 2 . . .
       bowler: harry-bauer
     - batsman:
       - name: uddhav-naik
         over: . . . . . . . .
-      - name: daz-goonatilaka
+      - name: dasith-goonatilaka
         over: nb b 0 0 w w 0 1
       bowler: quintin-paljaard
     - batsman:
       - name: uddhav-naik
         over: . . . 2 . . . 0
-      - name: daz-goonatilaka
+      - name: dasith-goonatilaka
         over: 0 0 2 . 0 0 4 .
       bowler: spencer-day
     - batsman:
       - name: uddhav-naik
         over: . . 1 . . 0 0 1
-      - name: daz-goonatilaka
+      - name: dasith-goonatilaka
         over: 0 2 . 0 1 . . .
       bowler: mathew-cowdry
     score: 24
