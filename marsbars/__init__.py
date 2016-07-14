@@ -217,13 +217,17 @@ class Player(db.Model, StatisticsMixin):
         return self._calc_runs(self.balls_faced.all())
 
     @property
+    def detailed_innings(self):
+        return len([i for i in self.partnerships.all() if i.has_over_detail()])
+
+    @property
     def deliveries_faced(self):
         return self.balls_faced.count()
 
     @property
-    def batting_ave(self):
-        outs = self.outs
-        return float(self.runs_scored)/outs if outs != 0 else 0
+    def runs_ave(self):
+        innings = self.detailed_innings
+        return float(self.runs_scored)/innings if innings != 0 else 0
 
     @property
     def batting_strike_rate(self):
@@ -247,11 +251,6 @@ class Player(db.Model, StatisticsMixin):
     @property
     def wickets(self):
         return reduce(lambda x, y: x + y.wickets, self.overs_bowled.all(), 0)
-
-    @property
-    def bowling_ave(self):
-        wickets = self.wickets
-        return float(self.runs_conceded)/wickets if wickets != 0 else 0
 
     @property
     def num_overs_bowled(self):
@@ -414,6 +413,9 @@ class IndoorPartnership(db.Model):
 
     def __repr__(self):
         return '<IndoorPartnership {}:{}>'.format(self.position, self.score)
+
+    def has_over_detail(self):
+        return self.overs.count() > 0
 
 class IndoorOver(db.Model):
     __tablname__ = 'indoor_over'

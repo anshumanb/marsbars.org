@@ -88,7 +88,7 @@ $profile-sprites: (
         bottom: 0;
         @include secondary-text;
     }
-    .runs, .bowling-economy {
+    .runs {
         width: 7em;
         dd {
             $fs: ms(10);
@@ -99,7 +99,7 @@ $profile-sprites: (
         }
     }
     .average, .innings, .strike-rate, .wickets, .bowling-average,
-    .outs, .sevens, .wides, .no-balls  {
+    .outs, .sevens, .wides, .no-balls, .bowling-economy {
         width: 3.5em;
         float: left;
         dd {

@@ -35,7 +35,7 @@
         <dl><dt>Runs</dt><dd>{{player.runs_scored}}</dd></dl>
       </li>
       <li class="average">
-        <dl><dt>Average</dt><dd>{{player.batting_ave|round|int}}</dd></dl>
+        <dl><dt>Average</dt><dd>{{player.runs_ave|round|int}}</dd></dl>
       </li>
       <li class="strike-rate">
         <dl><dt>S/R</dt><dd>{{player.batting_strike_rate|round|int}}</dd></dl>
@@ -53,14 +53,14 @@
       <li class="facet">
         <dl><dt>Facet</dt><dd>Bowling</dd></dl>
       </li>
+      <li class="runs">
+        <dl><dt>Runs</dt><dd>{{player.runs_conceded}}</dd></dl>
+      </li>
       <li class="bowling-economy">
         <dl><dt>Economy</dt><dd>{{player.bowling_economy|round(1)}}</dd></dl>
       </li>
       <li class="wickets">
         <dl><dt>Wickets</dt><dd>{{player.wickets}}</dd></dl>
-      </li>
-      <li class="bowling-average">
-        <dl><dt>Average</dt><dd>{{player.bowling_ave|round|int}}</dd></dl>
       </li>
       <li class="wides">
         <dl><dt>Wides</dt><dd>{{player.wides}}</dd></dl>
