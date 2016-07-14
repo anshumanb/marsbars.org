@@ -8,32 +8,248 @@ margin: 30 runs
 skins: 2
 points: 6
 innings:
--   score: 71
-    partnerships:
-    -   score: -8
-    -   score: 18
-    -   score: 34
-        skin: true
-    -   score: 27
-        skin: true
--   score: 101
-    partnerships:
-    -   score: 16
-        skin: true
-        members:
-        - rohit-patel
-        - jared-mascarenhas
-    -   score: 41
-        skin: true
-        members:
-        - uddhav-naik
-        - amit-pothen
-    -   score: 22
-        members:
-        - smit-shah
-        - anshuman-bhaduri
-    -   score: 22
-        members:
-        - brendan-raj
-        - abhishek-verma
-    us: true
+- partnerships:
+  - members:
+    - mark-dass
+    - logan-henwood
+    overs:
+    - batsman:
+      - name: mark-dass
+        over: w w 0 c 0 0
+      - name: logan-henwood
+        over: . . . . . .
+      bowler: brendan-raj
+    - batsman:
+      - name: mark-dass
+        over: . . . 3 . .
+      - name: logan-henwood
+        over: r r 3 . b 3
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: mark-dass
+        over: . . . 7 . .
+      - name: logan-henwood
+        over: r r 3 . 0 0
+      bowler: smit-shah
+    - batsman:
+      - name: mark-dass
+        over: 3 . . . 3 .
+      - name: logan-henwood
+        over: . 0 1 r . c
+      bowler: rohit-patel
+    score: -8
+    skin: false
+  - members:
+    - sam-kett
+    - stu-kett
+    overs:
+    - batsman:
+      - name: sam-kett
+        over: 0 b 1 . . 0
+      - name: stu-kett
+        over: . . . 0 3 .
+      bowler: jared-mascarenhas
+    - batsman:
+      - name: sam-kett
+        over: . . . . . .
+      - name: stu-kett
+        over: w w 3 r 0 0
+      bowler: abhishek-verma
+    - batsman:
+      - name: sam-kett
+        over: . . 2 . w 3
+      - name: stu-kett
+        over: r 3 . 1 . .
+      bowler: amit-pothen
+    - batsman:
+      - name: sam-kett
+        over: 0 3 . . . 3
+      - name: stu-kett
+        over: . . 0 0 2 .
+      bowler: uddhav-naik
+    score: 18
+    skin: false
+  - members:
+    - lee-terhuurne
+    - dave
+    overs:
+    - batsman:
+      - name: lee-terhuurne
+        over: 0 3 . . . 1
+      - name: dave
+        over: . . 0 0 3 .
+      bowler: rohit-patel
+    - batsman:
+      - name: lee-terhuurne
+        over: 1 . 3 . . 1
+      - name: dave
+        over: . 2 . 0 3 .
+      bowler: smit-shah
+    - batsman:
+      - name: lee-terhuurne
+        over: 2 . 3 . 0 b
+      - name: dave
+        over: . 3nb . 2 . .
+      bowler: jared-mascarenhas
+    - batsman:
+      - name: lee-terhuurne
+        over: . . . w 4 .
+      - name: dave
+        over: 0 0 3 . . 0
+      bowler: brendan-raj
+    score: 34
+    skin: true
+  - members:
+    - hayden-wark
+    - luke-henwood
+    overs:
+    - batsman:
+      - name: hayden-wark
+        over: 0 3 . . 0 0
+      - name: luke-henwood
+        over: . . 0 3 . .
+      bowler: amit-pothen
+    - batsman:
+      - name: hayden-wark
+        over: . 5 . . 3nb .
+      - name: luke-henwood
+        over: 3 . 0 c . b
+      bowler: abhishek-verma
+    - batsman:
+      - name: hayden-wark
+        over: 3 . 2 . . c
+      - name: luke-henwood
+        over: . 2 . 0 4 .
+      bowler: uddhav-naik
+    - batsman:
+      - name: hayden-wark
+        over: 3 . 3 . . 0
+      - name: luke-henwood
+        over: . 4 . 0 2 .
+      bowler: anshuman-bhaduri
+    score: 27
+    skin: true
+  score: 71
+- partnerships:
+  - members:
+    - rohit-patel
+    - jared-mascarenhas
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: 0 0 b b w 0
+      - name: jared-mascarenhas
+        over: . . . . . .
+      bowler: mark-dass
+    - batsman:
+      - name: rohit-patel
+        over: . . 0 0 1 .
+      - name: jared-mascarenhas
+        over: 0 2 . . . 3
+      bowler: hayden-wark
+    - batsman:
+      - name: rohit-patel
+        over: . . 0 3 . 0
+      - name: jared-mascarenhas
+        over: 0 1 . . 3 .
+      bowler: logan-henwood
+    - batsman:
+      - name: rohit-patel
+        over: . . . 0 w 0
+      - name: jared-mascarenhas
+        over: w w 1 . . .
+      bowler: sam-kett
+    score: 16
+    skin: true
+  - members:
+    - uddhav-naik
+    - amit-pothen
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: 3 . . 0 3 .
+      - name: amit-pothen
+        over: . w 3 . . 0
+      bowler: stu-kett
+    - batsman:
+      - name: uddhav-naik
+        over: 1 r . . 3 .
+      - name: amit-pothen
+        over: . . w 3 . r
+      bowler: lee-terhuurne
+    - batsman:
+      - name: uddhav-naik
+        over: . . 0 3 . 3
+      - name: amit-pothen
+        over: w 4 . . 1 .
+      bowler: luke-henwood
+    - batsman:
+      - name: uddhav-naik
+        over: 3 . w 1 . 0
+      - name: amit-pothen
+        over: . 5 . . 3 .
+      bowler: dave
+    score: 41
+    skin: true
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 0 2 . 3 . .
+      - name: anshuman-bhaduri
+        over: . . 2 . 0 3
+      bowler: stu-kett
+    - batsman:
+      - name: smit-shah
+        over: . . . . 1 .
+      - name: anshuman-bhaduri
+        over: 0 w 0 3 . 0
+      bowler: lee-terhuurne
+    - batsman:
+      - name: smit-shah
+        over: 3 . . 3 . c
+      - name: anshuman-bhaduri
+        over: . 0 3 . 3 .
+      bowler: dave
+    - batsman:
+      - name: smit-shah
+        over: 3 . . . 0 0
+      - name: anshuman-bhaduri
+        over: . 0 0 r . .
+      bowler: hayden-wark
+    score: 22
+    skin: false
+  - members:
+    - brendan-raj
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: brendan-raj
+        over: 0 0 1 . . .
+      - name: abhishek-verma
+        over: . . . b 0 0
+      bowler: logan-henwood
+    - batsman:
+      - name: brendan-raj
+        over: 3 . . . . 0
+      - name: abhishek-verma
+        over: . w 0 2 4 .
+      bowler: sam-kett
+    - batsman:
+      - name: brendan-raj
+        over: . . 1 . b 3
+      - name: abhishek-verma
+        over: 0 2 . 4 . .
+      bowler: luke-henwood
+    - batsman:
+      - name: brendan-raj
+        over: 3 . . . . 0
+      - name: abhishek-verma
+        over: . 0 0 3 3 .
+      bowler: mark-dass
+    score: 22
+    skin: false
+  score: 101
+  us: true
