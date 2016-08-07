@@ -25,6 +25,10 @@
     slug: jared-mascarenhas
 -   name: Sai Karnan
     slug: sai-karnan
+-   name: Daniel Brown
+    slug: daniel-brown
+-   name: Kanishk Vaddiraju
+    slug: kanishk-vaddiraju
 -   name: Minesh Patel
     slug: minesh-patel
     active: false
@@ -94,9 +98,6 @@
     name: Joy Chatterji
     slug: joy-chatterji
 -   active: false
-    name: Kanishk Vaddiraju
-    slug: kanishk-vaddiraju
--   active: false
     name: Nishant Dogra
     slug: nishant-dogra
 -   active: false
@@ -117,9 +118,6 @@
 -   active: false
     name: Ravi Patel
     slug: ravi-patel
--   active: false
-    name: Dan Brown
-    slug: dan-brown
 -   active: false
     name: Hasith Gamage
     slug: hasith-gamage
