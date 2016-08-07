@@ -304,6 +304,10 @@ h3 {
     background-position: -67.5em; }
   .profile.uddhav-naik {
     background-position: -74.25em; }
+  .profile.kanishk-vaddiraju {
+    background-position: -81em; }
+  .profile.daniel-brown {
+    background-position: -87.75em; }
   .profile + h3 {
     padding-top: 0.96em; }
   @media screen and (min-width: 19em) {
@@ -336,7 +340,11 @@ h3 {
       .profile.smit-shah {
         background-position: -90em; }
       .profile.uddhav-naik {
-        background-position: -99em; } }
+        background-position: -99em; }
+      .profile.kanishk-vaddiraju {
+        background-position: -108em; }
+      .profile.daniel-brown {
+        background-position: -117em; } }
 
 .avatar {
   background-image: url("/img/profile.png");
@@ -367,6 +375,10 @@ h3 {
     background-position: -67.5em; }
   .avatar.uddhav-naik {
     background-position: -74.25em; }
+  .avatar.kanishk-vaddiraju {
+    background-position: -81em; }
+  .avatar.daniel-brown {
+    background-position: -87.75em; }
 
 .overall-player-stats, .player-league-stats > li ul, .player-individual-stats > li ul, .player-partner-stats > li ul {
   text-align: center; }
