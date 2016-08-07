@@ -11,30 +11,30 @@ innings:
 - partnerships:
   - members:
     - rob-gilmore
-    - ben-khaled
+    - ben-jackett
     overs:
     - batsman:
       - name: rob-gilmore
         over: w 3 . . . .
-      - name: ben-khaled
+      - name: ben-jackett
         over: . . 0 w 0 2
       bowler: brendan-raj
     - batsman:
       - name: rob-gilmore
         over: . 1 . . . .
-      - name: ben-khaled
+      - name: ben-jackett
         over: 1 . nb nb 0 0
       bowler: amit-pothen
     - batsman:
       - name: rob-gilmore
         over: 2 . 3 . 0 3
-      - name: ben-khaled
+      - name: ben-jackett
         over: . 6 . 7 . .
       bowler: smit-shah
     - batsman:
       - name: rob-gilmore
         over: nb1 . 1 . 3 .
-      - name: ben-khaled
+      - name: ben-jackett
         over: . 3 . 1 . 5
       bowler: anshuman-bhaduri
     score: 54
@@ -140,7 +140,7 @@ innings:
         over: 3 . . . 3 .
       - name: amit-pothen
         over: . w 0 3 . 0
-      bowler: ben-khaled
+      bowler: ben-jackett
     - batsman:
       - name: uddhav-naik
         over: 0 w . . 3 .
@@ -200,7 +200,7 @@ innings:
         over: 0 0 1 . . .
       - name: rohit-patel
         over: . . . 0 0 2
-      bowler: ben-khaled
+      bowler: ben-jackett
     - batsman:
       - name: anshuman-bhaduri
         over: . 3 . . . 0
