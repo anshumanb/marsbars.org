@@ -549,6 +549,11 @@ h3 {
     background-color: #82CFFD;
     color: #0D4F8B;
     border-radius: 5px; }
+  .central-winter .league {
+    border: 1px solid #7F9A65;
+    background-color: #B4EEB4;
+    color: #3B5E2B;
+    border-radius: 5px; }
   .matches .match .datetime {
     color: #555555;
     margin: 0em 0 0.75em 0.5em;
