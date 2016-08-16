@@ -1,0 +1,255 @@
+datetime: '2016-08-14T18:20:00+12:00'
+league: 2016-central-winter
+venue: Central
+court: 2
+opponent: Youthz
+result: won
+margin: 15 runs
+skins: 2
+points: 6
+innings:
+- partnerships:
+  - members:
+    - brad-unknown
+    - taylor-macgregor
+    overs:
+    - batsman:
+      - name: brad-unknown
+        over: 0 3 . . 2 .
+      - name: taylor-macgregor
+        over: . . w 4 . w
+      bowler: rohit-patel
+    - batsman:
+      - name: brad-unknown
+        over: 3 . 1 . 1 .
+      - name: taylor-macgregor
+        over: . 1 . 3 . 1
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: brad-unknown
+        over: . . 3 . 2 .
+      - name: taylor-macgregor
+        over: 0 3 . 2 . 0
+      bowler: daniel-brown
+    - batsman:
+      - name: brad-unknown
+        over: 0 r . 3 . 2
+      - name: taylor-macgregor
+        over: . . 4 . 6 .
+      bowler: bhavik-vora
+    score: 45
+    skin: true
+  - members:
+    - logan-borow
+    - matthew-ensor
+    overs:
+    - batsman:
+      - name: logan-borow
+        over: 3 . 0 r . 0
+      - name: matthew-ensor
+        over: . 1 . . 2 .
+      bowler: brendan-raj
+    - batsman:
+      - name: logan-borow
+        over: . . . . . 7
+      - name: matthew-ensor
+        over: w w 0 0 1 .
+      bowler: roopesh-vanamala
+    - batsman:
+      - name: logan-borow
+        over: w 4 . . . 0
+      - name: matthew-ensor
+        over: . . 0 w 3 .
+      bowler: yohan
+    - batsman:
+      - name: logan-borow
+        over: . . 0 1 . 5
+      - name: matthew-ensor
+        over: w 4 . . 1 .
+      bowler: sahil-verma
+    score: 42
+    skin: true
+  - members:
+    - logan-flutey
+    - rob-mcstay
+    overs:
+    - batsman:
+      - name: logan-flutey
+        over: 1 . . c 1 .
+      - name: rob-mcstay
+        over: . 0 c . . s
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: logan-flutey
+        over: 1 . . . . 0
+      - name: rob-mcstay
+        over: . 0 1 r c .
+      bowler: rohit-patel
+    - batsman:
+      - name: logan-flutey
+        over: . . r . 6 .
+      - name: rob-mcstay
+        over: w r . 1 . s
+      bowler: bhavik-vora
+    - batsman:
+      - name: logan-flutey
+        over: 1 . . . . 1
+      - name: rob-mcstay
+        over: . 0 s c 1 .
+      bowler: sahil-verma
+    score: -33
+    skin: false
+  - members:
+    - dylan-jackson
+    - hayden-jackson
+    overs:
+    - batsman:
+      - name: dylan-jackson
+        over: 1 . . 3 . .
+      - name: hayden-jackson
+        over: . 0 3 . 0 3
+      bowler: daniel-brown
+    - batsman:
+      - name: dylan-jackson
+        over: . 2 . . . 5
+      - name: hayden-jackson
+        over: 1 . 1 r 1 .
+      bowler: yohan
+    - batsman:
+      - name: dylan-jackson
+        over: 5 . 1 . . .
+      - name: hayden-jackson
+        over: . 1 . 0 w 3
+      bowler: roopesh-vanamala
+    - batsman:
+      - name: dylan-jackson
+        over: . 1 r . 3 .
+      - name: hayden-jackson
+        over: 4 . . 1 . 0
+      bowler: brendan-raj
+    score: 32
+    skin: false
+  score: 86
+- partnerships:
+  - members:
+    - anshuman-bhaduri
+    - yohan
+    overs:
+    - batsman:
+      - name: anshuman-bhaduri
+        over: 3 . . . 3 .
+      - name: yohan
+        over: . 0 w r . 0
+      bowler: brad-unknown
+    - batsman:
+      - name: anshuman-bhaduri
+        over: w 3 . . 0 3
+      - name: yohan
+        over: . . b 2 . .
+      bowler: logan-flutey
+    - batsman:
+      - name: anshuman-bhaduri
+        over: w w 0 3 . .
+      - name: yohan
+        over: . . . . 0 0
+      bowler: logan-borow
+    - batsman:
+      - name: anshuman-bhaduri
+        over: s . 3 . . . 1
+      - name: yohan
+        over: . r . nb w 3 .
+      bowler: hayden-jackson
+    score: 21
+    skin: false
+  - members:
+    - bhavik-vora
+    - daniel-brown
+    overs:
+    - batsman:
+      - name: bhavik-vora
+        over: c . b c . .
+      - name: daniel-brown
+        over: . 4 . . 0 1
+      bowler: rob-mcstay
+    - batsman:
+      - name: bhavik-vora
+        over: . 6 . . 0 w
+      - name: daniel-brown
+        over: w1 . 0 2 . .
+      bowler: taylor-macgregor
+    - batsman:
+      - name: bhavik-vora
+        over: . 7 . . w 6
+      - name: daniel-brown
+        over: 2 . w c . .
+      bowler: matthew-ensor
+    - batsman:
+      - name: bhavik-vora
+        over: b . c . . r
+      - name: daniel-brown
+        over: . r . w 1 .
+      bowler: dylan-jackson
+    score: 5
+    skin: false
+  - members:
+    - roopesh-vanamala
+    - sahil-verma
+    overs:
+    - batsman:
+      - name: roopesh-vanamala
+        over: 2 . . . w nb
+      - name: sahil-verma
+        over: . 0 w 3 . .
+      bowler: rob-mcstay
+    - batsman:
+      - name: roopesh-vanamala
+        over: . 1 . 7 . 1
+      - name: sahil-verma
+        over: c . 3 . 3 .
+      bowler: logan-flutey
+    - batsman:
+      - name: roopesh-vanamala
+        over: 1 . 1 . . w
+      - name: sahil-verma
+        over: . 2 . w 1 .
+      bowler: taylor-macgregor
+    - batsman:
+      - name: roopesh-vanamala
+        over: . . . 3 . .
+      - name: sahil-verma
+        over: 0 0 2 . 0 0
+      bowler: dylan-jackson
+    score: 39
+    skin: true
+  - members:
+    - brendan-raj
+    - rohit-patel
+    overs:
+    - batsman:
+      - name: brendan-raj
+        over: w 1 . . 4 .
+      - name: rohit-patel
+        over: . . w 2 . 0
+      bowler: matthew-ensor
+    - batsman:
+      - name: brendan-raj
+        over: 3 . 3 . . c
+      - name: rohit-patel
+        over: . 13 . 0 3 .
+      bowler: brad-unknown
+    - batsman:
+      - name: brendan-raj
+        over: . c . 1 . 3
+      - name: rohit-patel
+        over: 3 . c . 3 .
+      bowler: logan-borow
+    - batsman:
+      - name: brendan-raj
+        over: 3 . 0 2 . .
+      - name: rohit-patel
+        over: . 1 . . 0 0
+      bowler: hayden-jackson
+    score: 36
+    skin: true
+  score: 101
+  us: true

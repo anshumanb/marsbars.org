@@ -3,10 +3,253 @@ league: 2016-super-league
 venue: Manukau
 court: 1
 opponent: Harbour
-result:
-margin:
-skins:
-points:
+result: lost
+margin: 86 runs
+skins: 1
+points: 1
 innings:
--   score:
--   score:
+- partnerships:
+  - members:
+    - uddhav-naik
+    - amit-pothen
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: 1 . r w 1 . . w
+      - name: amit-pothen
+        over: . w . . . w 2 .
+      bowler: osman-ahmad
+    - batsman:
+      - name: uddhav-naik
+        over: . 1 . w 0 w 2 .
+      - name: amit-pothen
+        over: 2 . 1 . . . . 0
+      bowler: shaun-howes
+    - batsman:
+      - name: uddhav-naik
+        over: 1 . . . b 0 0 1
+      - name: amit-pothen
+        over: . 0 0 2 . . . .
+      bowler: rayner-puch
+    - batsman:
+      - name: uddhav-naik
+        over: 1 . 2 . 0 2 . 0
+      - name: amit-pothen
+        over: . 1 . 2 . . 1 .
+      bowler: mathew-cowdry
+    score: 25
+    skin: false
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 0 2 m . . . . . 0
+      - name: anshuman-bhaduri
+        over: . . . w b 0 0 1 .
+      bowler: wesley-bolton
+    - batsman:
+      - name: smit-shah
+        over: . 1 . . 2 . 0 2
+      - name: anshuman-bhaduri
+        over: 2 . 0 2 . 3 . .
+      bowler: mike-okkerse
+    - batsman:
+      - name: smit-shah
+        over: 1 . 4 r 2 . . w
+      - name: anshuman-bhaduri
+        over: . 2 . . . 0 5 .
+      bowler: karl-wagstaff
+    - batsman:
+      - name: smit-shah
+        over: . 0 . . . 2 . .
+      - name: anshuman-bhaduri
+        over: 1 . r 0 2 . 0 1
+      bowler: imran-ahmadzai
+    score: 19
+    skin: true
+  - members:
+    - daniel-brown
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: daniel-brown
+        over: 0 2 . . 0 0 s b
+      - name: dasith-goonatilaka
+        over: . . 0 2 . . . .
+      bowler: wesley-bolton
+    - batsman:
+      - name: daniel-brown
+        over: . . 0 0 2 . 2 .
+      - name: dasith-goonatilaka
+        over: 0 2 . . . 1 . 2
+      bowler: shaun-howes
+    - batsman:
+      - name: daniel-brown
+        over: . 0 b 2 . 0 0 s
+      - name: dasith-goonatilaka
+        over: c . . . 1 . . .
+      bowler: karl-wagstaff
+    - batsman:
+      - name: daniel-brown
+        over: . 1 . r . 1 . b
+      - name: dasith-goonatilaka
+        over: 2 . 2 . 2 . 2 .
+      bowler: imran-ahmadzai
+    score: -9
+    skin: false
+  - members:
+    - rohit-patel
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: b 1 r . . 0 0 1
+      - name: brendan-raj
+        over: . . . 0 2 . . .
+      bowler: osman-ahmad
+    - batsman:
+      - name: rohit-patel
+        over: w 2 . r 0 0 1 .
+      - name: brendan-raj
+        over: . . w . . . . 2
+      bowler: rayner-puch
+    - batsman:
+      - name: rohit-patel
+        over: . . 0 r 2 . 0 2
+      - name: brendan-raj
+        over: 0 1 . . . 2 . .
+      bowler: mike-okkerse
+    - batsman:
+      - name: rohit-patel
+        over: 2 . w 0 1 . 0 0 2
+      - name: brendan-raj
+        over: . 2 . . . 4 . . .
+      bowler: mathew-cowdry
+    score: 13
+    skin: false
+  score: 48
+  us: true
+- partnerships:
+  - members:
+    - mathew-cowdry
+    - rayner-puch
+    overs:
+    - batsman:
+      - name: mathew-cowdry
+        over: 0 0 1 . 2 . . 1
+      - name: rayner-puch
+        over: . . . 3 . 0 1 .
+      bowler: brendan-raj
+    - batsman:
+      - name: mathew-cowdry
+        over: 0 b 1 . . . 1 .
+      - name: rayner-puch
+        over: . . . 0 0 1 . 0
+      bowler: amit-pothen
+    - batsman:
+      - name: mathew-cowdry
+        over: 2 . w 0 1 . . 1
+      - name: rayner-puch
+        over: . 1 . . . w 2 .
+      bowler: daniel-brown
+    - batsman:
+      - name: mathew-cowdry
+        over: 1 . . 2 . 0 0 w 1 .
+      - name: rayner-puch
+        over: . w 4 . 2 . . . . 0
+      bowler: anshuman-bhaduri
+    score: 31
+    skin: true
+  - members:
+    - shaun-howes
+    - karl-wagstaff
+    overs:
+    - batsman:
+      - name: shaun-howes
+        over: 0 0 1 . . . . 0
+      - name: karl-wagstaff
+        over: . . . w 0 0 2 .
+      bowler: amit-pothen
+    - batsman:
+      - name: shaun-howes
+        over: . . . . . 0 r 0
+      - name: karl-wagstaff
+        over: 2 r 0 0 2 . . .
+      bowler: smit-shah
+    - batsman:
+      - name: shaun-howes
+        over: . . w 0 0 2 . .
+      - name: karl-wagstaff
+        over: 0 2 . . . . 0 0
+      bowler: brendan-raj
+    - batsman:
+      - name: shaun-howes
+        over: w 2 . 2 . . 1 . 0
+      - name: karl-wagstaff
+        over: . . r . 0 2 . 3 .
+      bowler: dasith-goonatilaka
+    score: 12
+    skin: false
+  - members:
+    - imran-ahmadzai
+    - osman-ahmad
+    overs:
+    - batsman:
+      - name: imran-ahmadzai
+        over: 5 . 2 . w 2 . .
+      - name: osman-ahmad
+        over: . 2 . 2 . . 0 2
+      bowler: uddhav-naik
+    - batsman:
+      - name: imran-ahmadzai
+        over: . 2 . 2 . 2 . .
+      - name: osman-ahmad
+        over: 2 . 2 . 2 . w 0
+      bowler: rohit-patel
+    - batsman:
+      - name: imran-ahmadzai
+        over: 7 . 1 . 2 . w 1
+      - name: osman-ahmad
+        over: . 2 . 2 . r . .
+      bowler: uddhav-naik
+    - batsman:
+      - name: imran-ahmadzai
+        over: 3 . 2 . r . . . . 2
+      - name: osman-ahmad
+        over: . 2 . 2 . w w 0 1 .
+      bowler: rohit-patel
+    score: 54
+    skin: true
+  - members:
+    - wesley-bolton
+    - mike-okkerse
+    overs:
+    - batsman:
+      - name: wesley-bolton
+        over: 0 0 1 . 0 1 . .
+      - name: mike-okkerse
+        over: . . . 4 . . 0 0
+      bowler: daniel-brown
+    - batsman:
+      - name: wesley-bolton
+        over: 3 . . w 1 . 1 .
+      - name: mike-okkerse
+        over: . w 3 . . 4 . 1
+      bowler: smit-shah
+    - batsman:
+      - name: wesley-bolton
+        over: . . 0 1 . . . 1
+      - name: mike-okkerse
+        over: 0 2 . . 0 0 1 .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: wesley-bolton
+        over: 1 . 1 . 2 . 1 .
+      - name: mike-okkerse
+        over: . 3 . 3 . 3 . c
+      bowler: dasith-goonatilaka
+    score: 37
+    skin: true
+  score: 134

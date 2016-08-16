@@ -142,3 +142,12 @@
 -   active: false
     name: Shreyas
     slug: shreyas
+-   active: false
+    name: Bala
+    slug: bala
+-   active: false
+    name: Sahil Verma
+    slug: sahil-verma
+-   active: false
+    name: Roopesh Vanamala
+    slug: roopesh-vanamala

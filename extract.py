@@ -17,6 +17,14 @@ def slugify(name):
         return 'jared-mascarenhas'
     elif name == 'daz-goonatilaka':
         return 'dasith-goonatilaka'
+    elif name == 'yohan-unknown':
+        return 'yohan'
+    elif name == 'chirag-unknown':
+        return 'chirag-ahuja'
+    elif name == 'kanish-unknown':
+        return 'kanishk-vaddiraju'
+    elif name == 'daniel-unknown':
+        return 'daniel-brown'
     return name
 
 

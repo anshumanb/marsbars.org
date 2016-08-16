@@ -3,10 +3,253 @@ league: 2016-super-league
 venue: Waitakere
 court: 2
 opponent: Hamilton
-result:
-margin:
-skins:
-points:
+result: won
+margin: 9 runs
+skins: 3
+points: 7
 innings:
--   score:
--   score:
+- partnerships:
+  - members:
+    - uddhav-naik
+    - amit-pothen
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: 0 0 1 . 0 0 1 .
+      - name: amit-pothen
+        over: . . . 1 . . . 2
+      bowler: cooper-rowell
+    - batsman:
+      - name: uddhav-naik
+        over: . 2 . 2 . w 0 2
+      - name: amit-pothen
+        over: 2 . 1 . 2 . . .
+      bowler: karl-dalton
+    - batsman:
+      - name: uddhav-naik
+        over: 0 4 . . . . . 2
+      - name: amit-pothen
+        over: . . c c 0 0 2 .
+      bowler: vihang-ahlawat
+    - batsman:
+      - name: uddhav-naik
+        over: 1 . 0 1 . . . 2 .
+      - name: amit-pothen
+        over: . r . . 0 nb 1 . 1
+      bowler: chris-cliffe
+    score: 19
+    skin: true
+  - members:
+    - smit-shah
+    - kanishk-vaddiraju
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 0 2 . 3 . 2 . 0
+      - name: kanishk-vaddiraju
+        over: . . nb1 . 1 . 1 .
+      bowler: matt-hunt
+    - batsman:
+      - name: smit-shah
+        over: . . 0 b 2 . . .
+      - name: kanishk-vaddiraju
+        over: 0 7 . . . 0 0 2
+      bowler: vihang-ahlawat
+    - batsman:
+      - name: smit-shah
+        over: . . 2 . 2 . r .
+      - name: kanishk-vaddiraju
+        over: 0 r . 2 . 2 . w
+      bowler: paul-anderson
+    - batsman:
+      - name: smit-shah
+        over: . . 0 1 . . . .
+      - name: kanishk-vaddiraju
+        over: 0 2 . . 0 0 r 1
+      bowler: kevin-bartels
+    score: 17
+    skin: false
+  - members:
+    - daniel-brown
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: daniel-brown
+        over: 4 . . . . 0 0 s
+      - name: dasith-goonatilaka
+        over: . 0 0 w 1 . . .
+      bowler: cooper-rowell
+    - batsman:
+      - name: daniel-brown
+        over: . . 4 . . w 1 . 7
+      - name: dasith-goonatilaka
+        over: 0 1 . 2 m . . 3 .
+      bowler: tony-watkins
+    - batsman:
+      - name: daniel-brown
+        over: 1 . 0 2 . 1 . 0
+      - name: dasith-goonatilaka
+        over: . 1 . . 1 . 2 .
+      bowler: karl-dalton
+    - batsman:
+      - name: daniel-brown
+        over: . 2 . 2 . 2 . w 1
+      - name: dasith-goonatilaka
+        over: 1 . 2 . 2 . 2 . .
+      bowler: chris-cliffe
+    score: 41
+    skin: true
+  - members:
+    - rohit-patel
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: 0 2 . w 2 . . 0
+      - name: brendan-raj
+        over: . . 2 . . nb 2 .
+      bowler: matt-hunt
+    - batsman:
+      - name: rohit-patel
+        over: . . 0 0 1 . . .
+      - name: brendan-raj
+        over: 0 1 . . . 0 c 2
+      bowler: kevin-bartels
+    - batsman:
+      - name: rohit-patel
+        over: . c 2 . . 2 . 2
+      - name: brendan-raj
+        over: 4 . . 0 2 . 3 .
+      bowler: tony-watkins
+    - batsman:
+      - name: rohit-patel
+        over: 0 4 . . 0 w 2 . 0
+      - name: brendan-raj
+        over: . . 0 4 . . . 5 .
+      bowler: kevin-bartels
+    score: 38
+    skin: true
+  score: 115
+  us: true
+- partnerships:
+  - members:
+    - tony-watkins
+    - vihang-ahlawat
+    overs:
+    - batsman:
+      - name: tony-watkins
+        over: 0 nb2 . 2 1 . . 0
+      - name: vihang-ahlawat
+        over: . . 1 . . 0 1 .
+      bowler: brendan-raj
+    - batsman:
+      - name: tony-watkins
+        over: . w 1 . . 2 . .
+      - name: vihang-ahlawat
+        over: 3 . . 0 1 . 0 c
+      bowler: kanishk-vaddiraju
+    - batsman:
+      - name: tony-watkins
+        over: nb 1 . c . . 2 .
+      - name: vihang-ahlawat
+        over: . . 4 . s 4 . 2
+      bowler: smit-shah
+    - batsman:
+      - name: tony-watkins
+        over: . 1 . . . c . r 2
+      - name: vihang-ahlawat
+        over: r . w 0 2 . 2 . .
+      bowler: dasith-goonatilaka
+    score: 12
+    skin: false
+  - members:
+    - matt-hunt
+    - chris-cliffe
+    overs:
+    - batsman:
+      - name: matt-hunt
+        over: w 0 w 0 0 w1 . .
+      - name: chris-cliffe
+        over: . . . . . . 0 r
+      bowler: amit-pothen
+    - batsman:
+      - name: matt-hunt
+        over: . . . 2 . . w 0
+      - name: chris-cliffe
+        over: w w 2 . 0 1 . .
+      bowler: daniel-brown
+    - batsman:
+      - name: matt-hunt
+        over: . . . w 1 . . .
+      - name: chris-cliffe
+        over: 0 w 1 . . w w 0
+      bowler: rohit-patel
+    - batsman:
+      - name: matt-hunt
+        over: 0 7 . 0 2 . 2 .
+      - name: chris-cliffe
+        over: . . 1 . . 2 . 0
+      bowler: uddhav-naik
+    score: 37
+    skin: true
+  - members:
+    - karl-dalton
+    - kevin-bartels
+    overs:
+    - batsman:
+      - name: karl-dalton
+        over: w w 1 . 2 . . 0
+      - name: kevin-bartels
+        over: . . . 1 . 0 1 .
+      bowler: daniel-brown
+    - batsman:
+      - name: karl-dalton
+        over: . 1 . w w 1 . .
+      - name: kevin-bartels
+        over: 2 . r . . . 0 1
+      bowler: amit-pothen
+    - batsman:
+      - name: karl-dalton
+        over: . . . 2 . 2 . 2
+      - name: kevin-bartels
+        over: 0 0 2 . 2 . 1 .
+      bowler: smit-shah
+    - batsman:
+      - name: karl-dalton
+        over: w 1 . 2 . 2 . 0 1
+      - name: kevin-bartels
+        over: . . 1 . 1 . 2 . .
+      bowler: rohit-patel
+    score: 36
+    skin: false
+  - members:
+    - cooper-rowell
+    - tony-watkins
+    overs:
+    - batsman:
+      - name: cooper-rowell
+        over: 2 . . r . . 0 1
+      - name: tony-watkins
+        over: . 0 2 . 0 2 . .
+      bowler: brendan-raj
+    - batsman:
+      - name: cooper-rowell
+        over: 1 . 2 . . . . c
+      - name: tony-watkins
+        over: . 2 . 2 0 2 4 .
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: cooper-rowell
+        over: . . . . 2 . 1 .
+      - name: tony-watkins
+        over: w b 0 c . 2 . 7
+      bowler: uddhav-naik
+    - batsman:
+      - name: cooper-rowell
+        over: . 2 . 5 . 3 . w 2
+      - name: tony-watkins
+        over: 2 . c . 1 . r . .
+      bowler: kanishk-vaddiraju
+    score: 21
+    skin: false
+  score: 106

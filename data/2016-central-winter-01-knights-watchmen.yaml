@@ -1,0 +1,255 @@
+datetime: '2016-08-03T21:30:00+12:00'
+league: 2016-central-winter
+venue: Central
+court: 2
+opponent: Knights Watchmen
+result: won
+margin: 112 runs
+skins: 3
+points: 7
+innings:
+- partnerships:
+  - members:
+    - vish-siva
+    - shrish-latch
+    overs:
+    - batsman:
+      - name: vish-siva
+        over: w 3 . 2 . 2
+      - name: shrish-latch
+        over: . . 3 . 2 .
+      bowler: kanishk-vaddiraju
+    - batsman:
+      - name: vish-siva
+        over: 3 . 2 . w 0
+      - name: shrish-latch
+        over: . 1 . c . .
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: vish-siva
+        over: . 3 . . w 3
+      - name: shrish-latch
+        over: 3 . 1 r . .
+      bowler: chirag-ahuja
+    - batsman:
+      - name: vish-siva
+        over: 0 1 . 0 3 .
+      - name: shrish-latch
+        over: . . 3 . . r
+      bowler: brendan-raj
+    score: 29
+    skin: false
+  - members:
+    - royston-raphael
+    - shehan-ebenezer
+    overs:
+    - batsman:
+      - name: royston-raphael
+        over: r . 3 . b 2
+      - name: shehan-ebenezer
+        over: . 1 . 4 . .
+      bowler: bala
+    - batsman:
+      - name: royston-raphael
+        over: . . 3 . 3 .
+      - name: shehan-ebenezer
+        over: r 6 . c . w
+      bowler: rohit-patel
+    - batsman:
+      - name: royston-raphael
+        over: w 2 . 1 r .
+      - name: shehan-ebenezer
+        over: . . 3 . . r
+      bowler: amit-pothen
+    - batsman:
+      - name: royston-raphael
+        over: r . r . 5 .
+      - name: shehan-ebenezer
+        over: . 1 . 2 . 3
+      bowler: smit-shah
+    score: 5
+    skin: false
+  - members:
+    - hamish-unknown
+    - ruchir-garg
+    overs:
+    - batsman:
+      - name: hamish-unknown
+        over: c . 1 . . 0
+      - name: ruchir-garg
+        over: . 3 . 0 2 .
+      bowler: chirag-ahuja
+    - batsman:
+      - name: hamish-unknown
+        over: . 3 . s w 3
+      - name: ruchir-garg
+        over: 3 . 6 . . .
+      bowler: kanishk-vaddiraju
+    - batsman:
+      - name: hamish-unknown
+        over: 3 . c . 6 .
+      - name: ruchir-garg
+        over: . 3 . c . 1
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: hamish-unknown
+        over: . r . c . 3
+      - name: ruchir-garg
+        over: 3 . 7 . c .
+      bowler: bala
+    score: 15
+    skin: true
+  - members:
+    - joel-coutts
+    - jay-bhattacharya
+    overs:
+    - batsman:
+      - name: joel-coutts
+        over: 3 . 3 . r . .
+      - name: jay-bhattacharya
+        over: . 3 . c . w 3
+      bowler: rohit-patel
+    - batsman:
+      - name: joel-coutts
+        over: . 1 r . . 3
+      - name: jay-bhattacharya
+        over: 4 . . 0 3 .
+      bowler: brendan-raj
+    - batsman:
+      - name: joel-coutts
+        over: 1 . . 3 . 1
+      - name: jay-bhattacharya
+        over: . 0 3 . 1 .
+      bowler: smit-shah
+    - batsman:
+      - name: joel-coutts
+        over: w c . . 1 . c .
+      - name: jay-bhattacharya
+        over: . . r c . 2 . 4
+      bowler: amit-pothen
+    score: 10
+    skin: false
+  score: 59
+- partnerships:
+  - members:
+    - smit-shah
+    - kanishk-vaddiraju
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 1 . . w 3 .
+      - name: kanishk-vaddiraju
+        over: . 0 2 . . w
+      bowler: hamish-unknown
+    - batsman:
+      - name: smit-shah
+        over: 2 . . . 2 .
+      - name: kanishk-vaddiraju
+        over: . w w 3 . 1
+      bowler: joel-coutts
+    - batsman:
+      - name: smit-shah
+        over: . 3 . . . 3
+      - name: kanishk-vaddiraju
+        over: 7 . b w 3 .
+      bowler: royston-raphael
+    - batsman:
+      - name: smit-shah
+        over: w 1 . . 3 .
+      - name: kanishk-vaddiraju
+        over: . . 0 3 . s
+      bowler: ruchir-garg
+    score: 45
+    skin: true
+  - members:
+    - amit-pothen
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: 0 0 3 . w 3
+      - name: dasith-goonatilaka
+        over: . . . 3 . .
+      bowler: shrish-latch
+    - batsman:
+      - name: amit-pothen
+        over: 4 . 3 . 0 4
+      - name: dasith-goonatilaka
+        over: . 1 . 3 . .
+      bowler: jay-bhattacharya
+    - batsman:
+      - name: amit-pothen
+        over: w 1 . 0 4 .
+      - name: dasith-goonatilaka
+        over: . . 2 . . 0
+      bowler: vish-siva
+    - batsman:
+      - name: amit-pothen
+        over: 3 . 2 . 3 .
+      - name: dasith-goonatilaka
+        over: . 3 . 3 . 7
+      bowler: hamish-unknown
+    score: 58
+    skin: true
+  - members:
+    - bala
+    - chirag-ahuja
+    overs:
+    - batsman:
+      - name: bala
+        over: 2 . 3 . 1 . r
+      - name: chirag-ahuja
+        over: . 3 . r . c .
+      bowler: joel-coutts
+    - batsman:
+      - name: bala
+        over: . . . 1 . 1
+      - name: chirag-ahuja
+        over: w 0 7 . 3 .
+      bowler: vish-siva
+    - batsman:
+      - name: bala
+        over: . 0 . . . .
+      - name: chirag-ahuja
+        over: r . r w s 1
+      bowler: ruchir-garg
+    - batsman:
+      - name: bala
+        over: . 2 . w w 0
+      - name: chirag-ahuja
+        over: c . 6 . . .
+      bowler: shrish-latch
+    score: 7
+    skin: false
+  - members:
+    - rohit-patel
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: 0 nb 3 . . .
+      - name: brendan-raj
+        over: . . . w 0 0
+      bowler: shehan-ebenezer
+    - batsman:
+      - name: rohit-patel
+        over: 6 . 4 . . w
+      - name: brendan-raj
+        over: . 3 . 0 3 .
+      bowler: jay-bhattacharya
+    - batsman:
+      - name: rohit-patel
+        over: . 3 . . . .
+      - name: brendan-raj
+        over: 3 . w w 0 3
+      bowler: shehan-ebenezer
+    - batsman:
+      - name: rohit-patel
+        over: . 7 . . 3 .
+      - name: brendan-raj
+        over: 3 . 0 3 . 3
+      bowler: royston-raphael
+    score: 61
+    skin: true
+  score: 171
+  us: true

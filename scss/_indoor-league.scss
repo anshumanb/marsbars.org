@@ -1,3 +1,10 @@
+@mixin league-pill($text-color, $bg-color, $border-color) {
+    border: 1px solid $border-color;
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 5px;
+}
+
 .league-id, .league-grade {
     $fs: ms(-1);
     @include secondary-text;
@@ -48,16 +55,13 @@
 
         }
         @at-root .central-autumn .league {
-            border: 1px solid #C77826;
-            background-color: #FFCC99;
-            color: #8B4500;
-            border-radius: 5px;
+            @include league-pill(#8B4500, #FFCC99, #C77826);
         }
         @at-root .super-league .league {
-            border: 1px solid #4682B4;
-            background-color: #82CFFD;
-            color: #0D4F8B;
-            border-radius: 5px;
+            @include league-pill(#0D4F8B, #82CFFD, #4682B4);
+        }
+        @at-root .central-winter .league {
+            @include league-pill(#3B5E2B, #B4EEB4, #7F9A65);
         }
         .datetime, {
             //@include adjust-font-size($datetime-fs);
