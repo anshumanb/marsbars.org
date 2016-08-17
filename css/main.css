@@ -532,13 +532,15 @@ h3 {
     line-height: 1.2;
     margin: 0em 0 0em 0.4em;
     float: left; }
-  .matches .match .league {
+  .matches .match .league, .matches .match .league-title {
     float: left;
     font-size: 0.9em;
     line-height: 1.2777777778;
     margin-top: 0.2222222222em;
     margin-left: 0.5555555556em;
     padding: 0 0.5555555556em; }
+  .matches .match .league-title {
+    font-weight: bold; }
   .central-autumn .league {
     border: 1px solid #C77826;
     background-color: #FFCC99;
@@ -554,6 +556,24 @@ h3 {
     background-color: #B4EEB4;
     color: #3B5E2B;
     border-radius: 5px; }
+  .semi-final-2 {
+    border: 1px solid #734A12;
+    background-color: #A67D3D;
+    color: #734A12;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px #CDB38B; }
+  .semi-final, .semi-final-1, .semi-final-3 {
+    border: 1px solid #363636;
+    background-color: #8C8C8C;
+    color: #363636;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px #9C9C9C; }
+  .final {
+    border: 1px solid #8B7500;
+    background-color: #EEC900;
+    color: #8B7500;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px #EEE5DE; }
   .matches .match .datetime {
     color: #555555;
     margin: 0em 0 0.75em 0.5em;
