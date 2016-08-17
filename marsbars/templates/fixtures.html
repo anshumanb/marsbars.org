@@ -16,6 +16,10 @@
         <dd class="contest">{{match.opponent}}</dd>
       <dt>League</dt>
         <dd class="league">{{match.league.short_name}}</dd>
+      {% if match.title %}
+      <dt>Title</dt>
+        <dd class="league-title {{match.title_slug}}">{{match.title}}</dd>
+      {% endif %}
       <dt>Date and time</dt>
         <dd class="datetime">{{match.datetime | localtime}}</dd>
       <dt>Venue</dt>

@@ -4,6 +4,10 @@
     color: $text-color;
     border-radius: 5px;
 }
+@mixin league-title-pill($text-color, $bg-color, $border-color, $shadow-color) {
+    @include league-pill($text-color, $bg-color, $border-color);
+    text-shadow: 0 1px 1px $shadow-color;
+}
 
 .league-id, .league-grade {
     $fs: ms(-1);
@@ -40,7 +44,7 @@
             @include margin(0, 0, 0, 0.5em, $fs);
             float: left;
         }
-        .league {
+        .league, .league-title {
             $fs: ms(-1);
             $desired_gap: ($base-lh*16 - $contest-fs/1em*16)/2;
             $current_size: $fs/1em*16;
@@ -51,8 +55,9 @@
             margin-top: ($base-lh - $lh) * 1em;
             margin-left: root-em(0.5em, $fs);
             padding: 0 root-em(0.5em, $fs);
-            //text-transform: lowercase;
-
+        }
+        .league-title {
+            font-weight: bold;
         }
         @at-root .central-autumn .league {
             @include league-pill(#8B4500, #FFCC99, #C77826);
@@ -62,6 +67,15 @@
         }
         @at-root .central-winter .league {
             @include league-pill(#3B5E2B, #B4EEB4, #7F9A65);
+        }
+        @at-root .semi-final-2 {
+            @include league-title-pill(#734A12, #A67D3D, #734A12, #CDB38B);
+        }
+        @at-root .semi-final, .semi-final-1, .semi-final-3 {
+            @include league-title-pill(#363636, #8C8C8C, #363636, #9C9C9C);
+        }
+        @at-root .final {
+            @include league-title-pill(#8B7500, #EEC900, #8B7500, #EEE5DE);
         }
         .datetime, {
             //@include adjust-font-size($datetime-fs);

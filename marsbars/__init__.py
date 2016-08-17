@@ -327,18 +327,20 @@ class IndoorMatch(db.Model):
     venue = db.Column(db.String(255))
     court = db.Column(db.Integer)
     opponent = db.Column(db.String(255))
+    title = db.Column(db.String(255))
     result = db.Column(db.String(255))
     margin = db.Column(db.Integer)
     skins = db.Column(db.Integer)
     points = db.Column(db.Integer)
 
     def __init__(self, league, datetime, venue, court, opponent, result,
-                 margin, skins, points):
+                 margin, skins, points, title=None):
         self.league = league
         self.datetime = datetime
         self.venue = venue
         self.court = court
         self.opponent = opponent
+        self.title = title
         self.result = result
         self.margin = margin
         self.skins = skins
@@ -351,6 +353,10 @@ class IndoorMatch(db.Model):
     @property
     def score(self):
         return [innings.score for innings in self.innings]
+
+    @property
+    def title_slug(self):
+        return self.title.lower().replace(' ', '-')
 
     @property
     def is_completed(self):
