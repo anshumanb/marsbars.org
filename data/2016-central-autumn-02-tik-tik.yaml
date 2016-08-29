@@ -8,32 +8,248 @@ margin: 85 runs
 skins: 4
 points: 8
 innings:
--   score: 67
-    partnerships:
-    -   score: 38
-    -   score: 1
-    -   score: 20
-    -   score: 8
--   score: 152
-    partnerships:
-    -   score: 43
-        skin: true
-        members:
-        - uddhav-naik
-        - sai-karnan  
-    -   score: 26
-        skin: true
-        members:
-        - smit-shah
-        - anshuman-bhaduri
-    -   score: 43
-        skin: true
-        members:
-        - nipuna-de-abrew
-        - dasith-goonatilaka
-    -   score: 40 
-        skin: true
-        members:
-        - brendan-raj
-        - abhishek-verma
-    us: true
+- partnerships:
+  - members:
+    - imran-ahmadzai
+    - bhavik-vora
+    overs:
+    - batsman:
+      - name: imran-ahmadzai
+        over: w 0 r . . nb
+      - name: bhavik-vora
+        over: . . . 0 3 .
+      bowler: brendan-raj
+    - batsman:
+      - name: imran-ahmadzai
+        over: . . . w 3 .
+      - name: bhavik-vora
+        over: 0 r 3 . . 3
+      bowler: nipuna-de-abrew
+    - batsman:
+      - name: imran-ahmadzai
+        over: r r . . 3 .
+      - name: bhavik-vora
+        over: . . w 3 . 2
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: imran-ahmadzai
+        over: . w 6 . 7 .
+      - name: bhavik-vora
+        over: 7 . . 3 . 1
+      bowler: dasith-goonatilaka
+    score: 38
+    skin: false
+  - members:
+    - varun-patel
+    - sahil-verma
+    overs:
+    - batsman:
+      - name: varun-patel
+        over: 3 r 0 6 . .
+      - name: sahil-verma
+        over: . . . . 0 0
+      bowler: uddhav-naik
+    - batsman:
+      - name: varun-patel
+        over: r . . 0 0 3
+      - name: sahil-verma
+        over: . 0 c . . .
+      bowler: smit-shah
+    - batsman:
+      - name: varun-patel
+        over: 3 . . 0 . .
+      - name: sahil-verma
+        over: . c nb2 . r 3
+      bowler: sai-karnan
+    - batsman:
+      - name: varun-patel
+        over: . . . . w 1
+      - name: sahil-verma
+        over: 3 r b 7 . .
+      bowler: dasith-goonatilaka
+    score: 1
+    skin: false
+  - members:
+    - yohan
+    - robert-gilmore
+    overs:
+    - batsman:
+      - name: yohan
+        over: 0 0 1 . 0 0
+      - name: robert-gilmore
+        over: . . . 7 . .
+      bowler: nipuna-de-abrew
+    - batsman:
+      - name: yohan
+        over: . 4 . c . 3
+      - name: robert-gilmore
+        over: 3 . 1 . 1 .
+      bowler: abhishek-verma
+    - batsman:
+      - name: yohan
+        over: w 0 c . 0 2
+      - name: robert-gilmore
+        over: . . . 3 . .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: yohan
+        over: 1 . 0 c . 0
+      - name: robert-gilmore
+        over: . 3 . . 3 .
+      bowler: sai-karnan
+    score: 20
+    skin: false
+  - members:
+    - rohan
+    - tamim-rastagar
+    overs:
+    - batsman:
+      - name: rohan
+        over: 4 . . c . 0
+      - name: tamim-rastagar
+        over: . 0 3 . 4 .
+      bowler: uddhav-naik
+    - batsman:
+      - name: rohan
+        over: . 4 . . 0 .
+      - name: tamim-rastagar
+        over: 7 . 0 c . r
+      bowler: abhishek-verma
+    - batsman:
+      - name: rohan
+        over: w 2 . . . r
+      - name: tamim-rastagar
+        over: . . 0 0 b .
+      bowler: brendan-raj
+    - batsman:
+      - name: rohan
+        over: . 4 . . 3 .
+      - name: tamim-rastagar
+        over: 1 . s 3 . 0
+      bowler: smit-shah
+    score: 8
+    skin: false
+  score: 67
+- partnerships:
+  - members:
+    - uddhav-naik
+    - sai-karnan  
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: 1 . 3 . . w
+      - name: sai-karnan
+        over: . 3 . 0 3 .
+      bowler: yohan
+    - batsman:
+      - name: uddhav-naik
+        over: . 3 . . . 3
+      - name: sai-karnan
+        over: 3 . 0 0 3 .
+      bowler: imran-ahmadzai
+    - batsman:
+      - name: uddhav-naik
+        over: 0 2 . 3 . .
+      - name: sai-karnan
+        over: . . nb2 . 0 1
+      bowler: robert-gilmore
+    - batsman:
+      - name: uddhav-naik
+        over: . . nb3 . . .
+      - name: sai-karnan
+        over: 0 1 . 0 nb 0
+      bowler: tamim-rastagar
+    score: 43
+    skin: true
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: w 1 . . 3 .
+      - name: anshuman-bhaduri
+        over: . . 0 3 . 0
+      bowler: bhavik-vora
+    - batsman:
+      - name: smit-shah
+        over: 1 . . 0 4 .
+      - name: anshuman-bhaduri
+        over: . 0 3 . . 0
+      bowler: varun-patel
+    - batsman:
+      - name: smit-shah
+        over: s 0 0 3 . .
+      - name: anshuman-bhaduri
+        over: . . . . 0 3
+      bowler: imran-ahmadzai
+    - batsman:
+      - name: smit-shah
+        over: . . . 1 . 3
+      - name: anshuman-bhaduri
+        over: 0 0 1 . 2 .
+      bowler: rohan
+    score: 26
+    skin: true
+  - members:
+    - nipuna-de-abrew
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: nipuna-de-abrew
+        over: 0 3 . . . .
+      - name: dasith-goonatilaka
+        over: . . nb 0 w 0
+      bowler: yohan
+    - batsman:
+      - name: nipuna-de-abrew
+        over: 0 3 . . 3 .
+      - name: dasith-goonatilaka
+        over: . . 0 nb2 . 3
+      bowler: bhavik-vora
+    - batsman:
+      - name: nipuna-de-abrew
+        over: . 3 . . . 3
+      - name: dasith-goonatilaka
+        over: 3 . w 0 4 .
+      bowler: robert-gilmore
+    - batsman:
+      - name: nipuna-de-abrew
+        over: 5 . . . 0 0
+      - name: dasith-goonatilaka
+        over: . 0 0 1 . .
+      bowler: sahil-verma
+    score: 43
+    skin: true
+  - members:
+    - brendan-raj
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: brendan-raj
+        over: w 0 1 . 3 .
+      - name: abhishek-verma
+        over: . . . 4 . 2
+      bowler: varun-patel
+    - batsman:
+      - name: brendan-raj
+        over: . . . . . 4
+      - name: abhishek-verma
+        over: 0 w c 0 4 .
+      bowler: sahil-verma
+    - batsman:
+      - name: brendan-raj
+        over: 0 3 . 5 . .
+      - name: abhishek-verma
+        over: . . 3 . 0 3
+      bowler: rohan
+    - batsman:
+      - name: brendan-raj
+        over: . . 3 . . .
+      - name: abhishek-verma
+        over: 0 3 . 0 0 1
+      bowler: tamim-rastagar
+    score: 40 
+    skin: true
+  us: true
+  score: 152

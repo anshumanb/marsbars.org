@@ -1,13 +1,14 @@
 datetime: '2016-08-20T17:00:00+12:00'
 league: 2016-super-league
 venue: Waitakere
-court: 2
+court: 3
 opponent: Hamilton
 title: Semi-final 2
-result:
-margin:
-skins:
-points:
+result: won
+margin: 3 runs
+skins: 2
+points: 6
 innings:
-- score:
-- score:
+- score: 130
+- score: 133
+  us: true

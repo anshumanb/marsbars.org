@@ -8,32 +8,244 @@ margin: 32 runs
 skins: 0
 points: 0
 innings:
--   score: 112
-    partnerships:
-    -   score: 30
-        members:
-        - smit-shah
-        - sai-karnan
-    -   score: 23
-        members:
-        - bhavik-vora
-        - brendan-raj
-    -   score: 31
-        members:
-        - uddhav-naik
-        - abhishek-verma
-    -   score: 28
-        members:
-        - rohit-patel
-        - imran-ahmadzai
-    us: true
--   score: 144
-    partnerships:
-    -   score: 45
-        skin: true
-    -   score: 36
-        skin: true
-    -   score: 31
-        skin: true
-    -   score: 32
-        skin: true
+- partnerships:
+  - members:
+    - smit-shah
+    - sai-karnan
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 0 1 . . 3 .
+      - name: sai-karnan
+        over: . . 0 2 . w
+      bowler: ben-jackett
+    - batsman:
+      - name: smit-shah
+        over: 0 w 0 1 . .
+      - name: sai-karnan
+        over: . . . . w 0
+      bowler: josh-curran
+    - batsman:
+      - name: smit-shah
+        over: w 0 4 . w 0
+      - name: sai-karnan
+        over: . . . 6 . .
+      bowler: benjamin
+    - batsman:
+      - name: smit-shah
+        over: . 1 . c . r
+      - name: sai-karnan
+        over: 3 . 3 . 1 .
+      bowler: oliver-meyer-smith
+    score: 30
+  - members:
+    - bhavik-vora
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: bhavik-vora
+        over: w 0 w 0 . .
+      - name: brendan-raj
+        over: . . . . r .
+      bowler: robert-gilmore
+    - batsman:
+      - name: bhavik-vora
+        over: 0 1 . r 3 .
+      - name: brendan-raj
+        over: . . 0 . . 1
+      bowler: ajaz-patel
+    - batsman:
+      - name: bhavik-vora
+        over: . 0 3 . 0 7
+      - name: brendan-raj
+        over: 3 . . 7 . .
+      bowler: sam-curran
+    - batsman:
+      - name: bhavik-vora
+        over: 1 . . 2 . s
+      - name: brendan-raj
+        over: . 0 3 . 1 .
+      bowler: finn-allen
+    score: 23
+  - members:
+    - uddhav-naik
+    - abhishek-verma
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: 0 0 1 r 3 .
+      - name: abhishek-verma
+        over: . . . . . w
+      bowler: robert-gilmore
+    - batsman:
+      - name: uddhav-naik
+        over: 3 . . . 0 2
+      - name: abhishek-verma
+        over: . 0 0 1 . .
+      bowler: ben-jackett
+    - batsman:
+      - name: uddhav-naik
+        over: 4 . 0 2 . w
+      - name: abhishek-verma
+        over: . 2 . . 3 .
+      bowler: josh-curran
+    - batsman:
+      - name: uddhav-naik
+        over: . . r . 3 .
+      - name: abhishek-verma
+        over: 0 5 . 3 . 3
+      bowler: sam-curran
+    score: 31
+  - members:
+    - rohit-patel
+    - imran-ahmadzai
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: 3 . 0 w 0 w
+      - name: imran-ahmadzai
+        over: . 2 . . . .
+      bowler: benjamin
+    - batsman:
+      - name: rohit-patel
+        over: . . 3 . . .
+      - name: imran-ahmadzai
+        over: b 3 . b nb 1
+      bowler: ajaz-patel
+    - batsman:
+      - name: rohit-patel
+        over: . 2 . 0 2 .
+      - name: imran-ahmadzai
+        over: 3 . 2 . . 4
+      bowler: finn-allen
+    - batsman:
+      - name: rohit-patel
+        over: . 1 . . 2 . .
+      - name: imran-ahmadzai
+        over: 3 . w r . 0 1
+      bowler: oliver-meyer-smith
+    score: 28
+  us: true
+  score: 112
+- partnerships:
+  - members:
+    - finn-allen
+    - oliver-meyer-smith
+    overs:
+    - batsman:
+      - name: finn-allen
+        over: 3 . 3 . 4 .
+      - name: oliver-meyer-smith
+        over: . 4 . 3 . 0
+      bowler: bhavik-vora
+    - batsman:
+      - name: finn-allen
+        over: 0 1 . 3 . .
+      - name: oliver-meyer-smith
+        over: . . 3 . c 3
+      bowler: brendan-raj
+    - batsman:
+      - name: finn-allen
+        over: . . 0 3 . c
+      - name: oliver-meyer-smith
+        over: nb 3 . . 1 .
+      bowler: sai-karnan
+    - batsman:
+      - name: finn-allen
+        over: . w 1 . 7 .
+      - name: oliver-meyer-smith
+        over: 7 . . 1 . 0
+      bowler: smit-shah
+    score: 45
+    skin: true
+  - members:
+    - ajaz-patel
+    - benjamin
+    overs:
+    - batsman:
+      - name: ajaz-patel
+        over: 0 w 0 b r .
+      - name: benjamin
+        over: . . . . . 0
+      bowler: imran-ahmadzai
+    - batsman:
+      - name: ajaz-patel
+        over: w w 1 . . .
+      - name: benjamin
+        over: . . . w w 1
+      bowler: abhishek-verma
+    - batsman:
+      - name: ajaz-patel
+        over: . 3 . 3 . .
+      - name: benjamin
+        over: 1 . 3 . w b
+      bowler: rohit-patel
+    - batsman:
+      - name: ajaz-patel
+        over: 3 . 3 . 3 .
+      - name: benjamin
+        over: . 4 . 3 . 5
+      bowler: uddhav-naik
+    score: 36
+    skin: true
+  - members:
+    - robert-gilmore
+    - ben-jackett
+    overs:
+    - batsman:
+      - name: robert-gilmore
+        over: 0 3 . 0 1 .
+      - name: ben-jackett
+        over: . . 3 . . 3
+      bowler: imran-ahmadzai
+    - batsman:
+      - name: robert-gilmore
+        over: . . 1 . 3 .
+      - name: ben-jackett
+        over: 0 1 . 5 . 2
+      bowler: bhavik-vora
+    - batsman:
+      - name: robert-gilmore
+        over: . 3 . . . 3
+      - name: ben-jackett
+        over: 3 . 0 0 c .
+      bowler: sai-karnan
+    - batsman:
+      - name: robert-gilmore
+        over: 3 . w 0 3 .
+      - name: ben-jackett
+        over: . r . . . 1
+      bowler: rohit-patel
+    score: 31
+    skin: true
+  - members:
+    - sam-curran
+    - josh-curran
+    overs:
+    - batsman:
+      - name: sam-curran
+        over: b r b 3 . .
+      - name: josh-curran
+        over: . . . . 0 3
+      bowler: brendan-raj
+    - batsman:
+      - name: sam-curran
+        over: . . . w 1 .
+      - name: josh-curran
+        over: 0 w 3 . . 3
+      bowler: abhishek-verma
+    - batsman:
+      - name: sam-curran
+        over: . 0 3 . w 1
+      - name: josh-curran
+        over: 3 . . 3 . .
+      bowler: smit-shah
+    - batsman:
+      - name: sam-curran
+        over: c 1 . . 0 3 . .
+      - name: josh-curran
+        over: . . w 3 . . w 7
+      bowler: uddhav-naik
+    score: 32
+    skin: true
+  score: 144
