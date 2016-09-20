@@ -9,6 +9,248 @@ margin: 3 runs
 skins: 2
 points: 6
 innings:
-- score: 130
-- score: 133
+- partnerships:
+  - members:
+    - matt-hunt
+    - chris-cliffe
+    overs:
+    - batsman:
+      - name: matt-hunt
+        over: 0 0 2 . 0 2 . .
+      - name: chris-cliffe
+        over: . . . 1 . . 0 0
+      bowler: brendan-raj
+    - batsman:
+      - name: matt-hunt
+        over: 1 . 1 . . . 2 .
+      - name: chris-cliffe
+        over: . 2 . w w 2 . 0
+      bowler: amit-pothen
+    - batsman:
+      - name: matt-hunt
+        over: 2 . . . 0 w s 2
+      - name: chris-cliffe
+        over: . 0 0 r . . . .
+      bowler: smit-shah
+    - batsman:
+      - name: matt-hunt
+        over: 7 . 7 . 7 . 0 2
+      - name: chris-cliffe
+        over: . 1 . 2 . c . .
+      bowler: dasith-goonatilaka
+    score: 34
+    skin: true
+  - members:
+    - zakk-pratt
+    - paul-anderson
+    overs:
+    - batsman:
+      - name: zakk-pratt
+        over: c 1 . . . . 7 .
+      - name: paul-anderson
+        over: . . w 0 0 1 . 0
+      bowler: daniel-brown
+    - batsman:
+      - name: zakk-pratt
+        over: 1 . w 2 . . 2 .
+      - name: paul-anderson
+        over: . 2 . . w 5 . 2
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: zakk-pratt
+        over: . 2 . . c 2 . .
+      - name: paul-anderson
+        over: 1 . 0 2 . . 0 1
+      bowler: rohit-patel
+    - batsman:
+      - name: zakk-pratt
+        over: . . . 3 . 2 . . 0
+      - name: paul-anderson
+        over: 0 w 2 . 1 . 0 2 .
+      bowler: uddhav-naik
+    score: 39
+    skin: true
+  - members:
+    - kevin-bartels
+    - karl-dalton
+    overs:
+    - batsman:
+      - name: kevin-bartels
+        over: w 1 . w r . 2 .
+      - name: karl-dalton
+        over: . . 2 . . 2 . 0
+      bowler: amit-pothen
+    - batsman:
+      - name: kevin-bartels
+        over: 2 . . 2 . . . 1
+      - name: karl-dalton
+        over: . w 2 . c 0 2 .
+      bowler: daniel-brown
+    - batsman:
+      - name: kevin-bartels
+        over: 1 . 2 . 2 . 2 .
+      - name: karl-dalton
+        over: . 2 . nb3 . 1 . nb2
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: kevin-bartels
+        over: . 2 . . 1 . . 1
+      - name: karl-dalton
+        over: 2 . 0 2 . 0 2 .
+      bowler: smit-shah
+    score: 41
+    skin: false
+  - members:
+    - tony-watkins
+    - cooper-rowell
+    overs:
+    - batsman:
+      - name: tony-watkins
+        over: 1 . 1 . . . . .
+      - name: cooper-rowell
+        over: . 2 . w 0 w 0 1
+      bowler: brendan-raj
+    - batsman:
+      - name: tony-watkins
+        over: . 0 3 . 2 . 2 .
+      - name: cooper-rowell
+        over: 2 . . 4 . 2 . 5
+      bowler: rohit-patel
+    - batsman:
+      - name: tony-watkins
+        over: . 2 . m . w s 2 .
+      - name: cooper-rowell
+        over: 2 . c . 2 . . . c
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: tony-watkins
+        over: . . . 2 . b . .
+      - name: cooper-rowell
+        over: 0 0 1 . 2 . r 2
+      bowler: uddhav-naik
+    score: 16
+    skin: false
+  score: 130
+- partnerships:
+  - members:
+    - amit-pothen
+    - uddhav-naik
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: 0 0 2 . 0 0 2 .
+      - name: uddhav-naik
+        over: . . . 1 . . . 0
+      bowler: cooper-rowell
+    - batsman:
+      - name: amit-pothen
+        over: s 2 . 2 . 2 . 0
+      - name: uddhav-naik
+        over: . . 2 . 1 . 1 .
+      bowler: chris-cliffe
+    - batsman:
+      - name: amit-pothen
+        over: . 2 . . 0 2 . .
+      - name: uddhav-naik
+        over: r . 0 2 . . 0 2
+      bowler: karl-dalton
+    - batsman:
+      - name: amit-pothen
+        over: . 0 1 . 0 . . . .
+      - name: uddhav-naik
+        over: 1 . . 2 . r w 0 1
+      bowler: matt-hunt
+    score: 15
+    skin: false
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 4 . . 0 1 . c 2
+      - name: anshuman-bhaduri
+        over: . 0 1 . . 2 . .
+      bowler: cooper-rowell
+    - batsman:
+      - name: smit-shah
+        over: 0 2 . 2 . . w 2
+      - name: anshuman-bhaduri
+        over: . . 2 . 0 2 . .
+      bowler: zakk-pratt
+    - batsman:
+      - name: smit-shah
+        over: 2 . . 2 . 1 . 2
+      - name: anshuman-bhaduri
+        over: . 0 2 . 2 . 2 .
+      bowler: tony-watkins
+    - batsman:
+      - name: smit-shah
+        over: 0 0 r . 2 . 5 .
+      - name: anshuman-bhaduri
+        over: . . . 1 . 2 . 0
+      bowler: matt-hunt
+    score: 35
+    skin: false
+  - members:
+    - daniel-brown
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: daniel-brown
+        over: 0 w 0 0 1 . 0 0
+      - name: dasith-goonatilaka
+        over: . . . . . 2 . .
+      bowler: karl-dalton
+    - batsman:
+      - name: daniel-brown
+        over: . 3 . r . 3 . 3
+      - name: dasith-goonatilaka
+        over: 1 . 2 . 1 . 1 .
+      bowler: kevin-bartels
+    - batsman:
+      - name: daniel-brown
+        over: 2 . . 0 1 . . 2
+      - name: dasith-goonatilaka
+        over: . w 2 . . 0 1 .
+      bowler: zakk-pratt
+    - batsman:
+      - name: daniel-brown
+        over: 4 . 7 . . 4 . w 1
+      - name: dasith-goonatilaka
+        over: . 2 . 0 1 . 1 . .
+      bowler: kevin-bartels
+    score: 46
+    skin: true
+  - members:
+    - rohit-patel
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: 0 2 . c 1 . 0 2
+      - name: brendan-raj
+        over: . . 2 . . 5 . .
+      bowler: tony-watkins
+    - batsman:
+      - name: rohit-patel
+        over: 2 . . 2 . 0 1 .
+      - name: brendan-raj
+        over: . 0 2 . 2 . . 1
+      bowler: paul-anderson
+    - batsman:
+      - name: rohit-patel
+        over: . 2 . . . 1 . .
+      - name: brendan-raj
+        over: 2 . 0 0 2 . 0 3
+      bowler: chris-cliffe
+    - batsman:
+      - name: rohit-patel
+        over: . 2 . 0 2 . 0 0
+      - name: brendan-raj
+        over: 1 . 3 . . 2 . .
+      bowler: paul-anderson
+    score: 37
+    skin: true
+  score: 133
   us: true

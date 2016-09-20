@@ -3,10 +3,253 @@ league: 2016-central-winter
 venue: Central
 court: 4
 opponent: The Shield
-result:
-margin:
-skins:
-points:
+result: lost
+margin: 3 runs
+skins: 2
+points: 2
 innings:
-- score:
-- score:
+- partnerships:
+  - members:
+    - uddhav-naik
+    - kanishk-vaddiraju
+    overs:
+    - batsman:
+      - name: uddhav-naik
+        over: 0 r . 1 . 0
+      - name: kanishk-vaddiraju
+        over: . . c . 1 .
+      bowler: prateek-datt
+    - batsman:
+      - name: uddhav-naik
+        over: . 2 . 1 . b
+      - name: kanishk-vaddiraju
+        over: 3 . 3 . 1 .
+      bowler: terrence-unknown
+    - batsman:
+      - name: uddhav-naik
+        over: . 0 3 . . 2
+      - name: kanishk-vaddiraju
+        over: 3 . . 0 r .
+      bowler: asher-unknown
+    - batsman:
+      - name: uddhav-naik
+        over: 3 . 0 3 r 0
+      - name: kanishk-vaddiraju
+        over: . c . . . .
+      bowler: siddesh-nair
+    score: -4
+    skin: false
+  - members:
+    - amit-pothen
+    - rahul-chopra
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: 3 . . 3 . 0
+      - name: rahul-chopra
+        over: . 0 3 . 3 .
+      bowler: saarim-ahmed
+    - batsman:
+      - name: amit-pothen
+        over: . . 1 . . 3
+      - name: rahul-chopra
+        over: 0 1 . 0 1 .
+      bowler: munsarim-ahmed
+    - batsman:
+      - name: amit-pothen
+        over: r . 7 . . .
+      - name: rahul-chopra
+        over: . 2 . 0 w 5
+      bowler: prateek-datt
+    - batsman:
+      - name: amit-pothen
+        over: . . 2 . 2 .
+      - name: rahul-chopra
+        over: 0 7 . 1 . 13
+      bowler: nikhil-parpudi
+    score: 55
+    skin: true
+  - members:
+    - roopesh-vanamala
+    - sai-karnan
+    overs:
+    - batsman:
+      - name: roopesh-vanamala
+        over: 6 . r . 0 s
+      - name: sai-karnan
+        over: . 3 . 2 . .
+      bowler: siddesh-nair
+    - batsman:
+      - name: roopesh-vanamala
+        over: . . 0 0 1 .
+      - name: sai-karnan
+        over: 0 7 . . . c
+      bowler: aniket-joshi
+    - batsman:
+      - name: roopesh-vanamala
+        over: 1 . 0 3 . .
+      - name: sai-karnan
+        over: . 3 . . 2 r
+      bowler: terrence-unknown
+    - batsman:
+      - name: roopesh-vanamala
+        over: 0 4 . . 3 .
+      - name: sai-karnan
+        over: . . w 2 . 4
+      bowler: saarim-ahmed
+    score: 24
+    skin: true
+  - members:
+    - rohit-patel
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: rohit-patel
+        over: 3 . . . r 0
+      - name: brendan-raj
+        over: . w 0 w . .
+      bowler: asher-unknown
+    - batsman:
+      - name: rohit-patel
+        over: . 1 . 3 . 0
+      - name: brendan-raj
+        over: 2 . 3 . 3 .
+      bowler: nikhil-parpudi
+    - batsman:
+      - name: rohit-patel
+        over: . 4 . 0 0 w
+      - name: brendan-raj
+        over: 3 . 3 . . .
+      bowler: munsarim-ahmed
+    - batsman:
+      - name: rohit-patel
+        over: . 3 . 0 0 1
+      - name: brendan-raj
+        over: 3 . 2 . . .
+      bowler: aniket-joshi
+    score: 38
+    skin: false
+  score: 113
+  us: true
+- partnerships:
+  - members:
+    - prateek-datt
+    - saarim-ahmed
+    overs:
+    - batsman:
+      - name: prateek-datt
+        over: w1 . 3 r . w
+      - name: saarim-ahmed
+        over: . 3 . . r .
+      bowler: kanishk-vaddiraju
+    - batsman:
+      - name: prateek-datt
+        over: . . 2 r . 3
+      - name: saarim-ahmed
+        over: 0 3 . . 2 .
+      bowler: brendan-raj
+    - batsman:
+      - name: prateek-datt
+        over: nb3 . . . 3 .
+      - name: saarim-ahmed
+        over: . 0 0 c . 0
+      bowler: sai-karnan
+    - batsman:
+      - name: prateek-datt
+        over: 0 1 . . . .
+      - name: saarim-ahmed
+        over: . . 0 w 0 w
+      bowler: amit-pothen
+    score: 18
+    skin: true
+  - members:
+    - asher-unknown
+    - terrence-unknown
+    overs:
+    - batsman:
+      - name: asher-unknown
+        over: 5 . 3 . . .
+      - name: terrence-unknown
+        over: . 3 . w 0 b
+      bowler: rahul-chopra
+    - batsman:
+      - name: asher-unknown
+        over: 0 3 . 3 . .
+      - name: terrence-unknown
+        over: . . 4 . 0 3
+      bowler: uddhav-naik
+    - batsman:
+      - name: asher-unknown
+        over: . 3 . 3 . 0
+      - name: terrence-unknown
+        over: 1 . r . r .
+      bowler: rohit-patel
+    - batsman:
+      - name: asher-unknown
+        over: . . 4 . . w
+      - name: terrence-unknown
+        over: c 3 . 0 1 .
+      bowler: roopesh-vanamala
+    score: 25
+    skin: false
+  - members:
+    - nikhil-parpudi
+    - siddesh-nair
+    overs:
+    - batsman:
+      - name: nikhil-parpudi
+        over: 1 . w . w c
+      - name: siddesh-nair
+        over: . 3 . r . .
+      bowler: kanishk-vaddiraju
+    - batsman:
+      - name: nikhil-parpudi
+        over: 1 . 1 r 3 .
+      - name: siddesh-nair
+        over: . 3 . . . 3
+      bowler: sai-karnan
+    - batsman:
+      - name: nikhil-parpudi
+        over: . 1 . . 5 .
+      - name: siddesh-nair
+        over: 3 . 0 3 . 0
+      bowler: roopesh-vanamala
+    - batsman:
+      - name: nikhil-parpudi
+        over: w r . . w 1
+      - name: siddesh-nair
+        over: . . 0 3 . .
+      bowler: amit-pothen
+    score: 23
+    skin: false
+  - members:
+    - aniket-joshi
+    - munsarim-ahmed
+    overs:
+    - batsman:
+      - name: aniket-joshi
+        over: 3 r 4 . . 7
+      - name: munsarim-ahmed
+        over: . . . 0 2 .
+      bowler: rahul-chopra
+    - batsman:
+      - name: aniket-joshi
+        over: 1 . 0 0 2 .
+      - name: munsarim-ahmed
+        over: . 3 . . . 5
+      bowler: rohit-patel
+    - batsman:
+      - name: aniket-joshi
+        over: . 0 w c . 3
+      - name: munsarim-ahmed
+        over: 3 . . . 3 .
+      bowler: brendan-raj
+    - batsman:
+      - name: aniket-joshi
+        over: 5 . 7 . 3 .
+      - name: munsarim-ahmed
+        over: . 2 . 1 . 3
+      bowler: uddhav-naik
+    score: 50
+    skin: true
+  score: 116
