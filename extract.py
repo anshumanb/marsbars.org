@@ -5,27 +5,25 @@ import yaml
 from collections import OrderedDict
 
 
+NAME_FIXES = {
+    'sai-ganesh': 'sai-karnan',
+    'brendon-raj': 'brendan-raj',
+    'neil-unknown': 'anshuman-bhaduri',
+    'jared-mascherenas': 'jared-mascarenhas',
+    'daz-goonatilaka': 'dasith-goonatilaka',
+    'yohan-unknown': 'yohan',
+    'chirag-unknown': 'chirag-ahuja',
+    'kanish-unknown': 'kanishk-vaddiraju',
+    'daniel-unknown': 'daniel-brown',
+}
+
+def fix_player_slug(name):
+    return NAME_FIXES.get(name, name)
+
+
 def slugify(name):
-    name = name.lower().replace(' ', '-')
-    if name == 'sai-ganesh':
-        return 'sai-karnan'
-    elif name == 'brendon-raj':
-        return 'brendan-raj'
-    elif name == 'neil-unknown':
-        return 'anshuman-bhaduri'
-    elif name == 'jared-mascherenas':
-        return 'jared-mascarenhas'
-    elif name == 'daz-goonatilaka':
-        return 'dasith-goonatilaka'
-    elif name == 'yohan-unknown':
-        return 'yohan'
-    elif name == 'chirag-unknown':
-        return 'chirag-ahuja'
-    elif name == 'kanish-unknown':
-        return 'kanishk-vaddiraju'
-    elif name == 'daniel-unknown':
-        return 'daniel-brown'
-    return name
+    name = name.lower().strip().replace(' ', '-')
+    return fix_player_slug(name)
 
 
 class Bowler(object):
