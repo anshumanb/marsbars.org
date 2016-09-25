@@ -15,6 +15,7 @@ NAME_FIXES = {
     'chirag-unknown': 'chirag-ahuja',
     'kanish-unknown': 'kanishk-vaddiraju',
     'daniel-unknown': 'daniel-brown',
+    'shovik-unknown': 'shovik-nandi',
 }
 
 def fix_player_slug(name):
