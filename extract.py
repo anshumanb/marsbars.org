@@ -134,8 +134,7 @@ class Compat(object):
 
 
 def format_over(deliveries):
-    de = map(lambda d: d.replace('', '.'), deliveries)
-    de = [d if d != '' else '.' for d in deliveries]
+    de = [d.lower() if d != '' else '.' for d in deliveries]
     return ' '.join(de)
 
 
@@ -211,7 +210,7 @@ class Extractor(object):
 
         return {
             'innings': innings,
-            'result': compat.result()
+            #'result': compat.result()
         }
 
 
