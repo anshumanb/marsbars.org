@@ -11,11 +11,20 @@ NAME_FIXES = {
     'neil-unknown': 'anshuman-bhaduri',
     'jared-mascherenas': 'jared-mascarenhas',
     'daz-goonatilaka': 'dasith-goonatilaka',
+    'daz-unknown': 'dasith-goonatilaka',
     'yohan-unknown': 'yohan',
     'chirag-unknown': 'chirag-ahuja',
     'kanish-unknown': 'kanishk-vaddiraju',
     'daniel-unknown': 'daniel-brown',
     'shovik-unknown': 'shovik-nandi',
+    'nish-unknown': 'nishant-dogra',
+    'rohan-unknown': 'rohan-kundu',
+    'musa-unknown': 'musa-alam',
+    'mouse-unknown': 'musa-alam',
+    'jas-unknown': 'jaskirat-banipal',
+    'gurpreet-unknown': 'gurpreet',
+    'varun-unknown': 'varun-patel',
+    'tej-unknown': 'tejpal-singh',
 }
 
 def fix_player_slug(name):

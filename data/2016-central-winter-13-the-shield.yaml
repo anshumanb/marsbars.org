@@ -3,10 +3,253 @@ league: 2016-central-winter
 venue: Central
 court: 4
 opponent: The Shield
-result:
-margin:
-skins:
-points:
+result: won
+margin: 90 runs
+skins: 3
+points: 7
 innings:
-- score:
-- score:
+- partnerships:
+  - members:
+    - amit-pothen
+    - rahul-chopra
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: 0 3 . 1 . nb
+      - name: rahul-chopra
+        over: . . 1 . 6 .
+      bowler: terrence-unknown
+    - batsman:
+      - name: amit-pothen
+        over: . 3 . w 0 2
+      - name: rahul-chopra
+        over: 4 . 3 . . .
+      bowler: karn-gujarathi
+    - batsman:
+      - name: amit-pothen
+        over: w w 3 . . .
+      - name: rahul-chopra
+        over: . . . 0 0 3
+      bowler: siddesh-nair
+    - batsman:
+      - name: amit-pothen
+        over: . 6 . . . 0
+      - name: rahul-chopra
+        over: r . 0 0 1 .
+      bowler: aniket-joshi
+    score: 42
+    skin: true
+  - members:
+    - tejpal-singh
+    - jaskirat-banipal
+    overs:
+    - batsman:
+      - name: tejpal-singh
+        over: 3 . 3 . r 3
+      - name: jaskirat-banipal
+        over: . 8 . 1 . .
+      bowler: prateek-datt
+    - batsman:
+      - name: tejpal-singh
+        over: 3 . 1 . 3 .
+      - name: jaskirat-banipal
+        over: . 3 . 3 . 0
+      bowler: karn-gujarathi
+    - batsman:
+      - name: tejpal-singh
+        over: 0 5 . . . 2
+      - name: jaskirat-banipal
+        over: . . 0 0 s .
+      bowler: saarim-ahmed
+    - batsman:
+      - name: tejpal-singh
+        over: w 3 . nb 2 .
+      - name: jaskirat-banipal
+        over: . . 5 . . 0
+      bowler: nikhil-parpudi
+    score: 43
+    skin: true
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 0 0 2 . . .
+      - name: anshuman-bhaduri
+        over: . . . b 0 0
+      bowler: prateek-datt
+    - batsman:
+      - name: smit-shah
+        over: r 3 . 2 . w
+      - name: anshuman-bhaduri
+        over: . . 3 . 3 .
+      bowler: munsarim-ahmed
+    - batsman:
+      - name: smit-shah
+        over: . . w 3 . 2
+      - name: anshuman-bhaduri
+        over: nb 3 . . 1 .
+      bowler: terrence-unknown
+    - batsman:
+      - name: smit-shah
+        over: 2 . . . s 2
+      - name: anshuman-bhaduri
+        over: . 0 0 1 . .
+      bowler: siddesh-nair
+    score: 20
+    skin: false
+  - members:
+    - roopesh-vanamala
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: roopesh-vanamala
+        over: 1 . 2 . 3 .
+      - name: brendan-raj
+        over: . 3 . 1 . 3
+      bowler: munsarim-ahmed
+    - batsman:
+      - name: roopesh-vanamala
+        over: . 2 . 0 0 2
+      - name: brendan-raj
+        over: 3 . 1 . . .
+      bowler: nikhil-parpudi
+    - batsman:
+      - name: roopesh-vanamala
+        over: w c . s 0 2
+      - name: brendan-raj
+        over: . . 1 . . .
+      bowler: aniket-joshi
+    - batsman:
+      - name: roopesh-vanamala
+        over: 3 0 2 . 3 .
+      - name: brendan-raj
+        over: . . . 1 . 3
+      bowler: saarim-ahmed
+    score: 29
+    skin: true
+  score: 134
+  us: true
+- partnerships:
+  - members:
+    - nikhil-parpudi
+    - siddesh-nair
+    overs:
+    - batsman:
+      - name: nikhil-parpudi
+        over: 2 . . . 3 .
+      - name: siddesh-nair
+        over: . 0 0 3 . 3
+      bowler: jaskirat-banipal
+    - batsman:
+      - name: nikhil-parpudi
+        over: . . 3 . . w
+      - name: siddesh-nair
+        over: 0 3 . 0 3 .
+      bowler: brendan-raj
+    - batsman:
+      - name: nikhil-parpudi
+        over: . . 3 . 3 .
+      - name: siddesh-nair
+        over: w 3 . 3 . 3
+      bowler: tejpal-singh
+    - batsman:
+      - name: nikhil-parpudi
+        over: . . 0 r . .
+      - name: siddesh-nair
+        over: 0 1 . . 0 3
+      bowler: amit-pothen
+    score: 40
+    skin: false
+  - members:
+    - karn-gujarathi
+    - terrence-unknown
+    overs:
+    - batsman:
+      - name: karn-gujarathi
+        over: c . 3 . 3 .
+      - name: terrence-unknown
+        over: . 3 . r . w
+      bowler: rahul-chopra
+    - batsman:
+      - name: karn-gujarathi
+        over: 3 . 0 3 . 2
+      - name: terrence-unknown
+        over: . 1 . . 1 .
+      bowler: smit-shah
+    - batsman:
+      - name: karn-gujarathi
+        over: 0 c . . r .
+      - name: terrence-unknown
+        over: . . w 2 . 3
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: karn-gujarathi
+        over: . 1 . r c .
+      - name: terrence-unknown
+        over: r . c . . r
+      bowler: roopesh-vanamala
+    score: -14
+    skin: false
+  - members:
+    - prateek-datt
+    - saarim-ahmed
+    overs:
+    - batsman:
+      - name: prateek-datt
+        over: 3 . . 2 . .
+      - name: saarim-ahmed
+        over: . 0 3 . 0 3
+      bowler: rahul-chopra
+    - batsman:
+      - name: prateek-datt
+        over: . 0 1 . . 3
+      - name: saarim-ahmed
+        over: r . . s 1 .
+      bowler: tejpal-singh
+    - batsman:
+      - name: prateek-datt
+        over: 1 . . 1 . 1
+      - name: saarim-ahmed
+        over: . 0 c . 5 .
+      bowler: smit-shah
+    - batsman:
+      - name: prateek-datt
+        over: 2 . c . w 3
+      - name: saarim-ahmed
+        over: . 3 . 6 . .
+      bowler: anshuman-bhaduri
+    score: 21
+    skin: true
+  - members:
+    - aniket-joshi
+    - munsarim-ahmed
+    overs:
+    - batsman:
+      - name: aniket-joshi
+        over: 4 . . 0 c .
+      - name: munsarim-ahmed
+        over: . 0 1 . . 0
+      bowler: amit-pothen
+    - batsman:
+      - name: aniket-joshi
+        over: 1 . c 0 0 2
+      - name: munsarim-ahmed
+        over: . r . . . .
+      bowler: roopesh-vanamala
+    - batsman:
+      - name: aniket-joshi
+        over: 3 . 3 . 3 .
+      - name: munsarim-ahmed
+        over: . 1 . 3 . 3
+      bowler: jaskirat-banipal
+    - batsman:
+      - name: aniket-joshi
+        over: . . . 3 . 0
+      - name: munsarim-ahmed
+        over: 0 b r . c .
+      bowler: brendan-raj
+    score: -3
+    skin: false
+  score: 44

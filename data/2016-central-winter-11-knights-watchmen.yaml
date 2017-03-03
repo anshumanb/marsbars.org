@@ -3,10 +3,253 @@ league: 2016-central-winter
 venue: Central
 court: 4
 opponent: Knights Watchmen
-result:
-margin:
-skins:
-points:
+result: lost
+margin: 56 runs
+skins: 1
+points: 1
 innings:
-- score:
-- score:
+- partnerships:
+  - members:
+    - farhan-unknown
+    - sunny-unknown
+    overs:
+    - batsman:
+      - name: farhan-unknown
+        over: 3 . 3 . 0 3
+      - name: sunny-unknown
+        over: . 3 . 4 . .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: farhan-unknown
+        over: 0 0 3 . 1 .
+      - name: sunny-unknown
+        over: . . . 2 . 1
+      bowler: amit-pothen
+    - batsman:
+      - name: farhan-unknown
+        over: . 0 3 . . 7
+      - name: sunny-unknown
+        over: 3 . . 0 2 .
+      bowler: smit-shah
+    - batsman:
+      - name: farhan-unknown
+        over: 0 0 1 . 0 3
+      - name: sunny-unknown
+        over: . . . 4 . .
+      bowler: jaskirat-banipal
+    score: 46
+    skin: true
+  - members:
+    - joel-coutts
+    - shabaz-budhwani
+    overs:
+    - batsman:
+      - name: joel-coutts
+        over: 1 . 1 . 0 w
+      - name: shabaz-budhwani
+        over: . 2 . 3 . .
+      bowler: roopesh-vanamala
+    - batsman:
+      - name: joel-coutts
+        over: . . . 0 b 4
+      - name: shabaz-budhwani
+        over: 2 r 2 . . .
+      bowler: sai-karnan
+    - batsman:
+      - name: joel-coutts
+        over: c . 2 . 4 .
+      - name: shabaz-budhwani
+        over: . 3 . r . 4
+      bowler: gurpreet
+    - batsman:
+      - name: joel-coutts
+        over: . . c . w 3
+      - name: shabaz-budhwani
+        over: w nb3 . 2 . .
+      bowler: musa-alam
+    score: 22
+    skin: false
+  - members:
+    - vish-siva
+    - christo-soares
+    overs:
+    - batsman:
+      - name: vish-siva
+        over: 0 2 . w 0 w
+      - name: christo-soares
+        over: . . 5 . . .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: vish-siva
+        over: . . . 1 . .
+      - name: christo-soares
+        over: 0 s 3 . 0 c
+      bowler: roopesh-vanamala
+    - batsman:
+      - name: vish-siva
+        over: . nb 1 . 3 .
+      - name: christo-soares
+        over: 1 . . 4 . 0
+      bowler: smit-shah
+    - batsman:
+      - name: vish-siva
+        over: 7 . . . . c
+      - name: christo-soares
+        over: . w 0 w 3 .
+      bowler: gurpreet
+    score: 29
+    skin: true
+  - members:
+    - shrish-latch
+    - shehan-ebenezer
+    overs:
+    - batsman:
+      - name: shrish-latch
+        over: 4 . 4 . 3 .
+      - name: shehan-ebenezer
+        over: . 1 . 3 . 0
+      bowler: jaskirat-banipal
+    - batsman:
+      - name: shrish-latch
+        over: 7 . . . 3 .
+      - name: shehan-ebenezer
+        over: . w 0 6 . 1
+      bowler: musa-alam
+    - batsman:
+      - name: shrish-latch
+        over: . 3 . 1 . 3
+      - name: shehan-ebenezer
+        over: 5 . 3 . 2 .
+      bowler: sai-karnan
+    - batsman:
+      - name: shrish-latch
+        over: 3 r . 2 . . 7
+      - name: shehan-ebenezer
+        over: . . 2 . w 6 .
+      bowler: amit-pothen
+    score: 70
+    skin: true
+  score: 167
+- partnerships:
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 2 . . 3 . 3
+      - name: anshuman-bhaduri
+        over: . 0 c . 3 .
+      bowler: shabaz-budhwani
+    - batsman:
+      - name: smit-shah
+        over: 3 . . . . w
+      - name: anshuman-bhaduri
+        over: . w b w 1 .
+      bowler: sunny-unknown
+    - batsman:
+      - name: smit-shah
+        over: . . 0 0 3 .
+      - name: anshuman-bhaduri
+        over: nb 3 . . . 2
+      bowler: shrish-latch
+    - batsman:
+      - name: smit-shah
+        over: . w 1 . . 4
+      - name: anshuman-bhaduri
+        over: 3 . . w 1 .
+      bowler: joel-coutts
+    score: 39
+    skin: false
+  - members:
+    - gurpreet
+    - jaskirat-banipal
+    overs:
+    - batsman:
+      - name: gurpreet
+        over: b 0 1 r 7 .
+      - name: jaskirat-banipal
+        over: . . . . . 0
+      bowler: vish-siva
+    - batsman:
+      - name: gurpreet
+        over: w 0 r . 3 .
+      - name: jaskirat-banipal
+        over: . . . nb3 . w
+      bowler: christo-soares
+    - batsman:
+      - name: gurpreet
+        over: 4 . . c . w
+      - name: jaskirat-banipal
+        over: . w 6 . 4 .
+      bowler: farhan-unknown
+    - batsman:
+      - name: gurpreet
+        over: . 3 . . . w
+      - name: jaskirat-banipal
+        over: 5 . c 0 c .
+      bowler: shabaz-budhwani
+    score: 23
+    skin: true
+  - members:
+    - roopesh-vanamala
+    - musa-alam
+    overs:
+    - batsman:
+      - name: roopesh-vanamala
+        over: r . w 2 . .
+      - name: musa-alam
+        over: . 3 . . 2 r
+      bowler: sunny-unknown
+    - batsman:
+      - name: roopesh-vanamala
+        over: 1 . w 4 . 7
+      - name: musa-alam
+        over: . 1 . . 2 .
+      bowler: farhan-unknown
+    - batsman:
+      - name: roopesh-vanamala
+        over: c . . . nb c
+      - name: musa-alam
+        over: . w 0 nb1 . .
+      bowler: shehan-ebenezer
+    - batsman:
+      - name: roopesh-vanamala
+        over: 3 . 4 r nb 1
+      - name: musa-alam
+        over: . 2 . . . .
+      bowler: shrish-latch
+    score: 23
+    skin: false
+  - members:
+    - amit-pothen
+    - sai-karnan
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: r . . nb4 . c
+      - name: sai-karnan
+        over: . c 3 . 1 .
+      bowler: shehan-ebenezer
+    - batsman:
+      - name: amit-pothen
+        over: 4 . c . . .
+      - name: sai-karnan
+        over: . r . 4 r 7
+      bowler: christo-soares
+    - batsman:
+      - name: amit-pothen
+        over: . r 2 . 1 .
+      - name: sai-karnan
+        over: 13 . . 4 . 2
+      bowler: joel-coutts
+    - batsman:
+      - name: amit-pothen
+        over: . 4 . 0 4 .
+      - name: sai-karnan
+        over: c . 5 . . 6
+      bowler: vish-siva
+    score: 26
+    skin: false
+  score: 111
+  us: true

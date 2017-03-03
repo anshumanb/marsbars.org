@@ -1,0 +1,256 @@
+datetime: '2016-11-09T19:50:00+13:00'
+league: 2016-central-winter
+venue: Central
+court: 4
+opponent: Smak Breweries
+title: Semi-final
+result: lost
+margin: 10 runs
+skins: 1
+points: 1
+innings:
+- partnerships:
+  - members:
+    - smit-shah
+    - anshuman-bhaduri
+    overs:
+    - batsman:
+      - name: smit-shah
+        over: 2 . . nb 0 2
+      - name: anshuman-bhaduri
+        over: . 0 3 . . .
+      bowler: mike-meharag
+    - batsman:
+      - name: smit-shah
+        over: 0 3 . 0 1 .
+      - name: anshuman-bhaduri
+        over: . . 2 . . 2
+      bowler: robert-gilmore
+    - batsman:
+      - name: smit-shah
+        over: . 2 . . . .
+      - name: anshuman-bhaduri
+        over: 3 . 0 w 0 r
+      bowler: jason-macwilliam
+    - batsman:
+      - name: smit-shah
+        over: 3 . . . 0 2
+      - name: anshuman-bhaduri
+        over: . 3 0 2 . .
+      bowler: james-thomson
+    score: 30
+    skin: false
+  - members:
+    - amit-pothen
+    - rahul-chopra
+    overs:
+    - batsman:
+      - name: amit-pothen
+        over: 0 r . 3 . . w
+      - name: rahul-chopra
+        over: . . 3 . nb 2 .
+      bowler: peter-lane
+    - batsman:
+      - name: amit-pothen
+        over: . 0 0 r 3 . 4
+      - name: rahul-chopra
+        over: 3 . . . . 3 .
+      bowler: graeme-allwood
+    - batsman:
+      - name: amit-pothen
+        over: 5 . 3 . 3 .
+      - name: rahul-chopra
+        over: . 3 . 4 . 0
+      bowler: brent-humphrey
+    - batsman:
+      - name: amit-pothen
+        over: 3 . . . . 1
+      - name: rahul-chopra
+        over: . b 0 0 6 .
+      bowler: matt-wyatt
+    score: 39
+    skin: false
+  - members:
+    - roopesh-vanamala
+    - dasith-goonatilaka
+    overs:
+    - batsman:
+      - name: roopesh-vanamala
+        over: 0 0 2 . 1 .
+      - name: dasith-goonatilaka
+        over: . . . r . 0
+      bowler: mike-g
+    - batsman:
+      - name: roopesh-vanamala
+        over: w 0 1 . 2 .
+      - name: dasith-goonatilaka
+        over: . . . 2 . 3
+      bowler: robert-gilmore
+    - batsman:
+      - name: roopesh-vanamala
+        over: . . . w 0 3
+      - name: dasith-goonatilaka
+        over: 0 0 5 . . .
+      bowler: graeme-allwood
+    - batsman:
+      - name: roopesh-vanamala
+        over: c 0 1 . 0 c
+      - name: dasith-goonatilaka
+        over: . . . 1 . .
+      bowler: james-thomson
+    score: 12
+    skin: false
+  - members:
+    - sai-karnan
+    - brendan-raj
+    overs:
+    - batsman:
+      - name: sai-karnan
+        over: 3 . 0 0 3 .
+      - name: brendan-raj
+        over: . 3 . . . 0
+      bowler: peter-lane
+    - batsman:
+      - name: sai-karnan
+        over: . nb 1 . . 0 s
+      - name: brendan-raj
+        over: r . . w 2 . .
+      bowler: jason-macwilliam
+    - batsman:
+      - name: sai-karnan
+        over: . . 0 0 5 .
+      - name: brendan-raj
+        over: 0 1 . . . 0
+      bowler: matt-wyatt
+    - batsman:
+      - name: sai-karnan
+        over: 3 . r . . .
+      - name: brendan-raj
+        over: . 2 . 2 4 6
+      bowler: brent-humphrey
+    score: 25
+    skin: true
+  score: 106
+  us: true
+- partnerships:
+  - members:
+    - mike-meharag
+    - matt-wyatt
+    overs:
+    - batsman:
+      - name: mike-meharag
+        over: 0 0 3 . 2 .
+      - name: matt-wyatt
+        over: . . . 6 . 3
+      bowler: amit-pothen
+    - batsman:
+      - name: mike-meharag
+        over: . 0 1 . 3 .
+      - name: matt-wyatt
+        over: 6 . . 8 . 3
+      bowler: brendan-raj
+    - batsman:
+      - name: mike-meharag
+        over: . 0 3 . 1 .
+      - name: matt-wyatt
+        over: 3 . . 1 . c
+      bowler: sai-karnan
+    - batsman:
+      - name: mike-meharag
+        over: . 4 . . 0 2
+      - name: matt-wyatt
+        over: 5 . 0 6 . .
+      bowler: roopesh-vanamala
+    score: 55
+    skin: true
+  - members:
+    - robert-gilmore
+    - graeme-allwood
+    overs:
+    - batsman:
+      - name: robert-gilmore
+        over: 3 . 0 w 3 .
+      - name: graeme-allwood
+        over: . r . . . 3
+      bowler: rahul-chopra
+    - batsman:
+      - name: robert-gilmore
+        over: . . 0 3 . 3
+      - name: graeme-allwood
+        over: 0 3 . . 1 .
+      bowler: smit-shah
+    - batsman:
+      - name: robert-gilmore
+        over: 3 . . 3 . 3
+      - name: graeme-allwood
+        over: . 0 1 . 3 .
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: robert-gilmore
+        over: 4 . 0 3 . .
+      - name: graeme-allwood
+        over: . 2 . . 0 2
+      bowler: dasith-goonatilaka
+    score: 41
+    skin: true
+  - members:
+    - brent-humphrey
+    - jason-macwilliam
+    overs:
+    - batsman:
+      - name: brent-humphrey
+        over: 0 3 . . 3 .
+      - name: jason-macwilliam
+        over: . . 0 r . c
+      bowler: rahul-chopra
+    - batsman:
+      - name: brent-humphrey
+        over: . 3 . . 2 .
+      - name: jason-macwilliam
+        over: 3 . 0 3 . 3
+      bowler: brendan-raj
+    - batsman:
+      - name: brent-humphrey
+        over: . . . r . . . 3
+      - name: jason-macwilliam
+        over: 0 0 2 . c nb 3 .
+      bowler: sai-karnan
+    - batsman:
+      - name: brent-humphrey
+        over: 2 . 3 . 3 .
+      - name: jason-macwilliam
+        over: . 2 . 3 . 0
+      bowler: amit-pothen
+    score: 23
+    skin: true
+  - members:
+    - peter-lane
+    - james-thomson
+    overs:
+    - batsman:
+      - name: peter-lane
+        over: 3 . . . 2 .
+      - name: james-thomson
+        over: . 0 0 5 . b
+      bowler: anshuman-bhaduri
+    - batsman:
+      - name: peter-lane
+        over: 0 3 . . b 0
+      - name: james-thomson
+        over: . . 0 c . .
+      bowler: dasith-goonatilaka
+    - batsman:
+      - name: peter-lane
+        over: . . . 1 . 6
+      - name: james-thomson
+        over: b r r . 4 .
+      bowler: smit-shah
+    - batsman:
+      - name: peter-lane
+        over: 0 2 . . 0 0
+      - name: james-thomson
+        over: . . 0 1 . .
+      bowler: roopesh-vanamala
+    score: -3
+    skin: false
+  score: 116
