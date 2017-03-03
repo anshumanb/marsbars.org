@@ -109,7 +109,7 @@ OUTS = ['ro', 'r', 'st', 's', 'lbw', 'lb', 'h', 'hw', 'm', 'c', 'b']
 def calc_run(outcome, inhouse_league):
     if outcome in OUTS:
         result = -5
-    elif 'w' in outcome or 'nb' in outcome:
+    elif 'w' in outcome or 'nb' in outcome or 'n' in outcome:
         additional = outcome.strip('nbw')
         result = 3 if 'w' in outcome  and inhouse_league else 2
         result += int(additional) if additional != '' else 0
