@@ -460,7 +460,7 @@ class IndoorOver(db.Model):
     def _calc_extras(self, extra):
         total = 0
         for i in self._detail():
-            if extra in i:
+            if extra in i and 'hw' not in i:
                 total += 1
                 additional = i.strip(extra)
                 total += int(additional) if additional != '' else 0
